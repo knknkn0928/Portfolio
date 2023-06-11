@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+header .h_top {
+    background-color: var(--point-color);
+}
+
+header .h_top img {
+    margin: 20px auto;
+}
+
+.menubar {
+    background-color: var(--point-color);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.menubar li a {
+    color:#F8F3E8;
+}
+
+
+
+
+@media (min-width:1500px) {
+  }
