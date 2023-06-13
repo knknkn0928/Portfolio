@@ -12,3 +12,7 @@
   --margin-basic: 10%;
   /* --margin-btn: 5vw; */
 }
+
+::-webkit-scrollbar-thumb {
+  background-color: #004236;
+}
