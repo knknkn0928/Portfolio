@@ -383,7 +383,8 @@
     padding: 20px 0 0 0;
   }
 
-  .sec5 footer h3 {
+  .sec5 footer h3 a {
     color: #d6cb49;
+    font-size: 1.2rem;
   }
 }
