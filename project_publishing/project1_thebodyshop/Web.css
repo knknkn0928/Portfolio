@@ -1,5 +1,7 @@
 @charset "utf-8";
 
+@import url(./var.css);
+
 @media (min-width: 1025px) {
   header .header-top {
     background-color: var(--point-color);
@@ -36,7 +38,7 @@
     top: 20px;
   }
 
-  .icon_PC {
+  .icon_MB {
     display: none;
   }
 
