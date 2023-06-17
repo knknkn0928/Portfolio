@@ -154,6 +154,7 @@
 
   .sec1 ul li a p {
     color: #000;
+    margin: 15px 0;
   }
 
   .sec1 img {
@@ -198,6 +199,7 @@
 
   .sec2 ul li a p {
     color: #000;
+    margin: 15px 0;
   }
 
   .sec2 img {
@@ -205,7 +207,9 @@
   }
 
   .line-img1 {
+    /* display: block; */
     width: 100%;
+    object-fit:cover;
   }
 
   .line-img2 {
@@ -226,10 +230,12 @@
   }
 
   .sec3 h1 {
+    display: block;
     text-align: center;
     color: #f8f3e8;
     position: relative;
     margin: 40px 0;
+    width: 40vw;
   }
 
   .sec3 h1:before {
@@ -250,9 +256,9 @@
     color: #f8f3e8;
   }
 
-  .sec3 ul li img {
+  .sec3 ul li a img {
     display: block;
-    width: 30vw;
+    width: 40vw;
   }
 
   .sec3 ul li h3 {
@@ -323,8 +329,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
-    padding: 80px 0;
+    padding:10vh 0 2vh 0;
   }
 
   .sec5 ul li {
@@ -404,6 +409,8 @@
   }
 }
 
+/* 2차 브레이크 포인트 */
+
 @media (max-width: 777px) {
   header .menubar {
     display: none;
@@ -424,4 +431,96 @@
   .icon_MB {
     display: block;
   }
+
+    h6 {
+    font-size: 1rem;
+    font-weight: 800;
+    color: var(--point-color);
+    margin: 10px 0;
+  }
+
+  .sec1 ul li a p {
+    color: #000;
+    font-size: 0.8rem;
+    margin: 15px 0;
+  }
+
+  .sec2 {
+    padding: 0 0 5vh 0;
+  }
+
+  .sec2 ul li a p {
+    color: #000;
+    font-size: 0.8rem;
+    margin: 15px 0;
+  }
+
+  .line-img1 {
+    display: none;
+  }
+
+  .line-img2 {
+    display: block;
+    width: 100%;
+  }
+
+  .sec4 ul {
+    display: flex;
+    flex-flow: column;
+  }
+
+  .sec4 ul li img {
+    display: block;
+    margin: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 40vw;
+  }
+
+  .sec4 ul li:last-child {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    width: 100%;
+    height: 40vw;
+    background-color: #f8f3e8;
+    text-align: center;
+    color: var(--point-color);
+  }
+
+    .sec4 ul li:last-child .btn {
+    display: block;
+    margin: 10px auto;
+    font-size: 0.9rem;
+    text-align: center;
+    background-color: var(--point-color);
+    color: #f8f3e8;
+    width: 20vw;
+    padding: 13px;
+  }
+
+  .sec5 ul {
+    display: flex;
+    flex-wrap: column;
+    justify-content: center;
+    padding:10vh 0 2vh 0;
+  }
+
+  .sec5 ul li {
+    color: #f8f3e8;
+    width: 70vw;
+    margin: 10px 1.5vw;
+  }
+
+  .sec5 ul li a {
+    color: #f8f3e8;
+    text-align: center;
+  }
+
+  .sec5 img {
+    width: 70vw;
+    height: 50vw;
+    object-fit: cover;
+  }
+
 }
