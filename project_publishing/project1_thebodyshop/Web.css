@@ -83,12 +83,31 @@
     color: #d6cb49;
   }
 
-  .slide-img li:nth-child(1) a {
+
+  .slide {
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+  }
+
+  .slide-img li a {
     display: block;
-    background: url(./images/slide1.png) center no-repeat;
     width: 100%;
     height: 600px;
   }
+
+  .slide-img li:nth-child(1) a {
+    background: url(./images/slide1.png) center no-repeat;
+  }
+
+  .slide-img li:nth-child(2) a {
+    background: url(./images/slide2.jpg) center no-repeat;
+  }
+
+  .slide-img li:nth-child(3) a {
+    background: url(./images/slide3.jpg) center no-repeat;
+  }
+
 
   /* 메인 */
 
