@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+/* Notted */
+@font-face {
+  font-family: "Notted";
+  src: url(./fonts/Notted.ttf);
+}
+
+/* noto sans kr */
+@import url("https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Instrument+Sans&family=Lobster&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+
+/* montserrat */
+@import url("https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Instrument+Sans&family=Lobster&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+
+::-webkit-scrollbar {
+  width: 8px; /* 세로축 스크롤바 길이 */
+  height: 20px; /* 가로축 스크롤바 길이 */
+}
+::-webkit-scrollbar-track {
+  background-color: lightblue;
+}
+::-webkit-scrollbar-track-piece {
+  background-color: #1b1b1b;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #e2e2e2;
+}
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+* {
+  margin: 0;
+}
+
+h1 {
+  display: block;
+  font-family: "Notted";
+  font-weight: 300;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  display: block;
+}
+
+p {
+  font-family: "Noto Sans KR", sans-serif;
+  display: block;
+}
