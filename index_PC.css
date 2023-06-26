@@ -15,13 +15,20 @@ header {
   width: calc(100% - 6vw);
   height: calc(100vh - 6vw);
   padding: 3vw;
-  color: #fff;
+  position: relative;
+}
+
+header .text {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  position: relative;
-  scroll-snap-type: y mandatory;
+  position: absolute;
+  height: calc(100vh - 6vw);
+  width: calc(100% - 6vw);
+  color: #fff;
+  z-index: 1;
 }
+
 
 header img {
   display: block;
@@ -31,18 +38,19 @@ header img {
   top: 3vw;
   border-radius: 50%;
   box-shadow: 0 0 130px #fff;
+  z-index: 2;
   cursor: pointer;
 }
 
-header h1 {
+header .text h1 {
   font-size: 17vw;
 }
 
-header h4 {
+header .text h4 {
   font-size: 2vw;
 }
 
-header .header_bottom h6 {
+header .text .header_bottom h6 {
   font-size: 1.1vw;
   font-weight: 300;
 }
@@ -50,6 +58,96 @@ header .header_bottom h6 {
 .header_bottom {
   display: flex;
   justify-content: space-between;
+}
+
+
+.svgBox .svg {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top:0;
+  left: 0;
+}
+
+.animate {
+  animation: line-anim 5s infinite alternate;
+  transition: 0.5s ease;
+}
+
+@keyframes line-anim {
+  to {
+    stroke-dasharray: 60px;
+    stroke-dashoffset: 160px;
+    transition: 0.5s ease;
+  }
+}
+
+.svgBox .svg .ellipse1 {
+  fill: rgb(255, 255, 255, 0);
+  cx: 68vw;
+  cy: 22.5vw;
+  rx: 25vw;
+  ry: 7vw;
+  stroke: #fff;
+  stroke-width: 2;
+  rotate: -10deg;
+}
+
+.svgBox .svg .ellipse2 {
+  fill: rgb(255, 255, 255, 0);
+  cx: 68vw;
+  cy: 25vw;
+  rx: 34vw;
+  ry: 10vw;
+  stroke: #fff;
+  stroke-width: 1;
+  rotate: -10deg;
+}
+
+.svgBox .svg .ellipse3 {
+  fill: rgb(255, 255, 255, 0);
+  cx: 68vw;
+  cy: 28.5vw;
+  rx: 42vw;
+  ry: 14vw;
+  stroke: #fff;
+  stroke-width: 2;
+  stroke-dasharray: 0.3% 0.7%;
+  rotate: -10deg;
+}
+
+.svgBox .svg .ellipse4 {
+  fill: rgb(255, 255, 255, 0);
+  cx: 68vw;
+  cy: 33vw;
+  rx: 56vw;
+  ry: 19vw;
+  stroke: #fff;
+  stroke-width: 2;
+  rotate: -10deg;
+}
+
+.svgBox .svg .ellipse5 {
+  fill: rgb(255, 255, 255, 0);
+  cx: 68vw;
+  cy: 40vw;
+  rx: 72vw;
+  ry: 26.5vw;
+  stroke: #fff;
+  stroke-width: 2;
+  stroke-dasharray: 0.5% 0.7%;
+  rotate: -370deg;
+}
+
+.svgBox .svg .ellipse6 {
+  fill: rgb(255, 255, 255, 0);
+  cx: 68vw;
+  cy: 53vw;
+  rx: 90vw;
+  ry: 40vw;
+  stroke: #fff;
+  stroke-width: 1;
+  rotate: -10deg;
 }
 
 /* about */
@@ -120,6 +218,7 @@ header .header_bottom h6 {
   height: calc(100vh - 10vw);
   align-items:end;
   justify-content: space-between;
+  position: relative;
 }
 
 .about .sec2 h3 {
@@ -131,6 +230,7 @@ header .header_bottom h6 {
   list-style: none;
   padding:0;
   /* width: 65%; */
+  z-index: 1;
 }
 
 .about .sec2 .skill_list li{
@@ -149,6 +249,26 @@ header .header_bottom h6 {
 .about .sec2 .skill_list li p {
   text-transform: uppercase;
   width: 55%;
+}
+
+.about .sec2 .svgBox2 .svg {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top:0;
+  left: 0;
+}
+
+.about .sec2 .svgBox2 .svg .ellipse7 {
+  fill: rgb(255, 255, 255, 0);
+  cx: 18vw;
+  cy: 40vw;
+  rx: 70vw;
+  ry: 28vw;
+  stroke: #fff;
+  stroke-width: 2;
+  stroke-dasharray: 0.7% 0.7%;
+  rotate: -10deg;
 }
 
 
