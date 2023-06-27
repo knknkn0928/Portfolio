@@ -33,6 +33,9 @@
 
 * {
   margin: 0;
+}
+
+html {
   scroll-behavior: smooth;
 }
 
@@ -43,6 +46,13 @@ h1 {
   margin: 0;
   text-transform: capitalize;
   line-height: 0.8;
+}
+
+a {
+  text-decoration: none;
+  color:#1b1b1b;
+  margin: 0;
+  display: block;
 }
 
 h3,

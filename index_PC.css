@@ -26,28 +26,55 @@ header .sub_menu {
   top: 0;
   left: 0;
   z-index: 2;
+  /* display: none; */
 }
 
 header .backdrop {
   backdrop-filter: blur(3px);
 }
 
-header .sub_menu .sub_menu_title {
+header .sub_menu .nav {
+  position: relative;
+}
+
+header .sub_menu .nav .sub_menu_title {
+  position: absolute;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
-  height: calc(100vh - 10vw);
-  padding: 5vw 0 5vw 10vw;
-  font-size: 4.5vw;
-}
-header .sub_menu .sub_menu_title h1 {
-  width: 50%;
+  width: 100%;
+  font-family: "Notted";
+  font-size: 7.5vw;
+  top: 18vh;
+  bottom: 0;
+  right:0;
+  z-index: 3;
 }
 
-header .sub_menu .sub_menu_title h1:nth-child(2) {
+header .sub_menu .nav .sub_menu_title a {
+  padding: 0 0 0 13vw;
+  width: 50%;
+  transition: 0.5s all;
+}
+
+header .sub_menu .nav .sub_menu_title a:nth-child(2) {
   text-align: right;
 }
+
+header .sub_menu .nav .sub_menu_title:hover a {
+  filter: blur(3px);
+  opacity: .5;
+  transform: scale(.98);
+  text-shadow: none;
+}
+
+header .sub_menu .nav .sub_menu_title:hover a:hover {
+  transform: scale(1);
+  filter: blur(0px);
+  opacity: 1;
+}
+
+
 
 header .sub_menu .svgBox .svg .ellipse1-1 {
   fill: rgb(255, 255, 255, 0);
@@ -239,7 +266,7 @@ header .text .header_bottom h6 {
   bottom: 0;
   height: calc(100vh + 10vw);
   left: 0;
-  margin: 0 0 80vh 0;
+  margin: 0 0 calc(100vh - 10vw) 0;
 }
 
 .about h1 {
@@ -356,7 +383,7 @@ header .text .header_bottom h6 {
 
 .project {
   justify-content: space-between;
-  padding: 15vh 5vw 5vw 5vw;
+  padding: 5vw 5vw 5vw 5vw;
   width: calc(100% - 10vw);
   height: calc(200vh - 10vw);
 }

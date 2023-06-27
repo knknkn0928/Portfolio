@@ -15,20 +15,24 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Instrument+Sans&family=Lobster&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
     rel="stylesheet">
+    <script defer src="./common/jquery-3.7.0.min.js"></script>
+    <script src="./index.js"></script>
 </head>
 
 <body>
   <header>
-    <img src="./images/menu_back1.png" alt="menu button">
+    <img src="./images/menu_back1.png" alt="menu button" id="menu_btn">
+    <!-- <img src="./images/menu_back2.png" alt="menu button" id="menu_btn2"> -->
 
-    <div class="sub_menu backdrop">
-      <div class="sub_menu_title">
-        <h1>About</h1>
-        <h1>Self<br>
-          Projects</h1>
-        <h1>Contact</h1>
-      </div>
-
+      <div class="sub_menu backdrop" id="sub_menu">
+    <div class="nav">
+        <div class="sub_menu_title">
+          <a href="#About">About</a>
+          <a href="#Projects">Self<br>
+            Projects</a>
+          <a href="#Contact">Contact</a>
+        </div>
+    </div>
       <div class="svgBox">
         <svg class="svg">
           <ellipse class="ellipse1-1"></ellipse>
@@ -81,7 +85,7 @@
     </div>
   </header>
 
-  <section class="about">
+  <section class="about" id="About">
     <h1>about”</h1>
 
     <article class="sec1 flex">
@@ -155,7 +159,7 @@
     </article>
   </section>
 
-  <section class="project flex">
+  <section class="project flex" id="Projects">
 
     <div class="project_nav flex column">
       <h1>self projects</h1>
@@ -212,7 +216,7 @@
     </ul>
   </section>
 
-  <footer>
+  <footer id="Contact">
     <h1>contact</h1>
   </footer>
 </body>
