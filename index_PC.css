@@ -18,6 +18,89 @@ header {
   position: relative;
 }
 
+header .sub_menu {
+  position: absolute;
+  background: url(./images/background_1.png) no-repeat center / cover;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+header .backdrop {
+  backdrop-filter: blur(3px);
+}
+
+header .sub_menu .sub_menu_title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: calc(100vh - 10vw);
+  padding: 5vw 0 5vw 10vw;
+  font-size: 4.5vw;
+}
+header .sub_menu .sub_menu_title h1 {
+  width: 50%;
+}
+
+header .sub_menu .sub_menu_title h1:nth-child(2) {
+  text-align: right;
+}
+
+header .sub_menu .svgBox .svg .ellipse1-1 {
+  fill: rgb(255, 255, 255, 0);
+  cx: 13vw;
+  cy: 5vw;
+  rx: 15vw;
+  ry: 15vw;
+  stroke: #000;
+  stroke-width: 2;
+}
+
+header .sub_menu .svgBox .svg .ellipse2-1 {
+  fill: rgb(255, 255, 255, 0);
+  cx: 13vw;
+  cy: 5vw;
+  rx: 10vw;
+  ry: 10vw;
+  stroke: #000;
+  stroke-width: 1;
+}
+
+header .sub_menu .svgBox .svg .ellipse3-1 {
+  fill: rgb(255, 255, 255, 0);
+  cx: 20vw;
+  cy: 5vw;
+  rx: 23vw;
+  ry: 23vw;
+  stroke: #000;
+  stroke-width: 2;
+  stroke-dasharray: 0.3% 0.7%;
+}
+
+header .sub_menu .svgBox .svg .ellipse4-1 {
+  fill: rgb(255, 255, 255, 0);
+  cx: 32vw;
+  cy: 5vw;
+  rx: 37vw;
+  ry: 37vw;
+  stroke: #000;
+  stroke-width: 2;
+}
+
+header .sub_menu .svgBox .svg .ellipse5-1 {
+  fill: rgb(255, 255, 255, 0);
+  cx: 35vw;
+  cy: 5vw;
+  rx: 54vw;
+  ry: 54vw;
+  stroke: #000;
+  stroke-width: 2;
+  stroke-dasharray: 0.5% 0.7%;
+}
+
 header .text {
   display: flex;
   flex-direction: column;
@@ -29,7 +112,6 @@ header .text {
   z-index: 1;
 }
 
-
 header img {
   display: block;
   position: absolute;
@@ -38,7 +120,7 @@ header img {
   top: 3vw;
   border-radius: 50%;
   box-shadow: 0 0 130px #fff;
-  z-index: 2;
+  z-index: 10;
   cursor: pointer;
 }
 
@@ -60,13 +142,13 @@ header .text .header_bottom h6 {
   justify-content: space-between;
 }
 
-
 .svgBox .svg {
   width: 100%;
   height: 100vh;
   position: absolute;
-  top:0;
+  top: 0;
   left: 0;
+  z-index: 0;
 }
 
 .animate {
@@ -154,9 +236,9 @@ header .text .header_bottom h6 {
 
 .about {
   position: relative;
-  bottom:0;
+  bottom: 0;
   height: calc(100vh + 10vw);
-  left:0;
+  left: 0;
   margin: 0 0 80vh 0;
 }
 
@@ -166,16 +248,16 @@ header .text .header_bottom h6 {
   position: sticky;
   display: block;
   height: 0;
-  top:0;
-  bottom:10vh;
-  left:0;
+  top: 0;
+  bottom: 10vh;
+  left: 0;
   z-index: 1;
 }
 
 .about .sec1 {
   padding: 5vw;
   height: calc(100vh - 20vw);
-  align-items:end;
+  align-items: end;
   z-index: 0;
 }
 
@@ -193,30 +275,29 @@ header .text .header_bottom h6 {
 .about h2 {
   line-height: 1.2;
   font-size: 5.8vw;
-  color:#fff;
+  color: #fff;
   text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
   margin-bottom: 3vw;
 }
 
 .about h2 span {
-  color:#000;
-  text-shadow:none;
+  color: #000;
+  text-shadow: none;
 }
 
 .about .sec1 .sec1_right .sec1_right_under {
   justify-content: space-between;
   border-top: 2px solid #000;
-  padding-top:10px;
+  padding-top: 10px;
   margin-top: 3vw;
 }
-
 
 .about .sec2 {
   background: url(./images/background_2.png) no-repeat right / cover;
   padding: 5vw;
   width: calc(100% - 10vw);
   height: calc(100vh - 10vw);
-  align-items:end;
+  align-items: end;
   justify-content: space-between;
   position: relative;
 }
@@ -228,12 +309,12 @@ header .text .header_bottom h6 {
 
 .about .sec2 .skill_list {
   list-style: none;
-  padding:0;
+  padding: 0;
   /* width: 65%; */
   z-index: 1;
 }
 
-.about .sec2 .skill_list li{
+.about .sec2 .skill_list li {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
@@ -255,7 +336,7 @@ header .text .header_bottom h6 {
   width: 100%;
   height: 100vh;
   position: absolute;
-  top:0;
+  top: 0;
   left: 0;
 }
 
@@ -271,7 +352,6 @@ header .text .header_bottom h6 {
   rotate: -10deg;
 }
 
-
 /* project */
 
 .project {
@@ -284,7 +364,7 @@ header .text .header_bottom h6 {
 .project .project_nav {
   text-transform: uppercase;
   position: sticky;
-  top:33vh;
+  top: 33vh;
   left: 0;
   height: 29vh;
   justify-content: space-between;
@@ -393,12 +473,11 @@ header .text .header_bottom h6 {
 }
 .project .project_list li .project_list_num h5 {
   font-size: 1.7vw;
-  font-family: 'Gmarket Sans';
+  font-family: "Gmarket Sans";
 }
 
-
 footer h1 {
-  padding:5vw;
+  padding: 5vw;
   width: calc(100% - 10vw);
   height: calc(60vh - 10vw);
   font-size: 6.5vw;
