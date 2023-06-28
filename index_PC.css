@@ -295,6 +295,10 @@ header .text .header_bottom h6 {
   font-size: 1rem;
 }
 
+.about .sec1 p strong {
+  font-size: 1.3rem;
+}
+
 .about .sec1 .sec1_right {
   width: 50%;
   flex-direction: column;
@@ -306,10 +310,18 @@ header .text .header_bottom h6 {
   font-size: 5.8vw;
   color: #fff;
   text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
-  margin-bottom: 3vw;
+  margin-bottom: 2vw;
+}
+.about h2 span{
+transition: 0.2s;
 }
 
-.about h2 span {
+.about h2 span:nth-child(1):hover {color:#f5f2ff;}
+.about h2 span:nth-child(2):hover {color:#8EA7E9;}
+.about h2 span:nth-child(4):hover {color:#E5E0FF;}
+.about h2 span:nth-child(5):hover {color:#7286D3;}
+
+.about h2 span:nth-child(3) {
   color: #000;
   text-shadow: none;
 }
@@ -317,9 +329,11 @@ header .text .header_bottom h6 {
 .about .sec1 .sec1_right .sec1_right_under {
   justify-content: space-between;
   border-top: 2px solid #000;
-  padding-top: 10px;
-  margin-top: 3vw;
+  padding-top: 2vw;
+  margin-top: 2vw;
 }
+
+/* skill */
 
 .about .sec2 {
   background: url(./images/background_2.png) no-repeat right / cover;
@@ -335,6 +349,7 @@ header .text .header_bottom h6 {
   width: 30vw;
   font-size: 3vw;
 }
+
 
 .about .sec2 .skill_list {
   list-style: none;
@@ -362,11 +377,13 @@ header .text .header_bottom h6 {
   font-size: 1rem;
 }
 
+
 .about .sec2 .svgBox2 .svg {
   width: 100%;
   height: 100vh;
   position: absolute;
   top: 0;
+  display: none;
   left: 0;
 }
 
@@ -507,9 +524,19 @@ header .text .header_bottom h6 {
   font-family: "Gmarket Sans";
 }
 
-footer h1 {
+footer {
   padding: 5vw;
   width: calc(100% - 10vw);
-  height: calc(60vh - 10vw);
+  height: calc(100vh - 10vw);
+}
+
+footer h1 {
   font-size: 6.5vw;
+}
+
+footer .contact {
+justify-content: space-between;
+border-top: 2px solid #000;
+padding-top: 10px;
+margin-top: 3vw;
 }
