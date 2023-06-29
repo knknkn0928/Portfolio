@@ -54,7 +54,7 @@
 
     <div class="text flex column">
       <h4>Kim nahyun</h4>
-      <h1>Portfolio</h1>
+      <h1 class="title">Portfolio</h1>
       <div class="header_bottom flex">
         <h6><strong>Ui ux web publishing graphic</strong></h6>
         <h6>
@@ -117,6 +117,72 @@
     <article class="sec2 flex">
       <h3>skills++</h3>
 
+      <div class='console-container'>
+        <span id='text'></span>
+        <div class='console-underscore' id='console'>
+          &#95;
+        </div>
+      </div>
+      
+<!-- 
+    <div class="svgBox2">
+      <svg class="svg animate">
+        <ellipse class="ellipse7"></ellipse>
+      </svg>
+    </div> -->
+
+      <script> consoleText(['UX / Ui 퍼블리싱 그래픽 디자인 카페24 웹페이지 관리, 카드뉴스 배너 상세페이지 디자인 영상편집'], 'text',['#000']);
+
+        function consoleText(words, id, colors) {
+          if (colors === undefined) colors = ['#fff'];
+          var visible = true;
+          var con = document.getElementById('console');
+          var letterCount = 1;
+          var x = 1;
+          var waiting = false;
+          var target = document.getElementById(id)
+          target.setAttribute('style', 'color:' + colors[0])
+          window.setInterval(function() {
+        
+            if (letterCount === 0 && waiting === false) {
+              waiting = true;
+              target.innerHTML = words[0].substring(0, letterCount)
+              window.setTimeout(function() {
+                var usedColor = colors.shift();
+                colors.push(usedColor);
+                var usedWord = words.shift();
+                words.push(usedWord);
+                x = 1;
+                target.setAttribute('style', 'color:' + colors[0])
+                letterCount += x;
+                waiting = false;
+              }, 700)
+            } else if (letterCount === words[0].length + 1 && waiting === false) {
+              waiting = true;
+              window.setTimeout(function() {
+                x = -1;
+                letterCount += x;
+                waiting = false;
+              }, 3000)
+            } else if (waiting === false) {
+              target.innerHTML = words[0].substring(0, letterCount)
+              letterCount += x;
+            }
+          }, 100)
+          window.setInterval(function() {
+            if (visible === true) {
+              con.className = 'console-underscore hidden'
+              visible = false;
+        
+            } else {
+              con.className = 'console-underscore'
+        
+              visible = true;
+            }
+          }, 400)
+        }
+      </script>
+
       <ul class="skill_list flex column">
         <li class="flex">
           <h4>HTML5 & CSS3</h4>
@@ -149,11 +215,6 @@
           </p>
         </li>
       </ul>
-      <div class="svgBox2">
-        <svg class="svg animate">
-          <ellipse class="ellipse7"></ellipse>
-        </svg>
-      </div>
     </article>
   </section>
 
@@ -218,12 +279,7 @@
     <h1>contact</h1>
 
     <div class="Contact flex">
-      <div>
-        <p>2016 GTQ 1급</p>
-        <p>2022 GTQi 1급</p>
-        <p>2022 컴퓨터그래픽스운용기능사</p>
-        <p>2023 웹디자인기능사 - 실기예정</p>
-      </div>
+
       <div class="flex column">
         <p><strong>깃허브</strong><br> https://github.com/knknkn0928</p>
         <p><strong>Email</strong><br> rlaskrlasrk1201@gmail.com</p>
