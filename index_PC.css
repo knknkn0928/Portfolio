@@ -312,14 +312,22 @@ header .text .header_bottom h6 {
   text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
   margin-bottom: 2vw;
 }
-.about h2 span{
-transition: 0.2s;
+.about h2 span {
+  transition: 0.2s;
 }
 
-.about h2 span:nth-child(1):hover {color:#f5f2ff;}
-.about h2 span:nth-child(2):hover {color:#8EA7E9;}
-.about h2 span:nth-child(4):hover {color:#E5E0FF;}
-.about h2 span:nth-child(5):hover {color:#7286D3;}
+.about h2 span:nth-child(1):hover {
+  color: #f5f2ff;
+}
+.about h2 span:nth-child(2):hover {
+  color: #8ea7e9;
+}
+.about h2 span:nth-child(4):hover {
+  color: #e5e0ff;
+}
+.about h2 span:nth-child(5):hover {
+  color: #7286d3;
+}
 
 .about h2 span:nth-child(3) {
   color: #000;
@@ -333,6 +341,11 @@ transition: 0.2s;
   margin-top: 2vw;
 }
 
+.about .sec1 .sec1_right .sec1_right_under strong {
+  font-size: 1.1rem;
+  padding-right: 10px;
+}
+
 /* skill */
 
 .about .sec2 {
@@ -343,51 +356,53 @@ transition: 0.2s;
   align-items: end;
   justify-content: space-between;
   position: relative;
+
+  overflow: hidden;
 }
 
 .about .sec2 h3 {
-  width: 30vw;
+  width: 20vw;
   font-size: 3vw;
 }
-
 
 .about .sec2 .skill_list {
   list-style: none;
   padding: 0;
-  /* width: 65%; */
+  width: 65%;
   z-index: 1;
+  justify-content: space-between;
 }
 
 .about .sec2 .skill_list li {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding-top: 4vw;
+  padding-top: 2vw;
+  width: 100%;
 }
 
 .about .sec2 .skill_list li h4 {
-  width: 40%;
+  width: 35%;
   text-align: right;
-  font-size: 3vw;
+  font-size: 2vw;
   font-weight: 500;
 }
 .about .sec2 .skill_list li p {
   text-transform: uppercase;
-  width: 55%;
-  font-size: 1rem;
+  width: 60%;
+  font-size: 1.1rem;
 }
 
-
-.about .sec2 .svgBox2 .svg {
+.about .sec2 .svg {
   width: 100%;
   height: 100vh;
   position: absolute;
   top: 0;
-  display: none;
+  /* display: none; */
   left: 0;
 }
 
-.about .sec2 .svgBox2 .svg .ellipse7 {
+.about .sec2 .svg .ellipse7 {
   fill: rgb(255, 255, 255, 0);
   cx: 18vw;
   cy: 40vw;
@@ -413,8 +428,8 @@ transition: 0.2s;
   position: sticky;
   top: 33vh;
   left: 0;
-  height: 29vh;
-  justify-content: space-between;
+  height: 25vh;
+  /* justify-content: ; */
 }
 
 .project .project_nav h1 {
@@ -424,12 +439,14 @@ transition: 0.2s;
 
 .project .project_nav .project_btn {
   justify-content: space-between;
-  width: 25vw;
+  width: 24vw;
 }
 
 .project .project_nav .project_btn h6 {
-  font-size: 0.9rem;
+  font-size: 1vw;
   font-weight: 400;
+  height: 3vh;
+  padding-top: 5vh;
   cursor: pointer;
   position: relative;
   display: block;
@@ -443,7 +460,7 @@ transition: 0.2s;
   margin: 0 5px;
   position: absolute;
   transform: rotate(19deg);
-  top: -10px;
+  top: 38px;
   right: -3vw;
   left: 6vw;
 }
@@ -456,8 +473,8 @@ transition: 0.2s;
   margin: 0 5px;
   position: absolute;
   transform: rotate(19deg);
-  top: -10px;
-  right: 7vw;
+  top: 38px;
+  right: 6vw;
   left: -3vw;
 }
 
@@ -535,8 +552,8 @@ footer h1 {
 }
 
 footer .contact {
-justify-content: space-between;
-border-top: 2px solid #000;
-padding-top: 10px;
-margin-top: 3vw;
+  justify-content: space-between;
+  border-top: 2px solid #000;
+  padding-top: 10px;
+  margin-top: 3vw;
 }
