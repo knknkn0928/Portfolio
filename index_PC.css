@@ -1,5 +1,9 @@
 @charset "utf-8";
 
+body {
+  overflow-x: hidden;
+}
+
 .flex {
   display: flex;
 }
@@ -16,8 +20,10 @@ header {
   height: calc(100vh - 6vw);
   padding: 3vw;
   position: relative;
+  overflow: hidden;
 }
 
+/*
 .text {
   position:absolute;
   @include center();
@@ -37,16 +43,17 @@ header {
   width:100%;
   height: 100%;
   top:35%;
-  /* font-size:120px; */
+  // font-size:120px;
   background: url("https://cdn.pixabay.com/photo/2017/02/08/12/46/moon-2048727_1280.jpg") repeat;
   background-size: cover;
   background-position: 10% 30%;
   -webkit-background-clip: text;
   position:relative;
   text-align:center;
-  /* line-height:90px; */
-  /* letter-spacing: -8px; */
+  // line-height:90px;
+  // letter-spacing: -8px;
 }
+*/
 
 header .sub_menu {
   position: absolute;
@@ -73,7 +80,7 @@ header .sub_menu .nav .sub_menu_title {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  font-family: "Notted";
+  font-family: var(--title-txt-font);
   font-size: 15.5vh;
   top: 16vh;
   bottom: 0;
@@ -289,18 +296,29 @@ header .text .header_bottom h6 {
 
 /* about */
 
-.about {
+.horizontal_container {
   position: relative;
-  bottom: 0;
-  height: calc(100vh + 10vw);
+  width: 100%;
+}
+
+.horizontal_container .sticky_box {
+  position: sticky;
+  top: 0;
   left: 0;
-  margin: 0 0 calc(100vh - 10vw) 0;
+  height: 100vh;
+}
+
+.horizontal_container .sticky_box .horizontal_inner_box {
+  position: absolute;
+  display: flex;
+  height: 100vh;
+  width: 200%;
 }
 
 .about h1 {
   padding: 5vw;
   font-size: 6.5vw;
-  position: sticky;
+  position: fixed;
   display: block;
   height: 0;
   top: 0;
@@ -311,13 +329,15 @@ header .text .header_bottom h6 {
 
 .about .sec1 {
   padding: 5vw;
-  height: calc(100vh - 20vw);
+  width: calc(100% - 10vw);
+  height: calc(100vh - 10vw);
   align-items: end;
+  justify-content: space-between;
   z-index: 0;
 }
 
 .about .sec1 h3 {
-  width: 50%;
+  width: 45%;
   font-size: 3vw;
 }
 
@@ -336,7 +356,7 @@ header .text .header_bottom h6 {
 }
 
 .about h2 {
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: var(--kr-txt-font);
   line-height: 1.2;
   font-size: 5.8vw;
   color: #fff;
@@ -387,8 +407,6 @@ header .text .header_bottom h6 {
   align-items: end;
   justify-content: space-between;
   position: relative;
-
-  overflow: hidden;
 }
 
 .hidden {
@@ -396,21 +414,21 @@ header .text .header_bottom h6 {
 }
 
 .console-container {
-  font-family: "Gmarket Sans";
+  font-family: var(--main-sub-font);
   font-weight: 200;
-  font-size:3em;
+  font-size:2.5rem;
   text-align:left;
   height:40px;
-  width:700px;
+  width:58%;
   display:block;
   position:absolute;
-  color:white;
+  color:#fff;
   top:5vw;
   right:5vw;
   margin:auto;
 }
 .console-underscore {
-   display:inline-block;
+  display:inline-block;
   position:relative;
   top:-0.14em;
   left:10px;
@@ -418,7 +436,7 @@ header .text .header_bottom h6 {
 
 
 .about .sec2 h3 {
-  width: 20vw;
+  width: 30%;
   font-size: 3vw;
 }
 
@@ -478,11 +496,12 @@ header .text .header_bottom h6 {
   rotate: -10deg;
 } */
 
+
 /* project */
 
 .project {
   justify-content: space-between;
-  padding: 5vw 5vw 5vw 5vw;
+  padding: 5vw;
   width: calc(100% - 10vw);
   height: calc(200vh - 10vw);
 }
@@ -511,7 +530,6 @@ header .text .header_bottom h6 {
   font-weight: 400;
   height: 3vh;
   padding-top: 5vh;
-  cursor: pointer;
   position: relative;
   display: block;
 }
@@ -598,13 +616,13 @@ header .text .header_bottom h6 {
 }
 
 .project .project_list li .project_list_num p {
-  font-family: "Montserrat", sans-serif;
-  font-size: 0.9rem;
+  font-family: var(--main-txt-font);
+  font-size: var(--font-size-16);
   text-transform: uppercase;
 }
 .project .project_list li .project_list_num h5 {
   font-size: 1.7vw;
-  font-family: "Gmarket Sans";
+  font-family: var(--main-sub-font);
 }
 
 footer {
