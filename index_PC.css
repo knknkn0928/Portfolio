@@ -1,5 +1,9 @@
 @charset "utf-8";
 
+html {
+  height: 100%;
+}
+
 body {
   overflow-x: hidden;
 }
@@ -22,38 +26,6 @@ header {
   position: relative;
   overflow: hidden;
 }
-
-/*
-.text {
-  position:absolute;
-  @include center();
-}
-
-@mixin center(){
-  -webkit-transform: translate(-50%,-50%);
-      -ms-transform: translate(-50%,-50%);
-          transform: translate(-50%,-50%);
-    left:50%;
-    top:50%;
-}
-
-.text .title{
-  font-weight: 800;
-  color: transparent;
-  width:100%;
-  height: 100%;
-  top:35%;
-  // font-size:120px;
-  background: url("https://cdn.pixabay.com/photo/2017/02/08/12/46/moon-2048727_1280.jpg") repeat;
-  background-size: cover;
-  background-position: 10% 30%;
-  -webkit-background-clip: text;
-  position:relative;
-  text-align:center;
-  // line-height:90px;
-  // letter-spacing: -8px;
-}
-*/
 
 header .sub_menu {
   position: absolute;
@@ -197,6 +169,7 @@ header .text h4 {
 header .text .header_bottom h6 {
   font-size: 1.1vw;
   font-weight: 300;
+  font-family: var(--main-sub-font);
 }
 
 .header_bottom {
@@ -460,13 +433,14 @@ header .text .header_bottom h6 {
 .about .sec2 .skill_list li h4 {
   width: 32%;
   text-align: left;
-  font-size: 2.5vw;
+  font-family: var(--main-txt-font);
+  font-size: var(--font-size-34);
   font-weight: 500;
 }
 .about .sec2 .skill_list li p {
   text-transform: uppercase;
-  width: 50%;
-  font-size: 1.1vw;
+  width: 60%;
+  font-size: var(--font-size-16);
 }
 
 /* .about .svgBox2 {
@@ -573,6 +547,7 @@ header .text .header_bottom h6 {
   height: 33vh;
   cursor: pointer;
 }
+
 .project .project_list li:last-child {
   border-bottom: 2px solid #000;
 }
@@ -580,6 +555,12 @@ header .text .header_bottom h6 {
 .project .project_list li:hover {
   background: url(./images/background_2.png) no-repeat right / cover;
   transition: 0.3s;
+}
+
+.project .project_list li h3 {
+  font-family: var(--main-txt-font);
+  font-weight: 300;
+  font-size: var(--font-size-20);
 }
 
 .project .project_list li:hover .project_list_num h5 {
