@@ -146,16 +146,20 @@ header .text {
   z-index: 1;
 }
 
-header img {
-  display: block;
+header .menu_btn {
+  background: url(./images/menu_back1.png);
   position: absolute;
   width: 4.1667vw;
   right: 3%;
   top: 3vw;
-  border-radius: 50%;
+  /* border-radius: 50%; */
   box-shadow: 0 0 130px #fff;
   z-index: 10;
   cursor: pointer;
+}
+
+header img.active {
+  background: url(./images/menu_back2.png);
 }
 
 header .text h1 {

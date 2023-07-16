@@ -43,6 +43,10 @@ $(document).ready(function(){
 //   // 이게 뭐냐?
 
 
+function submenu() {
+  let menu = document.querySelector("#sub_menu")
+  menu.classList.toggle("active");
+}
 
 
 // 서브메뉴 버튼 클릭 이동
@@ -53,6 +57,7 @@ $(document).ready(function(){
     }, 1000);
     return false;
   });
+
 
 // 가로 스크롤
 
@@ -71,11 +76,11 @@ const scrolled = () => {
 addEventListener('scroll', scrolled);
 
 
+// 한 페이지 스크롤
 
-
-// window.addEventListener("wheel", function(e){
-// 	e.preventDefault();
-// },{passive : false});
+window.addEventListener("wheel", function(e){
+	e.preventDefault();
+},{passive : true});
 
 var $html = $("html");
 var page = 1;
@@ -97,11 +102,7 @@ $(window).on("wheel", function(e){
 });
 
 
-
-
-
-
-// 스킬 이벤트 효과
+// 스킬 작성 이벤트
 
 consoleText(['퍼블리싱 웹페이지 구축 및 UX / Ui 디자인 책자 브로셔 편집 및 그래픽 디자인 카페24 웹사이트 관리 카드뉴스 배너 상세페이지 디자인 영상편집'], 'text',['#000']);
 
