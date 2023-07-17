@@ -18,6 +18,9 @@
 /* montserrat */
 @import url("https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Instrument+Sans&family=Lobster&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
 
+/* Gmarketsans */
+@import url('https://webfontworld.github.io/gmarket/GmarketSans.css');
+
 :root { scroll-behavior : auto }
 
 :root {
@@ -41,15 +44,14 @@
   /* 폰트 패밀리 */
   --title-txt-font: "Notted", sans-serif, "Malgun Gothic", "맑은 고딕", helvetica, "Apple SD Gothic Neo", serif;
 
-  --main-txt-font: "Montserrat", sans-serif, "Malgun Gothic", "맑은 고딕", helvetica, "Apple SD Gothic Neo", serif,
+  --main-txt-font: "Montserrat", "pretendard", sans-serif, "Malgun Gothic", "맑은 고딕", helvetica, "Apple SD Gothic Neo", serif,
     "Malgun Gothic", "맑은 고딕", helvetica, "Apple SD Gothic Neo", sans-serif;
 
-  --main-sub-font:"Gmarket Sans", "Malgun Gothic", "맑은 고딕", helvetica, "Apple SD Gothic Neo", serif;
+  --main-sub-font:'GmarketSans', "Malgun Gothic", "맑은 고딕", helvetica, "Apple SD Gothic Neo", serif;
 
   --kr-txt-font: "pretendard", -apple-system, BlinkMacSystemFont;
   --kr-sub-font: "Gowun Batang", Georgia, "Times New Roman", Times, serif;
 }
-
 
 
 ::-webkit-scrollbar {
@@ -90,6 +92,11 @@ h1 {
   margin: 0;
   text-transform: capitalize;
   line-height: 0.8;
+}
+
+li {
+  list-style: none;
+  padding: 0;
 }
 
 a {

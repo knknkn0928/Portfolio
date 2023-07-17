@@ -49,7 +49,7 @@ function submenu() {
 }
 
 
-// 서브메뉴 버튼 클릭 이동
+/* 서브메뉴 버튼 클릭 이동 */
 
   $('#About').click(function () {
     $('html, body').animate({
@@ -59,7 +59,7 @@ function submenu() {
   });
 
 
-// 가로 스크롤
+/* 가로 스크롤 */
 
 const horizontalContainer = document.querySelector('.horizontal_container');
 const stickyBox = document.querySelector('.sticky_box');
@@ -76,33 +76,44 @@ const scrolled = () => {
 addEventListener('scroll', scrolled);
 
 
-// 한 페이지 스크롤
+/* 한 페이지 스크롤 */
 
-window.addEventListener("wheel", function(e){
-	e.preventDefault();
-},{passive : true});
+// window.addEventListener("wheel", function(e){
+// 	e.preventDefault();
+// },{passive : true});
 
-var $html = $("html");
-var page = 1;
-var lastPage = $(".page").length;
-$html.animate({scrollTop:0},10);
+// var $html = $("html");
+// var page = 1;
+// var lastPage = $(".page").length;
+// $html.animate({scrollTop:0},10);
 
-$(window).on("wheel", function(e){
-	if($html.is(":animated")) return;
-	if(e.originalEvent.deltaY > 0){
-		if(page== lastPage) return;
-		page++;
-	}else if(e.originalEvent.deltaY < 0){
-		if(page == 1) return;
-		page--;
-	}
-	var posTop = (page-1) * $(window).height();
-	$html.animate({scrollTop : posTop});
+// $(window).on("wheel", function(e){
+// 	if($html.is(":animated")) return;
+// 	if(e.originalEvent.deltaY > 0){
+// 		if(page== lastPage) return;
+// 		page++;
+// 	}else if(e.originalEvent.deltaY < 0){
+// 		if(page == 1) return;
+// 		page--;
+// 	}
+// 	var posTop = (page-1) * $(window).height();
+// 	$html.animate({scrollTop : posTop});
 
+// });
+
+/* about 스크롤시 페이드인아웃 */
+
+$(window).scroll(function () {
+  var scroll = $(window).scrollTop();
+  let about = $('.skill_list').offset().top;
+  if (scroll >= about) {
+    $('.about h1').addClass('active');
+  } else {
+    $('.about h1').removeClass('active');
+  }
 });
 
-
-// 스킬 작성 이벤트
+/* 스킬 작성 이벤트 */
 
 consoleText(['퍼블리싱 웹페이지 구축 및 UX / Ui 디자인 책자 브로셔 편집 및 그래픽 디자인 카페24 웹사이트 관리 카드뉴스 배너 상세페이지 디자인 영상편집'], 'text',['#000']);
 
