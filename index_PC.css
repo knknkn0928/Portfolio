@@ -620,11 +620,17 @@ header .text .header_bottom h6 {
   height: calc(100vh - 10vw);
 }
 
-.graphic li {
+.graphic .grid li {
   background: url(./images/ex.jpg);
+  background-size: 10%;
   filter: grayscale(100%);
   display: block;
   height: 100%;
+}
+
+.graphic .grid .wine {
+  background: url(./grapic_design/images/fragrant_well_bi.png) center 30% no-repeat;
+  background-size: cover;
 }
 
 .graphic .grid li a {
