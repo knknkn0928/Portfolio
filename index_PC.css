@@ -503,7 +503,7 @@ header .text .header_bottom h6 {
   justify-content: space-between;
   padding: 5vw;
   width: calc(100% - 10vw);
-  height: calc(200vh - 10vw);
+  height: calc(100vh - 10vw);
 }
 
 .project .project_nav {
@@ -570,7 +570,7 @@ header .text .header_bottom h6 {
   justify-content: space-between;
   align-items: center;
   border-top: 2px solid #000;
-  height: 33vh;
+  height: 16.6vh;
   transition: 0.3s;
   cursor: pointer;
   background-position: 50%;
@@ -618,9 +618,9 @@ header .text .header_bottom h6 {
   font-family: 'YUniverse-B';
 }
 
-
 .project .project_list li:nth-child(3) h4 {
   font-family: 'establishRetrosansOTF';
+  height: 3vh;
 }
 
 .project .project_list li:nth-child(3):hover {
