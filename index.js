@@ -115,7 +115,7 @@ $(window).scroll(function () {
 
 /* 스킬 작성 이벤트 */
 
-consoleText(['퍼블리싱 웹페이지 구축 및 UX / Ui 디자인 책자 브로셔 편집 및 그래픽 디자인 카페24 웹사이트 관리 카드뉴스 배너 상세페이지 디자인 영상편집'], 'text',['#000']);
+consoleText(['퍼블리싱 웹페이지 구축 카페24 웹사이트 관리 UX / Ui 디자인 책자 브로셔 지류 편집 및 카드뉴스 배너 상세페이지 등 그래픽 디자인 외 영상편집'], 'text',['#000']);
 
 function consoleText(words, id, colors) {
   if (colors === undefined) colors = ['#fff'];

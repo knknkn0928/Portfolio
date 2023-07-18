@@ -20,6 +20,11 @@ body {
   flex-direction: column;
 }
 
+p {
+  font-family: var(--kr-txt-font);
+  font-size: var(--font-size-20);
+}
+
 /* header */
 
 header {
@@ -330,11 +335,11 @@ header .text .header_bottom h6 {
 }
 
 .about .sec1 p {
-  font-size: 1rem;
+  font-size: var(--font-size-16)
 }
 
 .about .sec1 p strong {
-  font-size: 1.3rem;
+  font-size: var(--font-size-20)
 }
 
 .about .sec1 .sec1_right {
@@ -402,16 +407,16 @@ header .text .header_bottom h6 {
 }
 
 .console-container {
-  font-family: var(--main-sub-font);
+  font-family: 'GongGothicMedium';
   font-weight: 200;
   font-size:2.5rem;
   text-align:left;
   height:40px;
-  width:58%;
+  width:63%;
   display:block;
   position:absolute;
   color:#fff;
-  top:5vw;
+  top:10vw;
   right:5vw;
   margin:auto;
 }
@@ -424,14 +429,14 @@ header .text .header_bottom h6 {
 
 
 .about .sec2 h3 {
-  width: 30%;
+  width: 25%;
   font-size: 3vw;
 }
 
 .about .sec2 .skill_list {
   list-style: none;
   padding: 0;
-  width: 65%;
+  width: 70%;
   z-index: 1;
   justify-content: space-between;
 }
@@ -439,21 +444,27 @@ header .text .header_bottom h6 {
 .about .sec2 .skill_list li {
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: end;
-  padding-top: 2vw;
+  align-items: baseline;
+  padding-bottom: 3vw;
   width: 100%;
-  border-bottom: 1px solid #000;
+  border-top: 1px solid #000;
+}
+
+.about .sec2 .skill_list li:last-child {
+  padding-bottom: 0;
 }
 
 .about .sec2 .skill_list li h4 {
   width: 32%;
   text-align: left;
   font-family: var(--main-txt-font);
-  font-size: var(--font-size-34);
-  font-weight: 500;
+  font-size: var(--font-size-28);
+  font-weight: 700;
 }
+
 .about .sec2 .skill_list li p {
   text-transform: uppercase;
+  text-align: right;
   width: 60%;
   font-size: var(--font-size-16);
 }
@@ -560,7 +571,9 @@ header .text .header_bottom h6 {
   align-items: center;
   border-top: 2px solid #000;
   height: 33vh;
+  transition: 0.3s;
   cursor: pointer;
+  background-position: 50%;
 }
 
 .project .project_list li:last-child {
@@ -568,14 +581,8 @@ header .text .header_bottom h6 {
 }
 
 .project .project_list li:hover {
-  background: url(./images/background_2.svg) no-repeat right / cover;
-  transition: 0.3s;
-}
-
-.project .project_list li h3 {
-  font-family: var(--main-txt-font);
-  font-weight: 300;
-  font-size: var(--font-size-20);
+  background: url(./images/background_2.svg) no-repeat center / cover;
+  height: 70vh;
 }
 
 .project .project_list li:hover h5 {
@@ -600,11 +607,41 @@ header .text .header_bottom h6 {
   right: auto;
 }
 
-.project .project_list li h3 {
+.project .project_list li h4 {
   font-family: var(--main-txt-font);
   font-size: var(--font-size-34);
-  font-weight: normal;
+  font-weight: 600;
 }
+
+
+.project .project_list li:nth-child(1) h4 {
+  font-family: 'YUniverse-B';
+}
+
+
+.project .project_list li:nth-child(3) h4 {
+  font-family: 'establishRetrosansOTF';
+}
+
+.project .project_list li:nth-child(3):hover {
+background: url(./images/mock.gif) no-repeat center / contain;
+background-size: 10vw;
+}
+
+.project .project_list li:nth-child(4) h4 {
+  font-family: 'YUniverse-B';
+}
+
+.project .project_list li:nth-child(4):hover {
+background: url(./images/urbanic_amble.png) no-repeat center / contain;
+background-size: 8vw;
+}
+
+
+.project .project_list li:nth-child(6) h4 {
+  font-family: 'Noto Serif HK', serif;
+}
+
 
 .project .project_list li h5 {
   font-family: var(--main-txt-font);
@@ -621,17 +658,16 @@ header .text .header_bottom h6 {
 }
 
 .graphic .grid li {
-  background: url(./images/ex.jpg);
-  background-size: 10%;
+  background: url(./images/ex.jpg) no-repeat 50% / cover;
   filter: grayscale(100%);
   display: block;
   height: 100%;
 }
 
-.graphic .grid .wine {
-  background: url(./grapic_design/images/fragrant_well_bi.png) center 30% no-repeat;
+/* .graphic .grid .wine {
+  background: url(./grapic_design/images/fragrant_well_bi.png) no-repeat center / cover ;
   background-size: cover;
-}
+} */
 
 .graphic .grid li a {
   height: 100%;
@@ -724,6 +760,23 @@ footer h1 {
 footer .contact {
   justify-content: space-between;
   border-top: 2px solid #000;
-  padding-top: 10px;
+  border-bottom: 2px solid #000;
+  padding: 10px 0;
   margin-top: 3vw;
+  gap: 15px;
+}
+
+footer .contact div {
+  gap: 15px;
+  align-items: center;
+}
+
+footer .contact div p {
+  font-size: var(--font-size-16);
+  line-height:1.2;
+}
+
+footer .contact div img {
+  width: 50px;
+  height: 50px;
 }

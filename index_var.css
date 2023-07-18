@@ -19,7 +19,48 @@
 @import url("https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Instrument+Sans&family=Lobster&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
 
 /* Gmarketsans */
-@import url('https://webfontworld.github.io/gmarket/GmarketSans.css');
+@font-face {
+  font-family: 'GmarketSansMedium';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 에스코어 드림 */
+@font-face {
+  font-family: 'S-CoreDream-3Light';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 이사만루 */
+@font-face {
+  font-family: 'GongGothicMedium';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 유니버스 */
+@font-face {
+  font-family: 'YUniverse-B';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_yuniverse@1.0/YUniverse-B.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 설립체 */
+@font-face {
+  font-family: 'establishRetrosansOTF';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2112@1.0/establishRetrosansOTF.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 한자 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+HK:wght@200;300;400;500;600;700;800;900&display=swap');
+
 
 :root { scroll-behavior : auto }
 
@@ -47,7 +88,7 @@
   --main-txt-font: "Montserrat", "pretendard", sans-serif, "Malgun Gothic", "맑은 고딕", helvetica, "Apple SD Gothic Neo", serif,
     "Malgun Gothic", "맑은 고딕", helvetica, "Apple SD Gothic Neo", sans-serif;
 
-  --main-sub-font:'GmarketSans', "Malgun Gothic", "맑은 고딕", helvetica, "Apple SD Gothic Neo", serif;
+  --main-sub-font:'GmarketSansMedium', "Malgun Gothic", "맑은 고딕", helvetica, "Apple SD Gothic Neo", serif;
 
   --kr-txt-font: "pretendard", -apple-system, BlinkMacSystemFont;
   --kr-sub-font: "Gowun Batang", Georgia, "Times New Roman", Times, serif;
@@ -110,14 +151,13 @@ h3,
 h4,
 h5,
 h6 {
-  /* font-family: "Montserrat", sans-serif; */
   text-transform: uppercase;
   display: block;
   margin: 0;
 }
 
 p {
-	/* font-family: 'pretendard', sans-serif; */
+  margin: 0;
   display: block;
   font-weight: 300;
   font-size: 1.2rem;
