@@ -91,7 +91,8 @@
   --main-sub-font:'GmarketSansMedium', "Malgun Gothic", "맑은 고딕", helvetica, "Apple SD Gothic Neo", serif;
 
   --kr-txt-font: "pretendard", -apple-system, BlinkMacSystemFont;
-  --kr-sub-font: "Gowun Batang", Georgia, "Times New Roman", Times, serif;
+
+  --kr-sub-font: "noto sans kr", Georgia, "Times New Roman", Times, serif;
 }
 
 
@@ -135,7 +136,7 @@ h1 {
   line-height: 0.8;
 }
 
-li {
+ul, ol, li {
   list-style: none;
   padding: 0;
 }
@@ -160,6 +161,5 @@ p {
   margin: 0;
   display: block;
   font-weight: 300;
-  font-size: 1.2rem;
   line-height: 1.5;
 }

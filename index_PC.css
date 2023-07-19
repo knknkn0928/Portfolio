@@ -511,7 +511,7 @@ header .text .header_bottom h6 {
   position: sticky;
   top: 33vh;
   left: 0;
-  height: 25vh;
+  height: 200px;
   justify-content: space-between;
 }
 
@@ -529,7 +529,7 @@ header .text .header_bottom h6 {
   font-size: 1vw;
   font-weight: 400;
   height: 3vh;
-  padding-top: 5vh;
+  padding-top:10px;
   position: relative;
   display: block;
 }
@@ -542,7 +542,7 @@ header .text .header_bottom h6 {
   margin: 0 5px;
   position: absolute;
   transform: rotate(19deg);
-  top: 38px;
+  top: -5px;
   right: -3vw;
   left: 6vw;
 }
@@ -555,7 +555,7 @@ header .text .header_bottom h6 {
   margin: 0 5px;
   position: absolute;
   transform: rotate(19deg);
-  top: 38px;
+  top: -5px;
   right: 6vw;
   left: -3vw;
 }
@@ -672,7 +672,7 @@ background-size: 8vw;
 .graphic .grid li a {
   height: 100%;
   font-family: var(--main-txt-font);
-  font-size: var(--font-size-34);
+  font-size: var(--font-size-28);
   text-transform: uppercase;
   align-items: center;
   justify-content: center;
@@ -687,6 +687,7 @@ background-size: 8vw;
   border-bottom: 2px solid #000;
   border-top: 2px solid #000;
   box-sizing: border-box;
+  
 }
 
 .graphic .grid li:hover a h2 {
@@ -702,9 +703,6 @@ background-size: 8vw;
   grid-template-rows:1fr 1fr 1fr;
 }
 
-.graphic .grid li {
-  height: 400px;
-}
 
 .graphic .grid h1 {
   text-align: right;
