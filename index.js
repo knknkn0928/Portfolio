@@ -101,17 +101,18 @@ addEventListener('scroll', scrolled);
 
 // });
 
+
 /* about 스크롤시 페이드인아웃 */
 
-$(window).scroll(function () {
-  var scroll = $(window).scrollTop();
-  let about = $('.skill_list').offset().top;
-  if (scroll >= about) {
-    $('.about h1').addClass('active');
-  } else {
-    $('.about h1').removeClass('active');
-  }
-});
+// $(window).scroll(function () {
+//   var scroll = $(window).scrollTop();
+//   let about = $('.skill_list').offset().top;
+//   if (scroll >= about) {
+//     $('.about h1').addClass('active');
+//   } else {
+//     $('.about h1').removeClass('active');
+//   }
+// });
 
 /* 스킬 작성 이벤트 */
 

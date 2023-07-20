@@ -1,0 +1,330 @@
+@charset "utf-8";
+
+* {margin: 0;}
+
+:root { scroll-behavior : auto }
+
+.flex {
+    display: flex;
+}
+  
+.grid {
+    display: grid;
+}
+  
+.column {
+    flex-direction: column;
+}
+
+html {
+    background-image: url(../../images/background_0.svg);
+    background-attachment: fixed;
+}
+
+
+/* header */
+
+header .title {
+    width: 100%;
+    height: 60vh;
+    background: url(./images/background_0.jpg) no-repeat bottom / cover;
+    background-attachment: fixed;
+    align-items: center;
+}
+
+header .title .title_text {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(3px);
+    transition: 0.3s;
+    padding: 0 5vw 0 10vw;
+    gap: 20px;
+    color:#000;
+    align-items: center;
+}
+
+header .title .title_text img {
+    width: 20vh;
+}
+
+header .title:hover .title_text {
+    background-color: rgba(0, 0, 0, 0.7);
+    color:#fff;
+    width: 40%;
+}
+
+header .title .title_text div {
+    gap: 15px;
+}
+
+header .title .title_text h5 {
+    display: block;
+    width: 70px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background: linear-gradient(to bottom, #8D86E2, #4D6CFF);
+    color:#fff;
+    border-radius: 15px;
+}
+
+header .title .title_text h1 {
+  font-family: 'establishRetrosansOTF';
+  font-size: var(--font-size-34);
+}
+
+header .title .title_text span p {
+    font-size: var(--font-size-14);
+    font-family: var(--kr-sub-font);
+}
+
+
+/* section */
+
+.sec1 {
+    margin: 0 auto;
+    padding:8vw 20vw 0;
+    width: calc(100% - 40vw);
+    gap: 5vw;
+}
+
+.sec1 div {
+    color:#fff;
+}
+
+.sec1 div h2 {
+    font-family: var(--main-txt-font);
+    width: 30%;
+}
+
+.sec1 div p {
+    font-family: var(--kr-sub-font);
+    font-size: var(--font-size-16);
+}
+
+.sec1 div:first-child p {
+    width: 70%;
+}
+
+.sec1 div span p {
+    width: 100%;
+}
+
+.sec1 .app_img div {
+    justify-content: space-evenly;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 25px;
+    backdrop-filter: blur(1px);
+    padding-top: 2vw;
+}
+
+.sec1 .app_img div img {
+    width: 13vw;
+}
+
+
+
+/* sec2 */
+
+.sec2 {
+    padding:5vw 20vw;
+    width: calc(100% - 40vw);
+    gap: 5vw;
+}
+
+.gap {
+    gap:2vw;
+}
+
+.txt_gap p {
+    padding-bottom:5px;
+}
+
+img {
+    object-fit: contain;
+}
+
+.sec2 div {
+    /* gap: 2vw; */
+    color:#fff;
+}
+
+.sec2 div h2 {
+    font-family: var(--main-txt-font);
+    width: 30%;
+}
+
+.sec2 div p {
+    font-family: var(--kr-sub-font);
+    font-size: var(--font-size-16);
+}
+
+.sec2 div .style_guide {
+    width: calc(100% - 6vw);
+    padding:3vw;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 25px;
+    backdrop-filter: blur(1px);
+    gap:3vw;
+}
+
+.sec2 div .style_guide div h4 {
+    font-family: var(--main-txt-font);
+    width: 25%;
+    color: #BEC9FF;
+}
+
+.sec2 div .style_guide div .guide_sub {
+    width:75%;
+}
+
+.sec2 div .style_guide .color .guide_sub div span {
+    width: 25%;
+}
+
+.sec2 div .style_guide .color .guide_sub div span p {
+    width: 100%;
+    text-align: center;
+    display: block;
+    font-family: var(--kr-sub-font);
+    font-size: var(--font-size-14);
+}
+
+.sec2 div .style_guide .color .guide_sub div span:nth-child(1) p:first-child {
+    height: 20px;
+    background-color: #BEC9FF;}
+.sec2 div .style_guide .color .guide_sub div span:nth-child(2) p:first-child {
+    height: 20px;
+    background-color: #8D86E2;}
+.sec2 div .style_guide .color .guide_sub div span:nth-child(3) p:first-child {
+    height: 20px;
+    background: linear-gradient(to right, #8D86E2, #4D6CFF);}
+.sec2 div .style_guide .color .guide_sub div span:nth-child(4) p:first-child {
+    height: 20px;
+    background-color: #4D6CFF;}
+.sec2 div .style_guide .color .guide_sub div span:nth-child(5) p:first-child {
+    height: 20px;
+    background-color: #484848;}
+
+.sec2 div .style_guide .fonts .guide_sub .font_sub h3 {
+    width: 30%;
+}
+
+.sec2 div .style_guide .fonts .guide_sub .font_sub:first-child h3 {
+    font-family: 'establishRetrosansOTF';
+    font-weight: 200;
+    font-size: var(--font-size-20);
+}
+
+.sec2 div .style_guide .fonts .guide_sub .font_sub:first-child {
+    align-items: baseline;
+}
+
+
+.sec2 .proto_box {
+    gap: 5vw;
+}
+
+.sec2 .proto_box figure .info {
+    gap: 1vw;
+    margin: 0 auto;
+    padding-top: 2vw;
+    text-align: center;
+    width: 75%;
+}
+
+.sec2 .proto_box figure .info p {
+    font-size: var(--font-size-16);
+    text-align: left;
+}
+
+.sec2 div .proto_box .filter {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 25px;
+    backdrop-filter: blur(1px);
+    transition: 0.3s;
+
+    height: 30vw;
+    align-items: center;
+    overflow: hidden;
+}
+
+.sec2 div .proto_box .main1:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+.sec2 div .proto_box .main2:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+.sec2 div .proto_box .main3:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+
+.sec2 div .main1 {
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.sec2 div .main1 img {
+    width: 13vw;
+}
+
+.sec2 div .main1 img:last-child {
+    padding-top:5px;
+}
+
+.sec2 div .proto_box .main2 {
+    justify-content: space-between;
+}
+
+.sec2 div .main2 img:first-child {
+    width: 13vw;
+    padding-left:5vw;
+    transition: 0.5s;
+}
+
+.sec2 div .main2:hover img:first-child {
+    width: 18vw;
+    padding:0 0 5vw 2.5vw;
+}
+
+.sec2 div .main2 img:last-child {
+    height: 30vw;
+}
+
+.sec2 div .main3 {
+    justify-content: space-evenly;
+}
+
+.sec2 div .main3 img {
+    width: 13vw;
+}
+
+/* button */
+
+.up_btn {
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    color:#fff;
+    cursor: pointer;
+}
+
+.up_btn svg {
+    fill:#fff;
+    animation: up 2s ease-in-out 2s infinite;
+}
+
+@keyframes up {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.up_btn p {
+    font-family: var(--main-txt-font);
+}
