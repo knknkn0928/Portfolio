@@ -59,47 +59,30 @@ function submenu() {
   });
 
 
-/* 가로 스크롤 */
-
-const horizontalContainer = document.querySelector('.horizontal_container');
-const stickyBox = document.querySelector('.sticky_box');
-const innerBox = document.querySelector('.horizontal_inner_box');
-
-const calcHt = (ht) => {
-  return ht.scrollWidth - document.documentElement.clientWidth + document.documentElement.clientHeight;
-}
-
-horizontalContainer.style.height = `${calcHt(innerBox)}px`;
-const scrolled = () => {
-  innerBox.style.transform = `translateX(-${stickyBox.offsetTop}px)`;
-}
-addEventListener('scroll', scrolled);
-
-
 /* 한 페이지 스크롤 */
 
-// window.addEventListener("wheel", function(e){
-// 	e.preventDefault();
-// },{passive : true});
+window.addEventListener("wheel", function(e){
+	e.preventDefault();
+},{passive : true});
 
-// var $html = $("html");
-// var page = 1;
-// var lastPage = $(".page").length;
-// $html.animate({scrollTop:0},10);
+var $html = $("html");
+var page = 1;
+var lastPage = $(".page").length;
+$html.animate({scrollTop:0},10);
 
-// $(window).on("wheel", function(e){
-// 	if($html.is(":animated")) return;
-// 	if(e.originalEvent.deltaY > 0){
-// 		if(page== lastPage) return;
-// 		page++;
-// 	}else if(e.originalEvent.deltaY < 0){
-// 		if(page == 1) return;
-// 		page--;
-// 	}
-// 	var posTop = (page-1) * $(window).height();
-// 	$html.animate({scrollTop : posTop});
+$(window).on("wheel", function(e){
+	if($html.is(":animated")) return;
+	if(e.originalEvent.deltaY > 0){
+		if(page== lastPage) return;
+		page++;
+	}else if(e.originalEvent.deltaY < 0){
+		if(page == 1) return;
+		page--;
+	}
+	var posTop = (page-1) * $(window).height();
+	$html.animate({scrollTop : posTop});
 
-// });
+});
 
 
 /* about 스크롤시 페이드인아웃 */

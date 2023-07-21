@@ -284,42 +284,6 @@ header .text .header_bottom h6 {
 
 /* about */
 
-.horizontal_container {
-  position: relative;
-  width: 100%;
-}
-
-.horizontal_container .sticky_box {
-  position: sticky;
-  top: 0;
-  left: 0;
-  height: 100vh;
-}
-
-.horizontal_container .sticky_box .horizontal_inner_box {
-  position: absolute;
-  display: flex;
-  height: 100vh;
-  width: 200%;
-}
-
-.about h1 {
-  padding: 5vw;
-  font-size: 6.5vw;
-  position: fixed;
-  display: block;
-  height: 0;
-  top: 0;
-  bottom: 10vh;
-  left: 0;
-  z-index: 1;
-  transition: 0.2s;
-}
-
-.about h1.active {
-  opacity: 0;
-}
-
 .about .sec1 {
   padding: 5vw;
   width: calc(100% - 10vw);
@@ -329,10 +293,21 @@ header .text .header_bottom h6 {
   z-index: 0;
 }
 
-.about .sec1 h3 {
+.about .sec1 .sec1_title {
   width: 45%;
+  justify-content: space-between;
+}
+
+.about .sec1 .sec1_title h1 {
+  font-size: 6.5vw;
+}
+
+.about .sec1 .sec1_title .sec1 h3 {
   font-size: 3vw;
 }
+
+
+
 
 .about .sec1 p {
   font-size: var(--font-size-16)
@@ -546,30 +521,29 @@ header .text .header_bottom h6 {
   padding:0;
 }
 
-.project .project_list li {
+.project .project_list a {
   justify-content: space-between;
   align-items: center;
   border-top: 2px solid #000;
   height: 16.6vh;
   transition: 0.3s;
-  cursor: pointer;
   background-position: 50%;
 }
 
-.project .project_list li:last-child {
+.project .project_list a:last-child {
   border-bottom: 2px solid #000;
 }
 
-.project .project_list li:hover {
+.project .project_list a:hover {
   background: url(./images/background_2.svg) no-repeat center / cover;
   height: 70vh;
 }
 
-.project .project_list li:hover h5 {
+.project .project_list a:hover h5 {
   position: relative;
   transition: 0.3s;
 }
-.project .project_list li h5::after {
+.project .project_list a h5::after {
   content: "";
   position: absolute;
   display: block;
@@ -581,49 +555,49 @@ header .text .header_bottom h6 {
   width: 0;
 }
 
-.project .project_list li:hover h5::after {
+.project .project_list a:hover h5::after {
   width: 100%;
   left: 0;
   right: auto;
 }
 
-.project .project_list li h4 {
+.project .project_list a h4 {
   font-family: var(--main-txt-font);
   font-size: var(--font-size-34);
   font-weight: 600;
 }
 
 
-.project .project_list li:nth-child(1) h4 {
+.project .project_list a:nth-child(1) h4 {
   font-family: 'YUniverse-B';
 }
 
-.project .project_list li:nth-child(3) h4 {
+.project .project_list a:nth-child(3) h4 {
   font-family: 'establishRetrosansOTF';
   height: 3vh;
 }
 
-.project .project_list li:nth-child(3):hover {
+.project .project_list a:nth-child(3):hover {
 background: url(./images/mock.gif) no-repeat center / contain;
 background-size: 10vw;
 }
 
-.project .project_list li:nth-child(4) h4 {
+.project .project_list a:nth-child(4) h4 {
   font-family: 'YUniverse-B';
 }
 
-.project .project_list li:nth-child(4):hover {
+.project .project_list a:nth-child(4):hover {
 background: url(./images/urbanic_amble.png) no-repeat center / contain;
 background-size: 8vw;
 }
 
 
-.project .project_list li:nth-child(6) h4 {
+.project .project_list a:nth-child(6) h4 {
   font-family: 'Noto Serif HK', serif;
 }
 
 
-.project .project_list li h5 {
+.project .project_list a h5 {
   font-family: var(--main-txt-font);
   font-size: var(--font-size-28);
 }
