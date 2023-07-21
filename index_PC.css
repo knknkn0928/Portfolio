@@ -25,17 +25,8 @@ p {
   font-size: var(--font-size-20);
 }
 
-/* header */
+/* sub menu */
 
-header {
-  background: url(./images/background_0.svg) no-repeat center / cover;
-  width: calc(100% - 6vw);
-  height: calc(100vh - 6vw);
-  padding: 3vw;
-  position: relative;
-  overflow: hidden;
-  z-index: 9;
-}
 
 header .sub_menu {
   position: absolute;
@@ -143,6 +134,19 @@ header .sub_menu .svgBox .svg .ellipse5-1 {
   stroke: #000;
   stroke-width: 2;
   stroke-dasharray: 0.5% 0.7%;
+}
+
+
+/* header */
+
+header {
+  background: url(./images/background_0.svg) no-repeat center / cover;
+  width: calc(100% - 6vw);
+  height: calc(100vh - 6vw);
+  padding: 3vw;
+  position: relative;
+  overflow: hidden;
+  z-index: 9;
 }
 
 header .text {
@@ -284,6 +288,16 @@ header .text .header_bottom h6 {
 
 /* about */
 
+.about h3 {
+  font-family: var(--main-txt-font);
+  font-size: 3vw;
+  height: 60%
+}
+
+h1 {
+  font-size: 6.5vw;
+}
+
 .about .sec1 {
   padding: 5vw;
   width: calc(100% - 10vw);
@@ -293,20 +307,16 @@ header .text .header_bottom h6 {
   z-index: 0;
 }
 
-.about .sec1 .sec1_title {
-  width: 45%;
+.about .sec1 .sec1_left {
+  height: 100%;
+  width: 60%;
   justify-content: space-between;
 }
 
-.about .sec1 .sec1_title h1 {
-  font-size: 6.5vw;
+.about .sec1 .sec1_left .sec1_left_under {
+  justify-content: space-between;
+  align-items: end;
 }
-
-.about .sec1 .sec1_title .sec1 h3 {
-  font-size: 3vw;
-}
-
-
 
 
 .about .sec1 p {
@@ -318,30 +328,25 @@ header .text .header_bottom h6 {
 }
 
 .about .sec1 .sec1_right {
-  width: 50%;
-  flex-direction: column;
-  justify-content: end;
+  height: 100%;
+  justify-content: space-between;
 }
 
-.about .sec1 .sec1_right span h2 {
+.about .sec1 .sec1_right .sec1_right_top h2 {
   font-family: var(--kr-txt-font);
-  font-size: 4vw;
+  font-size: 5vw;
   color: #fff;
   text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
-  font-family: var(--title-txt-font);
   transition: 0.2s;
 }
 
-.about .sec1 .sec1_right .sec1_right_under {
-  justify-content: space-between;
-  border-top: 2px solid #000;
-  padding-top: 2vw;
-  margin-top: 2vw;
+.about .sec1 .sec1_right .sec1_right_top h2:nth-child(2) strong {
+  text-shadow: none;
+  color:#000;
 }
 
-.about .sec1 .sec1_right .sec1_right_under strong {
-  font-size: 1.1rem;
-  padding-right: 10px;
+.about .sec1 .sec1_right .sec1_right_top div {
+  text-align: left;
 }
 
 /* skill */
@@ -356,41 +361,15 @@ header .text .header_bottom h6 {
   position: relative;
 }
 
-.hidden {
-  opacity:0;
-}
-
-.console-container {
-  font-family: 'GongGothicMedium';
-  font-weight: 200;
-  font-size:2.5rem;
-  text-align:left;
-  height:40px;
-  width:63%;
-  display:block;
-  position:absolute;
-  color:#fff;
-  top:10vw;
-  right:5vw;
-  margin:auto;
-}
-.console-underscore {
-  display:inline-block;
-  position:relative;
-  top:-0.14em;
-  left:10px;
-}
-
-
 .about .sec2 h3 {
-  width: 25%;
-  font-size: 3vw;
+  align-items: end;
+  height: 3vw;
 }
 
 .about .sec2 .skill_list {
   list-style: none;
   padding: 0;
-  width: 70%;
+  width: 100%;
   z-index: 1;
   justify-content: space-between;
 }
@@ -472,7 +451,6 @@ header .text .header_bottom h6 {
 
 .project .project_nav h1 {
   width: 30vw;
-  font-size: 6.5vw;
 }
 
 .project .project_nav .project_btn {
@@ -660,7 +638,6 @@ background-size: 8vw;
 
 .graphic .grid h1 {
   text-align: right;
-  font-size: 6.5vw;
   display: block;
   grid-column: 3 / 3;
   grid-row: 1/4;
@@ -705,21 +682,15 @@ footer {
   justify-content: space-evenly;
 }
 
-footer h1 {
-  font-size: 6.5vw;
-}
-
 footer .contact {
   justify-content: space-between;
-  border-top: 2px solid #000;
-  border-bottom: 2px solid #000;
   padding: 10px 0;
   margin-top: 3vw;
   gap: 15px;
 }
 
 footer .contact div {
-  gap: 15px;
+  gap: 20px;
   align-items: center;
 }
 
@@ -731,4 +702,31 @@ footer .contact div p {
 footer .contact div img {
   width: 50px;
   height: 50px;
+}
+
+/* button */
+
+.up_btn {
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  color:#000000;
+  cursor: pointer;
+}
+
+.up_btn svg {
+  fill:#000000;
+  animation: up 2s ease-in-out 2s infinite;
+}
+
+@keyframes up {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.up_btn p {
+  font-family: var(--main-txt-font);
 }

@@ -149,3 +149,9 @@ function consoleText(words, id, colors) {
     }
   }, 400)
 }
+
+/* UP 버튼 */ 
+const up_btn = document.querySelector(".up_btn");
+up_btn.onclick = () => {
+window.scrollTo({ top: 0, behavior: "smooth" });  
+}
