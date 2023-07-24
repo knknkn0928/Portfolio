@@ -12,10 +12,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
       rel="stylesheet">
-    <link
-      href="https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Instrument+Sans&family=Lobster&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
-      rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+HK:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600&family=Noto+Serif+HK:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   
     <script src="./common/jquery-3.7.0.min.js"></script>
     <script defer src="../../common/jquery-3.7.0.min.js"></script>
@@ -25,12 +25,13 @@
     <header>
         <div class="title flex">
             <div class="title_text flex">
-                <img src="./images/app_main2.gif" alt="앱 메인화면">
+                <img src="./images/urbanic_amble.png" alt="앱 메인화면">
                 <div class="flex column">
                     <h5>Web</h5>
                     <h1>URBANIC30</h1>
                     <span>
                         <p>도시를 모티브로 시작된 브랜드 'URBANIC30'</p>
+                        <p>#Web Redesign #javascript #Jquery</p>
                         <p>Team project 2023-04-24 ~ 2023-05-30</p>
                     </span>
                 </div>
@@ -41,7 +42,7 @@
     <section class="sec1 flex column">
         <div class="flex">
             <h2>Overview</h2>
-            <p>“자립해냄”은 가정 바깥과 위기 상황에 노출되어 있는 청소년들을 보호하고 주체적인 자립을 돕기 위해 여성가족부와 한국청소년상담복지개발원에서 개발한 모바일 앱입니다. 실생활에서 필요한 다양한 지식을 알려주고 위급 상황의 청소년에게 상담 전화 연결 및 쉼터 정보, 멘토링 시스템을 통한 성장 기회를 제공합니다. 2022.05 기준 약 3290명의 청소년이 사용 중입니다.</p>
+            <p>“URBANIC30”은 도시를 모티브로유행에 치우치지 않고 우아하면서도 실용적인 제품들을 제작합니다.  자연스러운 멋을 가진 여성들에게 어울리는 여성적 아름다움과 편안함, 베이직한 멋을 담은 캐주얼 패션을 디자인하는 패션 브랜드입니다.</p>
         </div>
         <div class="flex">
             <h2>Team</h2>
@@ -51,14 +52,14 @@
             <h2>Time Line</h2>
             <span class="txt_gap">
                 <p>1. 팀 프로젝트 팀명 및 리더 선정</p>
-                <p>2. 리디자인 앱 선정</p>
-                <p>3. 기존 앱 분석 및 조사</p>
-                <p>4. 와이어 프레임 / 워크플로우 제작</p>
-                <p>5. 앱의 메인 디자인, 스타일 선정</p>
-                <p>6. 메인 페이지, 서브 페이지 제작</p>
-                <p>7. 최종 완성 및 발표</p>
-                <p>8. 완료 보고서</p>
-            </ol>
+                <p>2. 리디자인 사이트 선정</p>
+                <p>3. Git Organizations 생성 및 구성</p>
+                <p>4. Figma 디자인 작업 실행</p>
+                <p>5. 페이지 역할 분담</p>
+                <p>6. 퍼블리싱 가이드 라인 작성</p>
+                <p>7. Html, CSS, Javascript 구현</p>
+                <p>8. 전체 점검 후 부족한 점 함께 보완</p>
+            </span>
         </div>
         <div class="flex">
             <h2>담당업무</h2>
@@ -71,20 +72,22 @@
             </span>
         </div>
 
-        <div class="app_img flex column gap">
-            <h2>App original</h2>
-            <div class="flex">
-                <img src="./images/app_or1.png" alt="앱 기존 디자인">
-                <img src="./images/app_or2.png" alt="앱 기존 디자인">
-                <img src="./images/app_or3.png" alt="앱 기존 디자인">
-                <img src="./images/app_or4.png" alt="앱 기존 디자인">
+        <div class="web_img flex column gap">
+            <h2>Web original</h2>
+            <div class="flex column gap">
+                <img src="./images/web_or1.png" alt="웹 기존 디자인">
+                <p>제품을 판매하는 웹사이트지만 메인 홈에 다른 텍스트나 사진의 비중이 커서 제품에 대한 정보를 알기 어려움</p>
+            </div>
+            <div class="flex column gap">
+                <img src="./images/web_or2.png" alt="웹 기존 디자인">
+                <p>브랜드에 대한 정보나 QNA, 주문사항 등의 카테고리가 하단에 작게 들어가있어 한 눈에 확인하기 어려움</p>
             </div>
         </div>
 
-        <div class="flex">
+        <div class="Vision flex">
             <h2>UI UX Vision</h2>
             <span>
-                <p>일관적이지 못한 디자인과 구조를 수정하여 편안하게 앱을 사용할 수 있도록 만듬</p>
+                <p>메인 홈을 중심으로 개선점을 수정하여 사용자의 불편함을 낮춤</p>
             </span>
         </div>
     </section>
@@ -95,7 +98,7 @@
             <div class="style_guide flex column">
                 <div class="flex">
                     <h4>Main Keyword</h4>
-                    <p class="guide_sub">신뢰감, 희망, 안정감</p>
+                    <p class="guide_sub">세련됨, 차분함, 우아함</p>
                 </div>
                 <div class="color flex">
                     <h4>COLOR CONCEPT</h4>
@@ -103,31 +106,26 @@
                         <div class="flex">
                             <span class="flex column">
                                 <p></p>
-                                <p>#BEC9FF</p>
-                                <p>Background Sub Button</p>
+                                <p>#F4F4F4</p>
+                                <p>Background</p>
                             </span>
                             <span class="flex column">
                                 <p></p>
-                                <p>#8D86E2</p>
-                                <p>Menu icon Shadow</p>
+                                <p>#131313</p>
+                                <p>Almost text</p>
                             </span>
                             <span class="flex column">
                                 <p></p>
-                                <p>◀ Linear ▶</p>
-                                <p>Button Selection</p>
+                                <p>#EEECEC</p>
+                                <p>Backdrop filter</p>
                             </span>
                             <span class="flex column">
                                 <p></p>
-                                <p>#4D6CFF</p>
-                                <p>Shadow Sub Button</p>
-                            </span>
-                            <span class="flex column">
-                                <p></p>
-                                <p>#484848</p>
-                                <p>Text Sub Button</p>
+                                <p>#858585</p>
+                                <p>Footer slide</p>
                             </span>
                         </div>
-                        <p>청량하고 신뢰감 줄 수 있는 색상을 통해 청소년들의 경계와 거부감을 낮추고자 하였습니다. 또한 국내의 150만명, 즉 40명 중 1명 꼴로 색각 이상을 갖고 있다는 조사결과를 바탕으로 색각 이상 환자의 시점에서 오차를 낮추기 위하여 색채 오차가 적은 컬러들을 선택했습니다.</p>
+                        <p>제품 및 룩북의 사진들이 가진 다채로운 컬러를 극적으로 강조하고, 브랜드 자체의 세련되고 차분한 분위기를 유지하기 위하여 전체적으로 흑백의 톤을 유지하고 베이스 컬러를 무채색으로 사용하였습니다.</p>
                     </div>
                 </div>
                 <div class="fonts flex">
@@ -135,24 +133,20 @@
                     <div class="guide_sub flex column gap">
                         <div class="flex column">
                             <span class="font_sub flex">
-                                <h3>자립해냄</h3>
-                                <p>establish Retrosans OTF</p>
+                                <h3>URBANIC30</h3>
+                                <p>Friz Quadrata Regular</p>
+                            </span>
+                            <span class="font_sub flex">
+                                <h3>AGOS MUNI</h3>
+                                <p>Abhaya Libre</p>
                             </span>
                             <span class="font_sub flex">
                                 <h3>내부 텍스트</h3>
-                                <span class="flex column">
-                                    <p>Pretendard</p>
-                                    <p>NanumSquare Neo</p>
-                                </span>
+                                <p>Noto sans kr</p>
                             </span>
                         </div>            
-                        <p>타이틀에 사용된 폰트는 볼드하지만 경쾌하면서도 또렷한 주목성을 가지고 있으며 기존 앱에서 다양한 공모전 등을 공지하고 참여를 격려하기 때문에 청소년들이 미디어 제작활동에 즐거움을 느끼고 소통을 실천하기 위해 제작된 서체의 의도와 선정한 앱의 성격이 일치하다고 여겨 사용하게 되었습니다.</p>
-                        <p>그 외에는 부드러운 가독성으로 눈을 지치게 하지 않는 pretendard와 Nanumsquare을 사용해 내부 텍스트에 적용하였습니다.</p>                    
+                        <p>타이틀에 사용된 폰트는 기존 브랜드 로고에 사용된 폰트를 그대로 사용하였으며, 작은 텍스트들에는 Noto sans kr을 적용하여 깨끗하게 정리된 분위기와 가독성을 주었습니다.</p>                
                     </div>
-                </div>
-                <div class="flex">
-                    <h4>FONTS STYLE</h4>
-                    <img src="./images/fontstyle.svg" alt="fontstyle">
                 </div>
             </div>
         </div>
@@ -161,39 +155,43 @@
             <h2>Prototype</h2>
             <div class="proto_box flex column">
                 <div class="main1 filter flex">
-                    <img src="./images/app_main1.png" alt="앱 메인 이미지">
-                    <img src="./images/app_main1-1.png" alt="앱 메인 이미지">
-                    <img src="./images/app_main2.gif" alt="앱 메인 이미지">
+                    <img src="./images/web_main1.png" alt="앱 메인 이미지">
                 </div>
-
-                <figure>
-                    <div class="main2 filter flex">
-                        <img src="./images/app_main3.gif" alt="앱 메인 이미지">
-                        <img src="./images/app_main4.png" alt="앱 메인 이미지">
-                    </div>
-                    <figcaption class="info flex column">
-                        <h4>mouse hover시 확대됩니다</h4>
-                        <p><strong>마이크로 인터랙션</strong>을 통해 사용자의 행동을 피드백하게 만들어 사용자의 지루함을 줄이고 레이아웃에 여유를 주었습니다.</p>
-                        <p>기존 앱에서는 여러 카테고리 안으로 숨겨져 있던  긴급전화를
-                            메인 홈의 서브 버튼으로 꺼내 위급한 상황 시 앱을 통하여
-                            청소년이 즉각 도움을 요청 할 수 있도록 디자인하였으며, 서브버튼을 통해 지루함을 줄이고 공간에 여유를 주는 모션을 더했습니다.</p>
-                    </figcaption>
-                </figure>
-
+                <div class="main2 filter flex column gap">
+                    <img src="./images/web_shop1.png" alt="앱 메인 이미지">
+                    <img src="./images/web_shop2.png" alt="앱 메인 이미지">
+                </div>
                 <div class="main3 filter flex">
-                    <img src="./images/app_sub1-1.png" alt="">
-                    <img src="./images/app_sub1-2.png" alt="">
-                    <img src="./images/app_sub1-3.png" alt="">
+                    <img src="./images/web_coll2.png" alt="앱 메인 이미지">
                 </div>
-
-                <div class="main3 filter flex">
-                    <img src="./images/app_sub2-1.png" alt="">
-                    <img src="./images/app_sub2-2.png" alt="">
-                    <img src="./images/app_sub2-4.png" alt="">
-                    <img src="./images/app_sub2-3.png" alt="">
+                <div class="main4 filter flex column gap">
+                    <img src="./images/web_login.png" alt="앱 메인 이미지">
+                    <img src="./images/web_cart.png" alt="앱 메인 이미지">
                 </div>
-               
             </div>
+        </div>
+
+        <div class="Review flex column gap">
+            <h2>Review</h2>
+            <span class="flex gap">
+                <h4>Good</h4>
+                <p>전체적으로 실수나 문제점이 발생한 상황을 어려워하거나 힘들어하지 않고 긍정적으로 해결하는 분위기로 작업을 진행할 수 있어 좋았습니다. 또한 여러 의견을 주고받고 논의하여 더 나은 효과를 사용하여 처음 구상보다 더 발전한 결과물을 보일수 있었던 점, 서로를 북돋아 주는 분위기 덕분에 쳐지는 일 없이 빠르게 기간 내 진행할 수 있었습니다.</p>
+            </span>
+            <span class="flex gap">
+                <h4>Bad</h4>
+                <span class="flex column">
+                    <p>- 진행이 빨랐던 만큼 조금 더 보완할 수 있었던 파트를 제대로 눈여겨보지 못함</p>
+                    <p>- 맡은 부분을 구현하는 개개인의 속도가 달라서 배분된 task의 양이 달랐음</p>
+                </span>
+            </span>
+            <span class="flex gap">
+                <h4>Takeaway</h4>
+                <span>
+                    <p>- git hub의 team 사용과정에서의 주의점을 숙지하게 된 점</p>
+                    <p>- 단기적으로 주어진 목표에 집중하여 우선순위를 맞추고 차례대로 행동할 수 있는 구상력</p>
+                    <p>- 타인의 코드를 읽고 이해하여 수정하는 과정을 통해 웹페이지의 구성 이해 능력 향상</p>
+                </span>
+            </span>
         </div>
 
         <div class="up_btn flex column" id="up_btn">

@@ -23,6 +23,7 @@ html {
 
 p {
     font-family: var(--kr-txt-font);
+    line-height: 2;
 }
 
 
@@ -320,6 +321,31 @@ img {
 .sec2 div .main3 img {
     width: 13vw;
 }
+
+.sec2 .Review span {
+    width: 100%;
+    justify-content: space-between;
+}
+
+.sec2 .Review span span {
+    width: 80%;
+}
+
+.sec2 .Review span span p {
+    width: 100%;
+}
+
+.sec2 .Review span h4 {
+    text-align: center;
+    width: 15%;
+    display: block;
+    font-family: var(--main-txt-font);
+}
+
+.sec2 .Review span p {
+    width: 80%;
+}
+
 
 /* button */
 

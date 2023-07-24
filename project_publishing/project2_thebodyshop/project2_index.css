@@ -54,12 +54,12 @@ border-radius: 1.9vh;
 width: 18vh;
 height: 37.2vh;
 overflow: hidden;
-align-items: baseline;
+align-items: center;
 justify-content: center;
 }
 
 header .title .title_text .eximg img {
-    width: 20vh;
+    width: 13vh;
 }
 
 header .title:hover .title_text {
@@ -78,13 +78,15 @@ header .title .title_text h5 {
     height: 30px;
     line-height: 30px;
     text-align: center;
-    background: linear-gradient(to bottom, #8D86E2, #4D6CFF);
+    background-color: #253a33;
     color:#fff;
     border-radius: 15px;
 }
 
 header .title .title_text h1 {
-  font-family: 'establishRetrosansOTF';
+  font-family: var(--main-txt-font);
+  font-weight: 600;
+  text-transform: uppercase;
   font-size: var(--font-size-34);
 }
 

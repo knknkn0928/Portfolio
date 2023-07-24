@@ -4,6 +4,13 @@
 
 :root { scroll-behavior : auto }
 
+@font-face {
+    font-family: 'Friz Quadrata Regular';
+    src: url(../fonts/Friz\ Quadrata\ Regular.ttf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600&family=Noto+Serif+HK:wght@200;300;400;500;600;700;800;900&display=swap');
+
 .flex {
     display: flex;
 }
@@ -17,7 +24,7 @@
 }
 
 html {
-    background-image: url(../../images/background_0.svg);
+    background: url(../../images/background_0.png) no-repeat;
     background-attachment: fixed;
 }
 
@@ -49,7 +56,7 @@ header .title .title_text {
 }
 
 header .title .title_text img {
-    width: 20vh;
+    width: 15vh;
 }
 
 header .title:hover .title_text {
@@ -74,8 +81,10 @@ header .title .title_text h5 {
 }
 
 header .title .title_text h1 {
-  font-family: 'establishRetrosansOTF';
-  font-size: var(--font-size-34);
+    text-transform: uppercase;
+    font-family: 'Friz Quadrata Regular';
+    font-size: var(--font-size-34);
+    letter-spacing: -1px;
 }
 
 header .title .title_text span p {
@@ -113,18 +122,28 @@ header .title .title_text span p {
     width: 100%;
 }
 
-.sec1 .app_img div {
-    justify-content: space-evenly;
+.sec1 .web_img div {
     background-color: rgba(255, 255, 255, 0.3);
     border-radius: 25px;
     backdrop-filter: blur(1px);
-    padding-top: 2vw;
+    padding: 2vw;
+    justify-content: center;
+    align-items: center;
 }
 
-.sec1 .app_img div img {
-    width: 13vw;
+.sec1 .web_img div img {
+    border-radius: 20px;
+    display: block;
+    margin: 0;
+    object-fit: contain;
+    width: 100%;
+    /* width: 13vw; */
 }
 
+.sec1 .web_img .Vision {
+    justify-content: center;
+    align-items: center;
+}
 
 
 /* sec2 */
@@ -192,27 +211,29 @@ img {
 }
 
 .sec2 div .style_guide .color .guide_sub div span:nth-child(1) p:first-child {
-    height: 20px;
-    background-color: #BEC9FF;}
+    height: 25px;
+    background-color: #F4F4F4;}
 .sec2 div .style_guide .color .guide_sub div span:nth-child(2) p:first-child {
-    height: 20px;
-    background-color: #8D86E2;}
+    height: 25px;
+    background-color: #131313;}
 .sec2 div .style_guide .color .guide_sub div span:nth-child(3) p:first-child {
-    height: 20px;
-    background: linear-gradient(to right, #8D86E2, #4D6CFF);}
+    height: 25px;
+    background-color: #EEECEC;}
 .sec2 div .style_guide .color .guide_sub div span:nth-child(4) p:first-child {
-    height: 20px;
-    background-color: #4D6CFF;}
-.sec2 div .style_guide .color .guide_sub div span:nth-child(5) p:first-child {
-    height: 20px;
-    background-color: #484848;}
+    height: 25px;
+    background-color: #858585;}
 
 .sec2 div .style_guide .fonts .guide_sub .font_sub h3 {
     width: 30%;
 }
 
 .sec2 div .style_guide .fonts .guide_sub .font_sub:first-child h3 {
-    font-family: 'establishRetrosansOTF';
+    font-family: 'Friz Quadrata Regular';
+    font-weight: 200;
+    font-size: var(--font-size-20);
+}
+.sec2 div .style_guide .fonts .guide_sub .font_sub:nth-child(2) h3 {
+    font-family: 'Abhaya Libre', serif;
     font-weight: 200;
     font-size: var(--font-size-20);
 }
@@ -245,61 +266,59 @@ img {
     border-radius: 25px;
     backdrop-filter: blur(1px);
     transition: 0.3s;
-
-    height: 30vw;
     align-items: center;
-    overflow: hidden;
+    padding:2vw;
 }
 
-.sec2 div .proto_box .main1:hover {
-    background-color: rgba(255, 255, 255, 0.7);
+.sec2 div .proto_box .main1 {
+    width: calc(100% - 4vw);
 }
-.sec2 div .proto_box .main2:hover {
-    background-color: rgba(255, 255, 255, 0.7);
-}
-.sec2 div .proto_box .main3:hover {
-    background-color: rgba(255, 255, 255, 0.7);
-}
-
-
-.sec2 div .main1 {
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.sec2 div .main1 img {
-    width: 13vw;
-}
-
-.sec2 div .main1 img:last-child {
-    padding-top:5px;
+.sec2 div .proto_box .main1 img {
+    width: 100%;
 }
 
 .sec2 div .proto_box .main2 {
+    width: calc(100% - 4vw);
+}
+.sec2 div .proto_box .main2 img {
+    width: 100%;
+}
+
+.sec2 div .proto_box .main3 {
+    width: calc(100% - 4vw);
+}
+.sec2 div .proto_box .main3 img {
+    width: 100%;
+}
+
+.sec2 div .proto_box .main4 {
+    width: calc(100% - 4vw);
+}
+.sec2 div .proto_box .main4 img {
+    width: 100%;
+}
+
+.sec2 .Review span {
+    width: 100%;
     justify-content: space-between;
 }
 
-.sec2 div .main2 img:first-child {
-    width: 13vw;
-    padding-left:5vw;
-    transition: 0.5s;
+.sec2 .Review span span {
+    width: 80%;
 }
 
-.sec2 div .main2:hover img:first-child {
-    width: 18vw;
-    padding:0 0 5vw 2.5vw;
+.sec2 .Review span span p {
+    width: 100%;
 }
 
-.sec2 div .main2 img:last-child {
-    height: 30vw;
+.sec2 .Review span h4 {
+    width: 15%;
+    display: block;
+    font-family: var(--main-txt-font);
 }
 
-.sec2 div .main3 {
-    justify-content: space-evenly;
-}
-
-.sec2 div .main3 img {
-    width: 13vw;
+.sec2 .Review span p {
+    width: 80%;
 }
 
 /* button */
