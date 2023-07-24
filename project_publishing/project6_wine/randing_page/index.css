@@ -6,11 +6,16 @@ section {
 }
 
 .sec1 {}
+
 .sec2 {
   background: url(./images/back_1.png) no-repeat center /cover;
   background-attachment: fixed;
 }
 .sec3 {
+  background: url(./images/back_3.png) no-repeat center /cover;
+  background-attachment: fixed;
+}
+.sec4 {
   background: url(./images/back_2.png) no-repeat center /cover;
   background-attachment: fixed;
 }
