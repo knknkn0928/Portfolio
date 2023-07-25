@@ -4,12 +4,8 @@
 
 :root { scroll-behavior : auto }
 
-@font-face {
-    font-family: 'Friz Quadrata Regular';
-    src: url(../fonts/Friz\ Quadrata\ Regular.ttf);
-}
 
-@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600&family=Noto+Serif+HK:wght@200;300;400;500;600;700;800;900&display=swap');
+
 
 .flex {
     display: flex;
@@ -24,7 +20,7 @@
 }
 
 html {
-    background: url(../../images/background_0.png) no-repeat;
+    background: url(../../images/background_0.png) no-repeat right 50%;
     background-attachment: fixed;
 }
 
@@ -51,7 +47,7 @@ header .title .title_text {
     transition: 0.3s;
     padding: 0 5vw 0 10vw;
     gap: 20px;
-    color:#000;
+    color:#ffffff;
     align-items: center;
 }
 
@@ -75,7 +71,7 @@ header .title .title_text h5 {
     height: 30px;
     line-height: 30px;
     text-align: center;
-    background: linear-gradient(to bottom, #8D86E2, #4D6CFF);
+    background: linear-gradient(to bottom, #bd8b1f, #473417, #bd8b1f, #d8a332,  #f3c83c);
     color:#fff;
     border-radius: 15px;
 }
@@ -105,6 +101,10 @@ header .title .title_text span p {
     color:#fff;
 }
 
+.sec1 div span {
+    width: 70%;
+}
+
 .sec1 div h2 {
     font-family: var(--main-txt-font);
     width: 30%;
@@ -122,27 +122,26 @@ header .title .title_text span p {
     width: 100%;
 }
 
-.sec1 .web_img div {
+.sec1 .design2016 div {
     background-color: rgba(255, 255, 255, 0.3);
     border-radius: 25px;
     backdrop-filter: blur(1px);
     padding: 2vw;
     justify-content: center;
     align-items: center;
+    width: calc(100% - 4vw);
+    flex-flow: wrap;
 }
 
-.sec1 .web_img div img {
+.sec1 .design2016 div img {
     border-radius: 20px;
     display: block;
-    margin: 0;
     object-fit: contain;
-    width: 100%;
-    /* width: 13vw; */
+    width: calc(50% - 1vw);
 }
 
-.sec1 .web_img .Vision {
-    justify-content: center;
-    align-items: center;
+.sec1 .design2016 div p {
+    text-align: center;
 }
 
 
