@@ -545,6 +545,11 @@ h1 {
   font-weight: 600;
 }
 
+.project .project_list a h5 {
+  font-family: var(--main-txt-font);
+  font-size: var(--font-size-28);
+}
+
 
 .project .project_list a:nth-child(1) h4 {
   font-family: 'YUniverse-B';
@@ -557,40 +562,39 @@ h1 {
 
 
 .project .project_list a:nth-child(3) h4 {
-  font-family: 'establishRetrosansOTF';
-  height: 3vh;
+  font-family: 'Friz Quadrata Regular';
+}
+
+@font-face {
+  font-family: 'Friz Quadrata Regular';
+  src: url(./project_publishing/fonts/Friz\ Quadrata\ Regular.ttf)
 }
 
 .project .project_list a:nth-child(3):hover {
-background: url(./images/project_thumbs/mock.gif) no-repeat center / contain;
-background-size: 7vw;
-}
-
-
-
-.project .project_list a:nth-child(4) h4 {
-  font-family: 'YUniverse-B';
-}
-
-.project .project_list a:nth-child(4):hover {
 background: url(./images/project_thumbs/urbanic_amble.png) no-repeat center / contain;
 background-size: 7vw;
 }
 
 
-.project .project_list a:nth-child(6) h4 {
+.project .project_list a:nth-child(5) h4 {
   font-family: 'Noto Serif HK', serif;
 }
 
-.project .project_list a:nth-child(6):hover {
+.project .project_list a:nth-child(5):hover {
   background: url(./images/project_thumbs/logo3.png) no-repeat center / contain;
   background-size: 7vw;
   }
 
 
-.project .project_list a h5 {
-  font-family: var(--main-txt-font);
-  font-size: var(--font-size-28);
+
+.project .project_list a:nth-child(6) h4 {
+  font-family: 'establishRetrosansOTF';
+  height: 3vh;
+}
+
+.project .project_list a:nth-child(6):hover {
+  background: url(./images/project_thumbs/mock.gif) no-repeat center / contain;
+  background-size: 7vw;
 }
 
 

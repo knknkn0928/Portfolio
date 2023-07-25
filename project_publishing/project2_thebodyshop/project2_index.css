@@ -17,7 +17,7 @@
 }
 
 html {
-    background: url(../../images/background_0.png) no-repeat;
+    background: url(../../images/background_1.png) no-repeat;
     background-attachment: fixed;
 }
 
@@ -63,8 +63,7 @@ header .title .title_text .eximg img {
 }
 
 header .title:hover .title_text {
-    background-color: rgba(0, 0, 0, 0.7);
-    color:#fff;
+    background-color: rgba(255, 255, 255, 0.7);
     width: 40%;
 }
 
@@ -77,6 +76,7 @@ header .title .title_text h5 {
     width: 70px;
     height: 30px;
     line-height: 30px;
+    font-weight: bold;
     text-align: center;
     background-color: #253a33;
     color:#fff;
@@ -105,7 +105,7 @@ header .title .title_text span p {
 }
 
 .sec1 div {
-    color:#fff;
+    color:#000000;
 }
 
 .sec1 div h2 {
@@ -138,6 +138,30 @@ header .title .title_text span p {
 }
 
 
+.sec1 .web_img div {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 25px;
+    backdrop-filter: blur(1px);
+    padding: 2vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec1 .web_img div img {
+    border-radius: 20px;
+    display: block;
+    margin: 0;
+    object-fit: contain;
+    width: 100%;
+    /* width: 13vw; */
+}
+
+.sec1 .web_img .Vision {
+    justify-content: center;
+    align-items: center;
+}
+
+
 
 /* sec2 */
 
@@ -161,7 +185,7 @@ img {
 
 .sec2 div {
     /* gap: 2vw; */
-    color:#fff;
+    color:#000000;
 }
 
 .sec2 div h2 {
@@ -185,7 +209,7 @@ img {
 .sec2 div .style_guide div h4 {
     font-family: var(--main-txt-font);
     width: 25%;
-    color: #BEC9FF;
+    color: #3A857E;
 }
 
 .sec2 div .style_guide div .guide_sub {
@@ -205,27 +229,25 @@ img {
 
 .sec2 div .style_guide .color .guide_sub div span:nth-child(1) p:first-child {
     height: 20px;
-    background-color: #BEC9FF;}
+    background-color: #253a33;}
 .sec2 div .style_guide .color .guide_sub div span:nth-child(2) p:first-child {
     height: 20px;
-    background-color: #8D86E2;}
+    background-color: #3A857E;}
 .sec2 div .style_guide .color .guide_sub div span:nth-child(3) p:first-child {
     height: 20px;
-    background: linear-gradient(to right, #8D86E2, #4D6CFF);}
+    background-color: #F8F3E8;}
 .sec2 div .style_guide .color .guide_sub div span:nth-child(4) p:first-child {
     height: 20px;
-    background-color: #4D6CFF;}
-.sec2 div .style_guide .color .guide_sub div span:nth-child(5) p:first-child {
-    height: 20px;
-    background-color: #484848;}
+    background-color: #D6CB49;}
+
 
 .sec2 div .style_guide .fonts .guide_sub .font_sub h3 {
     width: 30%;
 }
 
 .sec2 div .style_guide .fonts .guide_sub .font_sub:first-child h3 {
-    font-family: 'establishRetrosansOTF';
-    font-weight: 200;
+    font-family:var(--kr-txt-font);
+    font-weight: 600;
     font-size: var(--font-size-20);
 }
 
@@ -233,22 +255,12 @@ img {
     align-items: baseline;
 }
 
+.sec2 div .style_guide div h4 {width: 25%;}
+.sec2 div .style_guide div img {width: 75%;}
+
 
 .sec2 .proto_box {
-    gap: 5vw;
-}
-
-.sec2 .proto_box figure .info {
-    gap: 1vw;
-    margin: 0 auto;
-    padding-top: 2vw;
-    text-align: center;
-    width: 75%;
-}
-
-.sec2 .proto_box figure .info p {
-    font-size: var(--font-size-16);
-    text-align: left;
+    gap: 2vw;
 }
 
 .sec2 div .proto_box .filter {
@@ -257,70 +269,60 @@ img {
     border-radius: 25px;
     backdrop-filter: blur(1px);
     transition: 0.3s;
-
-    height: 30vw;
     align-items: center;
-    overflow: hidden;
+}
+
+.sec2 .proto_box div {
+    justify-content: end;
+}
+
+.sec2 .proto_box div h4 {
+    padding-top:2vw;
+    font-family: var(--main-txt-font);
+    color: #3A857E;
 }
 
 .sec2 div .proto_box .main1:hover {
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.8);
 }
 .sec2 div .proto_box .main2:hover {
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.8);
 }
 .sec2 div .proto_box .main3:hover {
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
-
-.sec2 div .main1 {
+.sec2 div .proto_box .main1 {
+    width: 100%;
     align-items: center;
-    justify-content: space-evenly;
-}
-
-.sec2 div .main1 img {
-    width: 13vw;
-}
-
-.sec2 div .main1 .eximg {
-    margin-bottom:0.6vw;
-    border-radius: 1.2vw;
-    width: 12vw;
-    height: 24.5vw;
-    overflow: hidden;
-    align-items: baseline;
     justify-content: center;
 }
-.sec2 div .main1 .eximg img {
-    width: 110%;
+
+.sec2 div .proto_box .main1 img {
+    padding: 2vw;
+    width: calc(100% - 4vw);
 }
 
 .sec2 div .proto_box .main2 {
-    justify-content: space-between;
+    width: 65%;
+    align-items: center;
+    justify-content: center;
 }
 
-.sec2 div .main2 img:first-child {
-    width: 13vw;
-    padding-left:5vw;
-    transition: 0.5s;
+.sec2 div .proto_box .main2 img {
+    padding: 2vw;
+    width: calc(100% - 4vw);
 }
 
-.sec2 div .main2:hover img:first-child {
-    width: 18vw;
-    padding:0 0 5vw 2.5vw;
+.sec2 div .proto_box .main3 {
+    width: 35%;
+    align-items: center;
+    justify-content: center;
 }
 
-.sec2 div .main2 img:last-child {
-    height: 30vw;
-}
-
-.sec2 div .main3 {
-    justify-content: space-evenly;
-}
-
-.sec2 div .main3 img {
-    width: 13vw;
+.sec2 div .proto_box .main3 img {
+    padding: 2vw;
+    width: calc(100% - 4vw);
 }
 
 /* button */
@@ -331,12 +333,12 @@ img {
     height: 100px;
     justify-content: center;
     align-items: center;
-    color:#fff;
+    color:#000000;
     cursor: pointer;
 }
 
 .up_btn svg {
-    fill:#fff;
+    fill:#000000;
     animation: up 2s ease-in-out 2s infinite;
 }
 
