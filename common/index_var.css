@@ -3,7 +3,7 @@
 /* Notted */
 @font-face {
   font-family: "Notted";
-  src: url(../fonts/Notted.ttf);
+  src: url(../common/fonts/Notted.ttf);
 }
 
 /* noto sans kr */
@@ -132,6 +132,10 @@
 
 html {
   scroll-behavior: smooth;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none
 }
 
 h1 {
@@ -170,4 +174,27 @@ p {
   display: block;
   font-weight: 300;
   line-height: 1.5;
+}
+
+/* 마우스 커서 */
+
+.circle {
+  position: fixed;
+      top: 50px;
+      left: 50px;
+      background-color: #b44c4c;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 90px;
+      will-change: transform;
+
+      z-index: 10;
+      user-select: none;
+      pointer-events: none;
+}
+
+.circle.style {
+  transform: scale(5);
 }

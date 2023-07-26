@@ -5,23 +5,61 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>HYUN PORTFOLIO</title>
-  <link rel="stylesheet" href="index_PC.css">
-  <link rel="stylesheet" href="./common/index_var.css">
 
+  <!-- open graph -->
+  <meta property="og:title" content="KN Portfolio">
+  <meta property="og:description" content="김나현의 포트폴리오입니다✨">
+  <meta property="og:image" src="./images/background_0.png">
+  <meta property="og:url" content="경로">
+
+  <!-- fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
   <link
     href="https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Instrument+Sans&family=Lobster&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
     rel="stylesheet">
-
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+HK:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
+  <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="76x76" href="./common/favicon/android-chrome-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./common/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./common/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./common/favicon/favicon-16x16.png">
 
+  <!-- css -->
+  <link rel="stylesheet" href="./main-index/main_index_PC.css">
+  <link rel="stylesheet" href="./common/index_var.css">
+
+  <!-- script -->
   <script src="./common/jquery-3.7.0.min.js"></script>
-  <script defer src="./index.js"></script>
+  <script defer src="./main-index/main_index"></script>
+
 </head>
+
+<div class="circle"></div>
+<script>
+  const circle = document.querySelector('.circle');
+  let mouseX = 0;
+  let mouseY = 0;
+  let circleX = 0;
+  let circleY = 0;
+
+  const mouseMove = (e) => {
+    mouseX = e.clientX - 50;
+    mouseY = e.clientY - 50;
+  }
+  document.addEventListener('mousemove', mouseMove);
+
+  const anicircle = () => {
+    circleX += (mouseX - circleX) * 0.1;
+    circleY += (mouseY - circleY) * 0.1;
+    circle.style.transform = `translate(${circleX}px, ${circleY}px)`;
+    requestAnimationFrame(anicircle);
+  }
+  anicircle();
+
+</script>
 
 <body>
   <header class="page">
@@ -90,7 +128,6 @@
 
   <section class="about" id="About">
         <div class="sec1 flex page">
-
           <div class="sec1_left flex column">
             <h1>about”</h1>
             <div class="sec1_left_under flex">
@@ -162,10 +199,10 @@
 
     <div class="project_nav flex column">
       <h1>self projects</h1>
-      <div class="project_btn flex">
+      <span class="project_btn flex">
         <h6>ux & ui</h6>
         <h6>publishing</h6>
-      </div>
+      </span>
     </div>
 
     <menu class="project_list flex column">
@@ -232,11 +269,11 @@
     <h1>contact</h1>
     <div class="contact flex column">
       <div class="flex">
-        <img src="./images/github-mark.png" alt="git hub">
+        <img src="./main-index/images/github-mark.png" alt="git hub">
         <p><a href="https://github.com/knknkn0928"><strong>깃허브</strong><br> https://github.com/knknkn0928</a></p>
       </div>
       <div class="flex">
-        <img src="./images/email.svg" alt="email">
+        <img src="./main-index/images/email.svg" alt="email">
         <p><a href="#"><strong>Email</strong><br> rlaskrlasrk1201@gmail.com</a></p>
       </div>
     </div>

@@ -336,8 +336,9 @@ h1 {
   font-family: var(--kr-txt-font);
   font-size: 5vw;
   color: #fff;
-  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+  /* text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000; */
   transition: 0.2s;
+  z-index: 99;
 }
 
 .about .sec1 .sec1_right .sec1_right_top h2:nth-child(2) strong {
@@ -563,10 +564,10 @@ h1 {
   font-family: 'YUniverse-B';
 }
 
-.project .project_list a:nth-child(2):hover {
+/* .project .project_list a:nth-child(2):hover {
   background: url(./images/project_thumbs/TBS_Logo.png) no-repeat center / contain;
   background-size: 7vw;
-}
+} */
 
 
 .project .project_list a:nth-child(3) h4 {
@@ -578,32 +579,29 @@ h1 {
   src: url(./project_publishing/fonts/Friz\ Quadrata\ Regular.ttf)
 }
 
-.project .project_list a:nth-child(3):hover {
+/* .project .project_list a:nth-child(3):hover {
 background: url(./images/project_thumbs/urbanic_amble.png) no-repeat center / contain;
 background-size: 7vw;
-}
-
+} */
 
 .project .project_list a:nth-child(5) h4 {
   font-family: 'Noto Serif HK', serif;
 }
 
-.project .project_list a:nth-child(5):hover {
+/* .project .project_list a:nth-child(5):hover {
   background: url(./images/project_thumbs/logo3.png) no-repeat center / contain;
   background-size: 7vw;
-  }
-
-
+  } */
 
 .project .project_list a:nth-child(6) h4 {
   font-family: 'establishRetrosansOTF';
   height: 3vh;
 }
 
-.project .project_list a:nth-child(6):hover {
+/* .project .project_list a:nth-child(6):hover {
   background: url(./images/project_thumbs/mock.gif) no-repeat center / contain;
   background-size: 7vw;
-}
+} */
 
 
 /* graphic */
