@@ -30,6 +30,7 @@ html {
 
 p {
     font-family: var(--kr-txt-font);
+    font-size: var(--font-size-17);
 }
 
 
@@ -75,8 +76,8 @@ header .title .title_text h5 {
     height: 30px;
     line-height: 30px;
     text-align: center;
-    background: linear-gradient(to bottom, #8D86E2, #4D6CFF);
-    color:#fff;
+    background-color: #F4F4F4;
+    color:#131313;
     border-radius: 15px;
 }
 
@@ -110,10 +111,6 @@ header .title .title_text span p {
     width: 30%;
 }
 
-.sec1 div p {
-    font-size: var(--font-size-16);
-}
-
 .sec1 div:first-child p {
     width: 70%;
 }
@@ -137,14 +134,16 @@ header .title .title_text span p {
     margin: 0;
     object-fit: contain;
     width: 100%;
-    /* width: 13vw; */
+}
+
+.sec1 .web_img div p {
+    font-size: var(--font-size-16);
 }
 
 .sec1 .web_img .Vision {
     justify-content: center;
     align-items: center;
 }
-
 
 /* sec2 */
 
@@ -167,17 +166,12 @@ img {
 }
 
 .sec2 div {
-    /* gap: 2vw; */
     color:#fff;
 }
 
 .sec2 div h2 {
     font-family: var(--main-txt-font);
     width: 30%;
-}
-
-.sec2 div p {
-    font-size: var(--font-size-16);
 }
 
 .sec2 div .style_guide {
@@ -197,6 +191,10 @@ img {
 
 .sec2 div .style_guide div .guide_sub {
     width:75%;
+}
+
+.sec2 div .style_guide div .guide_sub .fz16 {
+    font-size: var(--font-size-16);
 }
 
 .sec2 div .style_guide .color .guide_sub div span {
@@ -243,21 +241,19 @@ img {
 }
 
 
+.sec2 .PDF_link {
+    align-items: center;
+}
+
+.sec2 .PDF_link a {
+    color:#fff;
+    font-family: var(--kr-txt-font);
+    font-size: var(--font-size-18);
+    font-weight: bold;
+}
+
 .sec2 .proto_box {
-    gap: 5vw;
-}
-
-.sec2 .proto_box figure .info {
-    gap: 1vw;
-    margin: 0 auto;
-    padding-top: 2vw;
-    text-align: center;
-    width: 75%;
-}
-
-.sec2 .proto_box figure .info p {
-    font-size: var(--font-size-16);
-    text-align: left;
+    gap: 2vw;
 }
 
 .sec2 div .proto_box .filter {
@@ -272,9 +268,11 @@ img {
 
 .sec2 div .proto_box .main1 {
     width: calc(100% - 4vw);
+    flex-wrap: wrap;
 }
 .sec2 div .proto_box .main1 img {
-    width: 100%;
+    width: calc(50% - 1vw);
+    display: block;
 }
 
 .sec2 div .proto_box .main2 {
@@ -284,19 +282,80 @@ img {
     width: 100%;
 }
 
-.sec2 div .proto_box .main3 {
+.sec2 div .proto_box .main2 {
     width: calc(100% - 4vw);
+    flex-wrap: wrap;
 }
-.sec2 div .proto_box .main3 img {
+.sec2 div .proto_box .main2 img {
+    width: calc(50% - 1vw);
+}
+
+.sec2 div .proto_box .main2 div h4 {
+    font-family: var(--kr-txt-font);
+    font-size: var(--font-size-18);
+    width: 20%;
+}
+
+.sec2 div .proto_box .main2 div div .fz16 {
+    width:80%;
+}
+
+.sec2 div .proto_box .main2 .fz16 {
+    font-size: var(--font-size-16);
+}
+
+.sec2 div .proto_box .main2 div img {
     width: 100%;
 }
 
-.sec2 div .proto_box .main4 {
-    width: calc(100% - 4vw);
+.sec2 div .proto_box .main2 .Easter_Egg {
+    position: relative;
+    justify-content: center;
+    cursor: pointer;
+    align-items: center;
 }
-.sec2 div .proto_box .main4 img {
-    width: 100%;
+
+.sec2 div .proto_box .main2 .Easter_Egg .p_center {
+    display: block;
+    text-align: center;
+    font-style:italic;
+    border-bottom: 1px solid #fff;
 }
+
+.sec2 div .proto_box .main2 .Easter_Egg .hidden {
+    width: 300px;
+    object-fit: contain;
+    position: absolute;
+    bottom:5vh;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.sec2 div .proto_box .main2 .Easter_Egg:hover .hidden {
+    opacity: 1;
+}
+
+
+.sec2 .site_link {
+    font-family: var(--kr-txt-font);
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255, 0.2);
+    border: 1px solid #000;
+    border-radius: 50%;
+    color:#fff;
+    text-align: center;
+    display: block;
+    width:200px;
+    padding: 1vw 2vw;
+    transition: 0.3s;
+}
+
+.sec2 .site_link:hover {
+    background-color: rgb(255, 255, 255, 0.8);
+    color:#000;
+}
+
+
 
 .sec2 .Review span {
     width: 100%;
@@ -346,4 +405,26 @@ img {
 
 .up_btn p {
     font-family: var(--main-txt-font);
+}
+
+.back_btn {
+    color:#fff;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    position: fixed;
+    top:1vw;
+    left: 1vw;
+    z-index: 999;
+    gap:1vw
+}
+
+.back_btn svg {
+    fill:#fff;
+    width: 35px;
+}
+
+.back_btn p {
+    font-family: var(--main-txt-font);
+    font-weight:500;
 }

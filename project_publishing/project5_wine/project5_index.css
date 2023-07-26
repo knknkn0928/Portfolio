@@ -26,6 +26,7 @@ html {
 
 p {
     font-family: var(--kr-txt-font);
+    font-size: var(--font-size-17);
 }
 
 
@@ -111,7 +112,7 @@ header .title .title_text span p {
 }
 
 .sec1 div p {
-    font-size: var(--font-size-16);
+    font-size: var(--font-size-17);
 }
 
 .sec1 div:first-child p {
@@ -142,6 +143,7 @@ header .title .title_text span p {
 
 .sec1 .design2016 div p {
     text-align: center;
+    font-size: var(--font-size-16);
 }
 
 
@@ -176,7 +178,7 @@ img {
 }
 
 .sec2 div p {
-    font-size: var(--font-size-16);
+    font-size: var(--font-size-17);
 }
 
 .sec2 div .style_guide {
@@ -345,4 +347,26 @@ img {
 
 .up_btn p {
     font-family: var(--main-txt-font);
+}
+
+.back_btn {
+    color:#fff;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    position: fixed;
+    top:1vw;
+    left: 1vw;
+    z-index: 999;
+    gap:1vw
+}
+
+.back_btn svg {
+    fill:#fff;
+    width: 35px;
+}
+
+.back_btn p {
+    font-family: var(--main-txt-font);
+    font-weight:500;
 }

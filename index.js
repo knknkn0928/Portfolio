@@ -66,7 +66,7 @@ window.addEventListener("wheel", function(e){
 },{passive : true});
 
 var $html = $("html");
-var page = 0;
+var page = 1;
 var lastPage = $(".page").length;
 $html.animate({scrollTop:0},10);
 

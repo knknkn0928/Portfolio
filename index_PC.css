@@ -320,7 +320,7 @@ h1 {
 
 
 .about .sec1 p {
-  font-size: var(--font-size-16)
+  font-size: var(--font-size-17)
 }
 
 .about .sec1 p strong {
@@ -377,7 +377,7 @@ h1 {
 .about .sec2 .skill_list li {
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
   padding-bottom: 3vw;
   width: 100%;
   border-top: 1px solid #000;
@@ -388,18 +388,26 @@ h1 {
 }
 
 .about .sec2 .skill_list li h4 {
-  width: 32%;
+  width: 50%;
   text-align: left;
   font-family: var(--main-txt-font);
-  font-size: var(--font-size-28);
+  font-size: var(--font-size-50);
   font-weight: 700;
+}
+
+.about .sec2 .skill_list li span {
+  width: 50%;
+}
+
+.about .sec2 .skill_list li span p {
+  width: 100%;
 }
 
 .about .sec2 .skill_list li p {
   text-transform: uppercase;
   text-align: right;
-  width: 60%;
-  font-size: var(--font-size-16);
+  width: 50%;
+  font-size: var(--font-size-17);
   font-family: var(--kr-txt-font);
 }
 
