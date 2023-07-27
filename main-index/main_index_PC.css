@@ -293,7 +293,8 @@ header .text .header_bottom h6 {
   width: calc(100% - 10vw);
   height: calc(100vh - 10vw);
   align-items: end;
-  justify-content: space-between;
+  justify-content: baseline;
+  gap: 13vw;
   z-index: 0;
 }
 
@@ -306,42 +307,60 @@ header .text .header_bottom h6 {
   font-size: var(--font-size-40);
 }
 
-.about .sec1 .sec1_left {
-  height: 100%;
-  width: 30%;
-  justify-content: space-between;
-}
-
 .about .sec1 p {
   font-size: var(--font-size-17);
   font-family: var(--kr-txt-font);  
 }
 
 .about .sec1 p strong {
-  font-size: var(--font-size-20)
+  font-size: var(--font-size-20);
 }
 
-.about .sec1 .sec1_right {
-  height: 100%;
+.about .sec1 h2 {
+  font-family: var(--kr-txt-font);
+  font-size: var(--font-size-60);
+}
+
+.about .sec1 .sec1_top {
+  margin: 0 auto;
+  width: 80%;
+  justify-content:center;
+  gap: 2vw;
+}
+
+.about .sec1 .sec1_top span {
+  justify-content: space-between;
+  align-items: end;
+  border-bottom: 1px solid #000;
+}
+
+.about .sec1 .sec1_top .intro {
   justify-content: space-between;
 }
 
-.about .sec1 .sec1_right img {
-  object-fit: cover;
-  width: 30vw;
-  height: 30vw;
+.about .sec1 .sec1_top .intro .year {
+  text-align: right;
+}
+
+.about .sec1 .sec1_bottom {
+  margin: 0 auto;
+  width: 80%;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99;
 }
 
 .about .sec1 .layer0 h2 {
   font-family: var(--kr-txt-font);
   font-size: var(--font-size-60);
   color: #fff;
-  /* text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000; */
   transition: 0.2s;
   z-index: 99;
+  text-align: center;
+  /* text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000; */
 }
 
-.about .sec1 .layer0 h2:nth-child(2) strong {
+.about .sec1 .layer0 h2 strong {
   text-shadow: none;
   color:#000;
 }
@@ -362,7 +381,6 @@ header .text .header_bottom h6 {
 
 .about .sec2 h3 {
   align-items: end;
-  height: 3vw;
   padding-right: 5vw;
   transition: 0.3s;
 }
@@ -379,24 +397,20 @@ header .text .header_bottom h6 {
 .about .sec2 .skill_list li {
   flex-wrap: wrap;
   align-items: center;
-  padding: 2vw 0;
+  /* padding: 2vw 0; */
   width: 100%;
+  height: 13vh;
   border-top: 1px solid #000;
   transition: 0.3s;
 }
-
-.about .sec2 .skill_list li:hover {
-  background: #000 url(../main-index/images/background_0.png) no-repeat;
-  color:#fff;
-  transition: 0.3s;
+.about .sec2 .skill_list li:last-child {
+  border-bottom: 1px solid #000;
 }
 
-.about .sec2 .skill_list li:nth-child(4):hover {
-  background-color: #000;
-  color: #fff;
-  padding: none;
+.about .sec2 .skill_list li:hover {
+  background: #000 url(../main-index/images/background_0.png) no-repeat right / cover;
+  color:#fff;
   transition: 0.3s;
-  padding-bottom: 2vw;
 }
 
 .about .sec2 .skill_list li .hidden {
@@ -435,7 +449,7 @@ header .text .header_bottom h6 {
 
 .about .sec2 .skill_list li span p {
   width: 100%;
-  font-size: var(--font-size-17);
+  font-size: var(--font-size-20);
   font-family: var(--kr-txt-font);
   text-transform: uppercase;
   text-align: right;
@@ -489,8 +503,8 @@ header .text .header_bottom h6 {
 }
 
 .project .project_nav::after {
-  content: "FIND EASTER EGG";
-  font-size: var(--font-size-24);
+  content: "FIND : EASTER EGG";
+  font-size: var(--font-size-20);
   font-family: var(--main-txt-font);
   color:#fff;
   width: 10vw;
@@ -498,7 +512,7 @@ header .text .header_bottom h6 {
   position: absolute;
   top:0;
   right: 6.5vw;
-  z-index: 0;
+  z-index: 1;
 }
 
 .project .project_nav h1 {
@@ -755,10 +769,13 @@ footer {
   justify-content: space-evenly;
 }
 
+footer h1 {
+  font-size: 6.5vw;
+}
+
 footer .contact {
   justify-content: space-between;
   padding: 10px 0;
-  margin-top: 3vw;
   gap: 15px;
 }
 
