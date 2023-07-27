@@ -81,13 +81,13 @@
   --font-size-17: 1.1rem;
   --font-size-18: 1.125rem;
   --font-size-20: 1.25rem;
+  --font-size-24: 1.5rem;
   --font-size-28: 1.75rem;
   --font-size-34: 2.125rem;
   --font-size-40: 2.5rem;
   --font-size-50: 3.125rem;
-
-  --main-size-60: 3.75rem;
-  --sub-size-24: 1.5rem;
+  --font-size-55: 3.5rem;
+  --font-size-60: 3.75rem;
 
   /* 폰트 패밀리 */
   --title-txt-font: "Notted", sans-serif, "Malgun Gothic", "맑은 고딕", helvetica, "Apple SD Gothic Neo", serif;
@@ -121,6 +121,11 @@
   display: none;
 }
 
+::selection {
+  background-color: #d64949e0;
+  color: #fff;
+}
+
 * {
   margin: 0;
 }
@@ -135,7 +140,8 @@ html {
   -webkit-user-select:none;
   -moz-user-select:none;
   -ms-user-select:none;
-  user-select:none
+  user-select:none;
+  /* cursor: none; */
 }
 
 h1 {
@@ -174,27 +180,4 @@ p {
   display: block;
   font-weight: 300;
   line-height: 1.5;
-}
-
-/* 마우스 커서 */
-
-.circle {
-  position: fixed;
-      top: 50px;
-      left: 50px;
-      background-color: #b44c4c;
-      width: 30px;
-      height: 30px;
-      border-radius: 50%;
-      text-align: center;
-      line-height: 90px;
-      will-change: transform;
-
-      z-index: 10;
-      user-select: none;
-      pointer-events: none;
-}
-
-.circle.style {
-  transform: scale(5);
 }

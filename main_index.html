@@ -10,7 +10,7 @@
   <meta property="og:title" content="KN Portfolio">
   <meta property="og:description" content="김나현의 포트폴리오입니다✨">
   <meta property="og:image" src="./images/background_0.png">
-  <meta property="og:url" content="경로">
+  <meta property="og:url" content="https://knknkn0928.github.io/Portfolio/main_index.html">
 
   <!-- fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,32 +33,14 @@
 
   <!-- script -->
   <script src="./common/jquery-3.7.0.min.js"></script>
-  <script defer src="./main-index/main_index"></script>
+  <script defer src="./main-index/main_index_scroll.js"></script>
+  <script defer src="./main-index/main_index_cursor.js"></script>
 
 </head>
 
 <div class="circle"></div>
 <script>
-  const circle = document.querySelector('.circle');
-  let mouseX = 0;
-  let mouseY = 0;
-  let circleX = 0;
-  let circleY = 0;
-
-  const mouseMove = (e) => {
-    mouseX = e.clientX - 50;
-    mouseY = e.clientY - 50;
-  }
-  document.addEventListener('mousemove', mouseMove);
-
-  const anicircle = () => {
-    circleX += (mouseX - circleX) * 0.1;
-    circleY += (mouseY - circleY) * 0.1;
-    circle.style.transform = `translate(${circleX}px, ${circleY}px)`;
-    requestAnimationFrame(anicircle);
-  }
-  anicircle();
-
+  
 </script>
 
 <body>
@@ -128,25 +110,24 @@
 
   <section class="about" id="About">
         <div class="sec1 flex page">
+          
           <div class="sec1_left flex column">
             <h1>about”</h1>
-            <div class="sec1_left_under flex">
-              <h3>what am i</h3>
-              <div class="info flex column">
-                <p><strong>내일 더 발전한 내가 되기 위하여 꾸준히 노력하고자 합니다.</strong></p>
-                <p>
-                  컨텐츠, UX & Ui 디자이너이자 웹 표준 및 웹 접근성 퍼블리셔입니다.
-                </p>
-                <p>UX/Ui를 통한 웹 접근성과 디자인의 연계에 대해 고민하며 공부중입니다.</p>
-              </div>
-            </div>
-          </div>
+            <h3>what am i</h3>
+          </div>          
           
           <div class="sec1_right flex column">
-            <span class="sec1_right_top flex column">
-                <h2>#활발#간죽간살</h2>
-                <h2><strong>#긍정적</strong>#노오력</h2>
-                <h2>#재빠른_적응력!</h2>
+            <div>
+              <p><strong>내일 더 발전한 내가 되기 위하여 꾸준히 노력하고자 합니다.</strong></p>
+              <p>
+                컨텐츠, UX & Ui 디자이너이자 웹 표준 및 웹 접근성 퍼블리셔입니다.
+              </p>
+              <p>UX/Ui를 통한 웹 접근성과 디자인의 연계에 대해 고민하며 공부중입니다.</p>
+            </div>
+            <span class="layer0 flex column find">
+              <h2>#활발 #간죽간살</h2>
+              <h2><strong>#긍정적</strong> #노오력</h2>
+              <h2>#재빠른_적응력!</h2>
             </span>
             <div>
               <p><strong>2015</strong>  GTQ 1급 취득</p>
@@ -161,23 +142,21 @@
               <ul class="skill_list flex column">
                 <li class="flex">
                   <h4>HTML5 & CSS3</h4>
-                  <p>
-                    웹 접근성을 고려한 시맨틱 태그, flex, grid, position 사용<br>
-                    미디어쿼리를 적용한 반응형 웹 / 태블릿 / 모바일 화면 제작<br>
-                    다양한 이벤트, 애니메이션 구현
-                  </p>
+                  <span class="hidden">
+                    <p>웹 접근성을 고려한 시맨틱 태그, flex, grid, position 사용</p>
+                    <p>미디어쿼리를 적용한 반응형 웹 / 태블릿 / 모바일 화면 제작, 다양한 이벤트, 애니메이션 구현</p>
+                  </span>
                 </li>
                 <li class="flex">
                   <h4>JavaScript & jQuery</h4>
-                  <p>
-                    자바스크립트 기본 문법 이해<br>
-                    ES6+ 문법 자바스크립트 활용<br>
-                    비동기 통신 ​Ajax를 이용한 JSON 데이터 활용
-                  </p>
+                  <span class="hidden">
+                    <p>자바스크립트 기본 문법 이해, ES6+ 문법 자바스크립트 활용</p>
+                    <p>비동기 통신 ​Ajax를 이용한 JSON 데이터 활용</p>
+                  </span>
                 </li>
                 <li class="flex">
                   <h4>USEd Tool</h4>
-                  <span>
+                  <span class="hidden">
                     <p> VSCode / Figma</p>
                     <p><strong>ADOBE</strong> Photoshop, Illustrator, Indesign, Premiere Pro, After Effects, XD
                     </p>
@@ -185,10 +164,10 @@
                 </li>
                 <li class="flex">
                   <h4>Git & GitHub</h4>
-                  <p>
-                    Git으로 코드 버전 관리 GitHub로 협업 가능<br>
-                    GitHub를 이용한 배포와 CLI 기반 GitBash 사용 가능
-                  </p>
+                  <span class="hidden">
+                    <p>Git으로 코드 버전 관리 GitHub로 협업 가능</p>
+                    <p>GitHub를 이용한 배포와 CLI 기반 GitBash 사용 가능</p>
+                  </span>
                 </li>
               </ul>
               <h3>skills++</h3>
@@ -197,7 +176,7 @@
 
   <section class="project flex page" id="Projects">
 
-    <div class="project_nav flex column">
+    <div class="project_nav flex column find">
       <h1>self projects</h1>
       <span class="project_btn flex">
         <h6>ux & ui</h6>
@@ -207,7 +186,7 @@
 
     <menu class="project_list flex column">
       <a href="" target="_blank" class="flex">
-        <h4>Portfolio making</h4>
+        <h4>자립해냄</h4>
         <h5>01</h5>
       </a>
       <a href="./project_publishing/project2_thebodyshop/project2_index.html" class="flex">
@@ -227,7 +206,7 @@
         <h5>05</h5>
       </a>
       <a href="./project_publishing/project6_appdesign/project6_index.html" class="flex">
-        <h4>자립해냄</h4>
+        <h4>Portfolio making</h4>
         <h5>06</h5>
       </a>
     </menu>
