@@ -66,6 +66,11 @@
   font-style: normal;
 }
 
+/* Friz Quadrata Regular */
+@font-face {
+  font-family: 'Friz Quadrata Regular';
+  src: url(../project_publishing/fonts/Friz\ Quadrata\ Regular.ttf)
+}
 
 :root { scroll-behavior : auto }
 

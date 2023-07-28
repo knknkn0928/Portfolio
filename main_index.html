@@ -22,7 +22,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+HK:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
   <!-- favicon -->
-  <link rel="apple-touch-icon" sizes="76x76" href="./common/favicon/android-chrome-72x72.png">
+  <link rel="android-chrome-icon" sizes="76x76" href="./common/favicon/android-chrome-72x72.png">
   <link rel="apple-touch-icon" sizes="76x76" href="./common/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="./common/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="./common/favicon/favicon-16x16.png">
@@ -44,42 +44,29 @@
 </script>
 
 <body>
-  <header class="page">
-    <div class="menu_btn"></div>
-
-    <div class="sub_menu backdrop" id="sub_menu">
-      <div class="nav">
-        <div class="sub_menu_title">
-          <a href="#About">About</a>
-          <a href="#Projects">Self<br>
-            Projects</a>
-          <a href="#Contact">Contact</a>
-        </div>
-      </div>
-      <div class="svgBox">
-        <svg class="svg">
-          <ellipse class="ellipse1-1"></ellipse>
-        </svg>
-        <svg class="svg">
-          <ellipse class="ellipse2-1"></ellipse>
-        </svg>
-        <svg class="svg animate">
-          <ellipse class="ellipse3-1"></ellipse>
-        </svg>
-        <svg class="svg">
-          <ellipse class="ellipse4-1"></ellipse>
-        </svg>
-        <svg class="svg animate">
-          <ellipse class="ellipse5-1"></ellipse>
-        </svg>
+    <div class="sub_menu backdrop flex" id="sub_menu">
+       <div class="nav">
+          <div class="sub_menu_title flex column">
+            <span class="flex">
+              <p>✴</p>
+              <a href="#About">About</a>
+            </span>
+            <a href="#Projects">Self Projects</a>
+            <a href="#Graphic">Graphic Design</a>
+            <a href="#Contact">Contact</a>
+          </div>
       </div>
     </div>
 
+  <header class="page">
     <div class="text flex column">
       <h4>Kim nahyun</h4>
       <h1 class="title">Portfolio</h1>
       <div class="header_bottom flex">
         <h6><strong>Ui ux web publishing graphic</strong></h6>
+        <svg class="svg">
+          <line class="line"></line>
+        </svg>
         <h6>
           <strong>contact :</strong> rlaskrlasrk1201@gmail.com
         </h6>
@@ -123,8 +110,8 @@
                 <p>UI UX를 통한 웹의 접근성과 디자인의 연계에 대해 고민하며 공부중입니다.</p>
               </div>
               <div class="year flex column">
-                <p>웹 컨텐츠, 배너, 영상, 편집 디자이너 4년차 근무&nbsp;&nbsp;&nbsp;<strong>2018-2022</strong></p>
-                <p>GTQ 1급 , GTQi 1급, 컴퓨터그래픽스운용기능사 취득&nbsp;&nbsp;&nbsp;<strong>2015-2022</strong></p>
+                <p>컨텐츠, 배너, 영상, 편집 디자이너 4년차 근무&nbsp;&nbsp;&nbsp;<strong>2018-2022</strong></p>
+                <p>GTQ 1급 , GTQi 1급, 컴퓨터그래픽스운용기능사 취득&nbsp;&nbsp;&nbsp;<strong>2016/2022</strong></p>
                 <p>웹디자인기능사 필기 합격, 웹퍼블리싱 수업 이수&nbsp;&nbsp;&nbsp;<strong>2023 NOW</strong></p>
               </div>
             </div>
@@ -168,12 +155,12 @@
                 <li class="flex">
                   <h4>Git & GitHub</h4>
                   <span class="hidden">
-                    <p>Git으로 코드 버전 관리 GitHub로 협업 가능</p>
+                    <p>Git으로 코드 버전 관리 및 GitHub Organizations를 통한 협업 가능</p>
                     <p>GitHub를 이용한 배포와 CLI 기반 GitBash 사용 가능</p>
                   </span>
                 </li>
                 <li class="flex">
-                  <h4>I CAN</h4>
+                  <h4>I CAN,</h4>
                   <span class="hidden">
                     <p>퍼블리싱 웹페이지 구축 카페24 웹사이트 관리 UX / Ui 디자인</p>
                     <p>책자 브로셔 지류 편집 및 카드뉴스 배너 상세페이지 등 그래픽 디자인 외 영상편집</p>
@@ -195,34 +182,52 @@
     </div>
 
     <menu class="project_list flex column">
-      <a href="" target="_blank" class="flex">
+      <a href="./project_publishing/project1_appdesign/project1_index.html" class="flex">
         <h4>자립해냄</h4>
-        <h5>01</h5>
+        <span class="list_right flex">
+          <h6>App UIUX Design</h6>
+          <h5>01</h5>
+        </span>
       </a>
       <a href="./project_publishing/project2_thebodyshop/project2_index.html" class="flex">
         <h4>The BodyShop</h4>
-        <h5>02</h5>
+        <span class="list_right flex">
+          <h6>Web Redesign</h6>
+          <h5>02</h5>
+        </span>
       </a>
       <a href="./project_publishing/project3_urbanic30/project3_index.html" class="flex">
         <h4>urbarnic 30</h4>
-        <h5>03</h5>
+        <span class="list_right flex">
+          <h6>Team project Pusblishing</h6>
+          <h5>03</h5>
+        </span>
       </a>
       <a href="" class="flex">
         <h4></h4>
-        <h5></h5>
+        <span class="list_right flex">
+          <h6>Web Pusblishing</h6>
+          <h5>04</h5>
+        </span>
       </a>
       <a href="./project_publishing/project5_wine/project5_index.html" class="flex">
         <h4>香井</h4>
-        <h5>05</h5>
+        <span class="list_right flex">
+          <h6>Randing Page</h6>
+          <h5>05</h5>
+        </span>
       </a>
-      <a href="./project_publishing/project6_appdesign/project6_index.html" class="flex">
+      <a href="./project_publishing/project6_making/project6_index.html" class="flex">
         <h4>Portfolio making</h4>
-        <h5>06</h5>
+        <span class="list_right flex">
+          <h6>About my Portfolio</h6>
+          <h5>06</h5>
+        </span>
       </a>
     </menu>
   </section>
 
-  <section class="graphic page">
+  <section class="graphic page" id="Graphic">
     <div class="grid">
       <h1>Graphic design</h1>
       <li class="wine">
@@ -254,14 +259,18 @@
   </section>
 
 
-  <footer class="page flex" id="contact">
+  <footer class="page flex column" id="Contact">
     <h1>contact</h1>
+    <span class="find">
+      <h2>Thanks for</h2>
+      <h2>watch✴</h2>
+    </span>
     <div class="contact flex column">
-      <div class="flex">
+      <div class="git flex">
         <img src="./main-index/images/github-mark.png" alt="git hub">
         <p><a href="https://github.com/knknkn0928"><strong>깃허브</strong><br> https://github.com/knknkn0928</a></p>
       </div>
-      <div class="flex">
+      <div class="email flex">
         <img src="./main-index/images/email.svg" alt="email">
         <p><a href="#"><strong>Email</strong><br> rlaskrlasrk1201@gmail.com</a></p>
       </div>

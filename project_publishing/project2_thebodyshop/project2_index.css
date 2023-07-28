@@ -43,23 +43,13 @@ header .title .title_text {
     backdrop-filter: blur(3px);
     transition: 0.3s;
     padding: 0 5vw 0 10vw;
-    gap: 20px;
+    gap: 30px;
     color:#000;
     align-items: center;
 }
 
-header .title .title_text .eximg {
-margin-right:1vw;
-border-radius: 1.9vh;
-width: 18vh;
-height: 37.2vh;
-overflow: hidden;
-align-items: center;
-justify-content: center;
-}
-
-header .title .title_text .eximg img {
-    width: 13vh;
+header .title .title_text img {
+    width: 15vh;
 }
 
 header .title:hover .title_text {
@@ -91,7 +81,7 @@ header .title .title_text h1 {
 }
 
 header .title .title_text span p {
-    font-size: var(--font-size-14);
+    font-size: var(--font-size-16);
 }
 
 
@@ -114,7 +104,7 @@ header .title .title_text span p {
 }
 
 .sec1 div p {
-    font-size: var(--font-size-16);
+    font-size: var(--font-size-17);
 }
 
 .sec1 div:first-child p {
@@ -125,26 +115,16 @@ header .title .title_text span p {
     width: 100%;
 }
 
-.sec1 .app_img div {
-    justify-content: space-evenly;
-    background-color: rgba(255, 255, 255, 0.3);
-    border-radius: 25px;
-    backdrop-filter: blur(1px);
-    padding-top: 2vw;
-}
-
-.sec1 .app_img div img {
-    width: 13vw;
-}
-
-
 .sec1 .web_img div {
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(172, 172, 172, 0.2);
     border-radius: 25px;
-    backdrop-filter: blur(1px);
     padding: 2vw;
     justify-content: center;
     align-items: center;
+}
+
+.sec1 .web_img div p {
+    font-size: var(--font-size-16);
 }
 
 .sec1 .web_img div img {
@@ -194,15 +174,14 @@ img {
 }
 
 .sec2 div p {
-    font-size: var(--font-size-16);
+    font-size: var(--font-size-17);
 }
 
 .sec2 div .style_guide {
     width: calc(100% - 6vw);
     padding:3vw;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(172, 172, 172, 0.2);
     border-radius: 25px;
-    backdrop-filter: blur(1px);
     gap:3vw;
 }
 
@@ -210,6 +189,10 @@ img {
     font-family: var(--main-txt-font);
     width: 25%;
     color: #3A857E;
+}
+
+.sec2 div .style_guide div p {
+    font-size: var(--font-size-16);
 }
 
 .sec2 div .style_guide div .guide_sub {
@@ -265,9 +248,8 @@ img {
 
 .sec2 div .proto_box .filter {
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(172, 172, 172, 0.2);
     border-radius: 25px;
-    backdrop-filter: blur(1px);
     transition: 0.3s;
     align-items: center;
 }
@@ -350,6 +332,7 @@ img {
 
 .up_btn p {
     font-family: var(--main-txt-font);
+    font-weight: bold;
 }
 
 .back_btn {

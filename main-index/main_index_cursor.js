@@ -26,3 +26,10 @@ $(".find").hover(function(){
 }, function(){
 	$(".circle").removeClass("active");
 });
+
+
+$(".sub_menu").hover(function(){
+	$(".circle").addClass("top");
+}, function(){
+	$(".circle").removeClass("top");
+});

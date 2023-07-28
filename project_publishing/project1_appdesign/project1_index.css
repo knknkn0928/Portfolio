@@ -23,6 +23,7 @@ html {
 
 p {
     font-family: var(--kr-txt-font);
+    font-weight: 100;
     line-height: 2;
 }
 
@@ -86,11 +87,12 @@ header .title .title_text h5 {
 
 header .title .title_text h1 {
   font-family: 'establishRetrosansOTF';
+  font-weight: 300;
   font-size: var(--font-size-34);
 }
 
 header .title .title_text span p {
-    font-size: var(--font-size-14);
+    font-size: var(--font-size-16);
 }
 
 
@@ -113,7 +115,7 @@ header .title .title_text span p {
 }
 
 .sec1 div p {
-    font-size: var(--font-size-16);
+    font-size: var(--font-size-17);
 }
 
 .sec1 div:first-child p {
@@ -126,9 +128,8 @@ header .title .title_text span p {
 
 .sec1 .app_img div {
     justify-content: space-evenly;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.2);
     border-radius: 25px;
-    backdrop-filter: blur(1px);
     padding-top: 2vw;
 }
 
@@ -175,9 +176,8 @@ img {
 .sec2 div .style_guide {
     width: calc(100% - 6vw);
     padding:3vw;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.2);
     border-radius: 25px;
-    backdrop-filter: blur(1px);
     gap:3vw;
 }
 
@@ -252,9 +252,8 @@ img {
 
 .sec2 div .proto_box .filter {
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.2);
     border-radius: 25px;
-    backdrop-filter: blur(1px);
     transition: 0.3s;
 
     height: 30vw;
