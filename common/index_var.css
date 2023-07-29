@@ -148,6 +148,9 @@ html {
   -ms-user-select:none;
   user-select:none;
   /* cursor: none; */
+
+  min-width: 1620px;
+  max-width: 1920px;
 }
 
 h1 {
