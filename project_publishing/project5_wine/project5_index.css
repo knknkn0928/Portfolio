@@ -4,6 +4,16 @@
 
 :root { scroll-behavior : auto }
 
+@font-face {
+    font-family: 'JSongMyung-Regular-KO';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/JSongMyung-Regular-KO.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  /* 한자 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+HK:wght@200;300;400;500;600;700;800;900&display=swap');
+
 html {
     background: url(../../main-index/images/background_0.png) no-repeat right 50%;
     background-attachment: fixed;
@@ -199,7 +209,7 @@ img {
 .sec2 div .style_guide div h4 {
     font-family: var(--main-txt-font);
     width: 25%;
-    color: #BEC9FF;
+    color: #000000;
 }
 
 .sec2 div .style_guide div .guide_sub {
@@ -207,7 +217,7 @@ img {
 }
 
 .sec2 div .style_guide .color .guide_sub div span {
-    width: 25%;
+    width: 33.3%;
 }
 
 .sec2 div .style_guide .color .guide_sub div span p {
@@ -219,28 +229,25 @@ img {
 
 .sec2 div .style_guide .color .guide_sub div span:nth-child(1) p:first-child {
     height: 25px;
-    background-color: #F4F4F4;}
+    background-color: #ffffff;}
 .sec2 div .style_guide .color .guide_sub div span:nth-child(2) p:first-child {
     height: 25px;
-    background-color: #131313;}
+    background-color: #000000;}
 .sec2 div .style_guide .color .guide_sub div span:nth-child(3) p:first-child {
     height: 25px;
-    background-color: #EEECEC;}
-.sec2 div .style_guide .color .guide_sub div span:nth-child(4) p:first-child {
-    height: 25px;
-    background-color: #858585;}
+    background-color: #afafaf;}
 
 .sec2 div .style_guide .fonts .guide_sub .font_sub h3 {
     width: 30%;
 }
 
 .sec2 div .style_guide .fonts .guide_sub .font_sub:first-child h3 {
-    font-family: 'Friz Quadrata Regular';
+    font-family: 'JSongMyung-Regular-KO';
     font-weight: 200;
     font-size: var(--font-size-20);
 }
 .sec2 div .style_guide .fonts .guide_sub .font_sub:nth-child(2) h3 {
-    font-family: 'Abhaya Libre', serif;
+    font-family: var(--kr-txt-font);
     font-weight: 200;
     font-size: var(--font-size-20);
 }
@@ -267,6 +274,11 @@ img {
     width: calc(100% - 4vw);
     gap: 2vw;
 }
+
+.sec2 div .proto_box .main1 p {
+    text-align: center;
+}
+
 .sec2 div .proto_box .main1 img {
     width: 100%;
 }
@@ -278,6 +290,14 @@ img {
     width: 100%;
 }
 
+.sec2 a {
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    font-size: var(--font-size-18);
+    font-family: var(--kr-txt-font);
+}
+
 .sec2 div .proto_box .main3 {
     width: calc(100% - 4vw);
 }
@@ -285,35 +305,38 @@ img {
     width: 100%;
 }
 
-.sec2 div .proto_box .main4 {
+
+.sec2 div .proto_box .des {
     width: calc(100% - 4vw);
+    flex-wrap: wrap;
 }
-.sec2 div .proto_box .main4 img {
+
+
+.sec2 div .proto_box .des h4 {
+    font-family: var(--kr-txt-font);
+    font-size: var(--font-size-18);
+    width: 23%;
+}
+
+.sec2 div .proto_box .des a {
+    color: #fff;
+    font-weight: bold;
+    text-align: left;
+}
+
+.sec2 div .proto_box div .fz16 {
+    width:100%;
+    font-size: var(--font-size-16);
+}
+
+.sec2 div .proto_box div img {
     width: 100%;
 }
 
-.sec2 .Review span {
-    width: 100%;
-    justify-content: space-between;
+.sec2 div .proto_box div .des2 {
+    width: 50%
 }
 
-.sec2 .Review span span {
-    width: 80%;
-}
-
-.sec2 .Review span span p {
-    width: 100%;
-}
-
-.sec2 .Review span h4 {
-    width: 15%;
-    display: block;
-    font-family: var(--main-txt-font);
-}
-
-.sec2 .Review span p {
-    width: 80%;
-}
 
 /* button */
 

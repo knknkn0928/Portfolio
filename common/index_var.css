@@ -9,7 +9,7 @@
 /* noto sans kr */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 
-/* font-family: 'Pretendard', san-serif; --kr-txt-font */
+/* font-family: 'Pretendard', san-serif;*/
 @font-face {
   font-family: 'Pretendard-Regular';
   src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
@@ -17,7 +17,7 @@
   font-style: normal;
 }
 
-/* font-family: 'Gowun Batang', serif; --kr-sub-font */
+/* font-family: 'Gowun Batang', serif; */
 @import url("https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap");
 
 /* montserrat */
@@ -147,7 +147,7 @@ html {
   -moz-user-select:none;
   -ms-user-select:none;
   user-select:none;
-  /* cursor: none; */
+  overflow-x: hidden;
 
   min-width: 1620px;
   max-width: 1920px;

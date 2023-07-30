@@ -23,8 +23,18 @@
   font-style: normal;
 }
 
+/* 한자 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+HK:wght@200;300;400;500;600;700;800;900&display=swap');
+
+/* font-family: 'Gowun Batang', serif; */
+@import url("https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap");
+
 .flex {
   display: flex;
+}
+
+.column {
+  flex-direction: column;
 }
 
 section {
@@ -69,10 +79,10 @@ section article.open:hover {
 }
 
 section article.open .open_txt {
-  flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
   height: 600px;
+  border-radius: 120px 120px;
   background: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(2px);
 }
@@ -99,17 +109,77 @@ section article.open .open_txt img {
 }
 
 section article.sec1 {
-  background: url(./images/back_1.png) no-repeat center /cover;
+  background: url(./images/open_back.jpg) no-repeat center /cover;
   background-attachment: fixed;
 }
 
-section article.sec1 div {
-  flex-direction: column;
-  color: #fff;
-  width: calc(100% - 4vw);
-  height: calc(100% - 4vw);
-  padding:2vw;
+section article.sec1 .sec1_left {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+section article.sec1 .sec1_left .left {
+  height: 60%;
+  width: 200px;
+  padding: 40px 0;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 120px 120px;
+  background: rgba(175, 175, 175, 0.1);
+  backdrop-filter: blur(5px);
+  transition: 2s ease-in-out;
+
   position: fixed;
+  top: 15%;
+  left: 40px;
+}
+
+@keyframes active {
+  0% { transform: translateX(-300px); }
+  100% { transform: translateX(0); }
+}
+
+section.active article.sec1 .sec1_left .left  {
+  animation: active 2s ease-in-out;
+  z-index: 99;
+}
+
+section article.sec1 .sec1_left .left span {
+  align-items: center;
+  gap: 25px;
+}
+
+section article.sec1 .sec1_left .left span a {
+  color: #fff;
+  font-family: 'Noto Serif HK';
+  text-transform: uppercase;
+  font-size: 1.1rem;
+}
+
+section article.sec2 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+section article.sec2 .right {
+  position: absolute;
+  top: 15%;
+  right:40px;
+  align-items: end;
+}
+
+section article.sec2 .right h1 {
+  font-family: 'JSongMyung-Regular-KO';
+  font-weight: 200;
+  font-size: 110px;
+}
+
+section article.sec2 .right h2 {
+  font-family: 'JSongMyung-Regular-KO';
+  font-weight: 200;
+  font-size: 70px;
 }
 
 .sec1 .logo {
@@ -118,10 +188,14 @@ section article.sec1 div {
 }
 
 .sec2 {
-  background: url(./images/back_3.png) no-repeat center / cover;
+  background: url(./images/back_1.png) no-repeat center / cover;
   background-attachment: fixed;
 }
 .sec3 {
+  background: url(./images/back_3.png) no-repeat center / cover;
+  background-attachment: fixed;
+}
+.sec4 {
   background: url(./images/back_2.png) no-repeat center / cover;
   background-attachment: fixed;
 }
