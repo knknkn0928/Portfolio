@@ -15,43 +15,6 @@
 // });
 
 
-/* 바로가기 버튼 변경
-
-$(document).ready(function(){
-    $("#menu_btn1").show();
-    $("#menu_btn2").hide();
-
-    $("#menu_btn1").click(function(){
-        $("#menu_btn1").hide();
-        $("#menu_btn2").show();
-    });
-
-    $("#menu_btn2").click(function(){
-        $("#menu_btn1").show();
-        $("#menu_btn2").hide();
-    });
-});
-*/
-
-// $('#menu_btn').on('click', (e) => {
-//     $('#sub_menu').animate({
-//       bottom: $('#sub_menu').css('bottom') === '0px' ? '100vh' : '0px'
-//     }, 300);
-//     $(e.target).toggleClass('opened');
-//   });
-
-//   // 이게 뭐냐?
-
-
-function submenu() {
-  let menu = document.querySelector("#sub_menu")
-  menu.classList.toggle("active");
-}
-
-
-
-
-
 /* about 스크롤시 페이드인아웃 */
 
 // $(window).scroll(function () {
@@ -116,5 +79,3 @@ function submenu() {
 //     }
 //   }, 400)
 // }
-
-/* 마우스 커서 */

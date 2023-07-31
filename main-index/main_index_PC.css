@@ -30,21 +30,31 @@ p {
 .sub_menu {
   position: fixed;
   background: url(./images/background_1.png) no-repeat center / cover;
-  width: 50%;
-  height: 100vh;
-  top:0;
-  bottom: 0;
-  right: 0;
+  overflow: hidden;
+
+  width: 2.5rem;
+  height: 2.5rem;
+
+  top:2.5vw;
+  right: 2.5vw;
   z-index: 99;
-  border-radius: 0 0 0 30%;
-  backdrop-filter: blur(5px);
+  border-radius: 5rem;
   align-items: center;
   justify-content: center;
-  display: none;
+  cursor: pointer;
+  /* display: none; */
+  transition: 0.6s;
+}
+
+.sub_menu:hover {
+  backdrop-filter: blur(3px);
+  height: calc(100% - 4vw);
+  width:25rem;
+  border-radius: 50rem 4rem 50rem 50rem ;
 }
 
 .sub_menu .nav {
-  width:50%;
+  width: 70%;
   height:45%;
 }
 
@@ -53,6 +63,7 @@ p {
   justify-content: space-evenly;
   width: 100%;
   height:100%;
+  gap: 1vw;
 }
 
 .sub_menu .sub_menu_title span {
@@ -79,6 +90,10 @@ p {
   z-index: 100;
   width: 100%;
   text-align: left;
+}
+
+.sub_menu .sub_menu_title a:nth-child(3) {
+  text-align: right;
 }
 
 .sub_menu .sub_menu_title:hover a {
@@ -147,12 +162,6 @@ header .text .header_bottom {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-header .text .header_bottom svg line {
-  stroke: #fff;
-  stroke-width: 2;
-  width: 200px;
 }
 
 header .text .header_bottom h6 {
@@ -345,7 +354,7 @@ header .text .header_bottom h6 {
 
 .about .sec2 h3 {
   align-items: end;
-  padding-right: 5vw;
+  padding-right: 8vw;
   transition: 0.3s;
 }
 
@@ -354,14 +363,13 @@ header .text .header_bottom h6 {
   padding: 0;
   width: 100%;
   z-index: 1;
-  justify-content: space-between;
   transition: 0.3s;
 }
 
 .about .sec2 .skill_list li {
   flex-wrap: wrap;
   align-items: center;
-  /* padding: 2vw 0; */
+  justify-content: space-between;
   width: 100%;
   height: 13vh;
   border-top: 1px solid #000;
@@ -399,7 +407,7 @@ header .text .header_bottom h6 {
   font-family: var(--main-txt-font);
   font-size: var(--font-size-40);
   font-weight: 700;
-  padding-left: 5vw;
+  padding-left: 8vw;
 }
 
 .about .sec2  h3 {
@@ -408,8 +416,8 @@ header .text .header_bottom h6 {
 }
 
 .about .sec2 .skill_list li span {
-  padding-right: 5vw;
-  width: calc(50% - 5vw);
+  padding-right: 8vw;
+  width: calc(50% - 3vw);
 }
 
 .about .sec2 .skill_list li span p {
@@ -425,8 +433,8 @@ header .text .header_bottom h6 {
 
 .project {
   justify-content: space-between;
-  padding: 5vw;
-  width: calc(100% - 10vw);
+  padding: 5vw 8vw;
+  width: calc(100% - 16vw);
   height: calc(100vh - 10vw);
 }
 
@@ -613,8 +621,8 @@ background-size: 7vw;
 /* graphic */
 
 .graphic {
-  padding: 5vw;
-  width: calc(100% - 10vw);
+  padding: 5vw 8vw;
+  width: calc(100% - 16vw);
   height: calc(100vh - 10vw);
 }
 
@@ -711,7 +719,7 @@ footer h1 {
 
 footer span {
   color:#fff;
-  font-size: var(--font-size-24);
+  font-size: var(--font-size-28);
   font-family: var(--main-txt-font);
   z-index: 10;
   text-align: center;
@@ -719,7 +727,6 @@ footer span {
 
 footer .contact {
   justify-content: space-between;
-  padding: 10px 0;
   gap: 15px;
 }
 

@@ -338,6 +338,25 @@ img {
     width: 50%
 }
 
+.sec2 .site_link {
+    font-family: var(--kr-txt-font);
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255, 0.2);
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    color:#fff;
+    text-align: center;
+    display: block;
+    width:200px;
+    padding: 1vw 2vw;
+    transition: 0.3s;
+}
+
+.sec2 .site_link:hover {
+    background-color: rgb(255, 255, 255, 0.8);
+    color:#000;
+}
+
 
 /* button */
 
