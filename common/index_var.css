@@ -147,7 +147,6 @@ html {
   -moz-user-select:none;
   -ms-user-select:none;
   user-select:none;
-  overflow-x: hidden;
 
   min-width: 1620px;
   max-width: 1920px;

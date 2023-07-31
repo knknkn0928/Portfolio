@@ -19,6 +19,7 @@
 html {
     background: url(../../main-index/images/background_1.png) no-repeat;
     background-attachment: fixed;
+    overflow-x: hidden;
 }
 
 p {
