@@ -243,6 +243,62 @@ img {
 .sec2 div .style_guide div img {width: 75%;}
 
 
+.sec2 .work {
+    gap: 2vw;
+}
+
+.sec2 div .work .filter {
+    width:50%;
+    background-color: rgba(172, 172, 172, 0.2);
+    border-radius: 25px;
+    transition: 0.3s;
+    align-items: center;
+}
+
+.sec2 div .work {
+    width: 100%;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.sec2 div .work div:first-child {
+    width: 70%;
+}
+.sec2 div .work div:last-child {
+    width: 30%;
+}
+
+.sec2 div .work div h4 {
+    padding-top:2vw;
+}
+
+.sec2 div .work div img {
+    padding: 2vw;
+    width: calc(100% - 4vw);
+}
+
+
+.sec2 .site_link {
+    font-family: var(--kr-txt-font);
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255, 0.2);
+    border: 1px solid #000000;
+    border-radius: 50%;
+    color:#000000;
+    text-align: center;
+    display: block;
+    width:200px;
+    padding: 1vw 2vw;
+    transition: 0.3s;
+}
+
+.sec2 .site_link:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+    color:#ffffff;
+}
+
+
+
 .sec2 .proto_box {
     gap: 2vw;
 }
