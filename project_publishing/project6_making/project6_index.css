@@ -17,8 +17,7 @@
 }
 
 html {
-    background: url(./images/background_0.png) no-repeat;
-    background-attachment: fixed;
+    background-color: #fff;
     overflow-x: hidden;
 }
 
@@ -293,6 +292,10 @@ img {
     font-size: var(--font-size-24);
 }
 
+.sec2 div .style_guide .fonts .guide_sub .font_sub:nth-child(2) h3 {
+    font-family: var(--main-txt-font);
+}
+
 .sec2 div .style_guide .fonts .guide_sub .font_sub:first-child {
     align-items: baseline;
 }
@@ -305,39 +308,80 @@ img {
 }
 
 .sec2 div .Description div {
-    width: 100%;
+    padding: 2vw;
+    width: calc(100% - 4vw);
     background: url(../../main-index/images/background_1.png);
     border-radius: 25px;
     align-items: center;
 }
 
-/* .sec2 div .main1 {
-    align-items: center;
-    justify-content: space-evenly;
-} */
-
 .sec2 div .Description img {
-    padding: 0 2vw;
-    width: calc(100% - 4vw);
+    width: 100%;
 }
 
 .sec2 div .Description h4 {
-    padding-top: 2vw;
     font-family: var(--kr-txt-font);
     font-size: var(--font-size-18);
     font-weight: bold;
 }
 
-.sec2 div .Description p {
-    padding: 0 2vw 2vw;
+.sec2 div .Description .main3 {
+    position: relative;
+    align-items: end;
 }
 
-.sec2 div .main2 img:first-child {
-    width: 13vw;
-    padding-left:5vw;
-    transition: 0.5s;
+.sec2 div .Description .main3 img {
+    width: 60%;
 }
 
+.sec2 div .Description .main3 .easter_egg {
+    display: block;
+    cursor: pointer;
+    width: 250px;
+    border-bottom: 1px solid #000;
+}
+
+.sec2 div .Description .main3 .easter_egg .hidden {
+    position: absolute;
+    top:35%;
+    left:30%;
+    width: 200px;
+    transition: 0.3s;
+    opacity: 0;
+}
+
+.sec2 div .Description .main3 .easter_egg:hover .hidden {
+    opacity: 1;
+}
+
+.sec2 div .Description .main3 .rip {
+    align-items: end;
+    font-weight: bold;
+}
+
+.sec2 div .Description .main3 span .rip img {
+    width: 75%;
+}
+
+.sec2 div .Description .main5 span h4 {
+    color:#fff;
+    font-size: var(--font-size-70);
+    text-align: center;
+}
+
+.sec2 div .Description .main5 span img {
+    width: 50%;
+}
+
+.sec2 div .Description .hover {
+    width: calc(100% - 4vw);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sec2 div .Description .hover img:last-child {
+    width: 30%;
+}
 
 /* button */
 

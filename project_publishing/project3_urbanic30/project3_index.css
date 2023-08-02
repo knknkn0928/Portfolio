@@ -304,14 +304,16 @@ img {
 }
 
 .sec2 div .proto_box .main2 div img {
-    width: 100%;
+    width: 70%;
+    margin: 0 auto;
 }
 
 .sec2 div .proto_box .main2 .Easter_Egg {
     position: relative;
-    justify-content: center;
     cursor: pointer;
     align-items: center;
+    width: 270px;
+    margin: 0 auto;
 }
 
 .sec2 div .proto_box .main2 .Easter_Egg .p_center {
@@ -326,12 +328,12 @@ img {
     object-fit: contain;
     position: absolute;
     bottom:5vh;
-    opacity: 0;
+    display: none;
     transition: 0.3s;
 }
 
 .sec2 div .proto_box .main2 .Easter_Egg:hover .hidden {
-    opacity: 1;
+    display: block;
 }
 
 

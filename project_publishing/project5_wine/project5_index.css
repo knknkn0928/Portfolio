@@ -330,13 +330,15 @@ img {
     font-size: var(--font-size-16);
 }
 
-.sec2 div .proto_box div img {
+.sec2 div .proto_box .des img:first-child {
     width: 100%;
 }
 
-.sec2 div .proto_box div .des2 {
-    width: 50%
+.sec2 div .proto_box div img {
+    margin: 0 auto;
+    width: 50%;
 }
+
 
 .sec2 .site_link {
     font-family: var(--kr-txt-font);

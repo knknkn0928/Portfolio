@@ -48,8 +48,8 @@ p {
 
 .sub_menu:hover {
   backdrop-filter: blur(3px);
-  height: calc(100% - 4vw);
-  width:25rem;
+  height: calc(100% - 5vw);
+  width:23rem;
   border-radius: 50rem 4rem 50rem 50rem ;
 }
 
@@ -783,7 +783,6 @@ footer .contact div img {
   height: 20px;
   border-radius: 50%;
   text-align: center;
-  line-height: 90px;
   /* will-change: transform; */
   pointer-events: none;
   z-index: 10;

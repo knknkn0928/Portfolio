@@ -93,7 +93,7 @@
 
         <div class="Concept flex">
             <h2>Concept</h2>
-            <p>"COSMIC DUST", 기존에 제작되었던 포트폴리오들의 디자인 테마를 이어서 컨셉을 잡고 구상을 진행하였습니다. 전체적으로 화이트의 공백을 많이 주어 깨끗하고 넓은 느낌을 주고자 하였습니다.</p>
+            <p>"COSMIC DUST", 기존에 제작되었던 포트폴리오들의 디자인 테마를 이어서 컨셉을 잡고 구상을 진행하였습니다. 화이트와 공백을 주어 깨끗하고 넓은 느낌을 주고자 하였습니다.</p>
         </div>
     </section>
 
@@ -122,7 +122,7 @@
                             <span class="flex column">
                                 <p></p>
                                 <p>#Light gray</p>
-                                <p>Backdrop filter</p>
+                                <p>skills Background</p>
                             </span>
                             <span class="flex column">
                                 <p></p>
@@ -162,33 +162,59 @@
                 <div class="main1 flex column gap">
                     <h4>Index Page 구상 단계</h4>
                     <img src="./images/design_proto.PNG" alt="디자인 초기 시안">
-                    <p class="fz16">제품의 브랜드 이미지와 서정적인 분위기를 보여주는 동시에 제품이 가진 스타일을 빠르게 한 눈에 보여줄 수 있도록 계획함. 제품의 링크 영역에 mouseover 시 background 영역에 컨셉 포토, 피팅 이미지를 띄워 확인할 수 있도록 디자인 단계에서 컨셉을 구상.</p>
+                    <p class="fz16">노이즈와 텍스쳐를 사용한 Background 이미지를 테마로 index의 디자인을 구상. svg를 사용하여 행성의 궤도가 회전하는 모습을 염두에 두고 COSMIC이라는 이미지를 심플하고 뚜렷하게 표현하고자 함.</p>
+                    <p class="fz16">작업 중 깨달았는데, 이미지로 만들어놓은 것을 동적인 형태로 구현하니 <strong>처음 생각한 시안만큼 만족스러운 조화를 이루지 못했다.</strong> 편집 디자인과 영상 디자인의 배치가 움직임을 고려하고 달라져야 하는 것과 비슷한 선상. 하지만 생각해보면 웹 디자인의 레이아웃은 지류와 영상 사이의 어딘가에 존재하는 것 같다. 고정되어 있는 영역과 mouseover되는 영역과 hidden으로 숨겨놓고 커서 진입시 인터랙션과 유사한 형태로 확인되는 영역을 별개로 두지 않는 것이 중요한 것 같다는 깨달음.</p>
                 </div>
-
 
                 <div class="main2 flex column gap">
-                    <h4>jquery 시도</h4>
-                    <img src="./images/description2.png" alt="이벤트 코드">
-                    <p class="fz16">각 파트 별로 적용되어야 하는 이미지가 다르기 때문에 eq(n)을 통하여 인덱스를 찾도록 해도 함수를 실행시킨 뒤 교체시켜야 하는 이미지가 각각 별개이기 때문에 의미가 없다는 깨달음을 얻다. 물론 방법이 있겠지만 현재 내가 가진 기술로는 마땅한 해결방법이 없었다. 초보자의 지옥, 엄청나게 긴 JS 코드만이 나를 따뜻하게 맞이해주었다.</p>
+                    <h4>Scroll Event의 고찰</h4>
+                    <img src="./images/horizontal_scroll.PNG" alt="가로 스크롤 이미지">
+                    <p class="fz16">구상 단계부터 가로 스크롤, 그리고 휠 한번에 페이지 한 장이 이동하는 스크롤 이벤트를 넣고자 했다. about 파트의 what am i 와 skills 영역이 한 줄로 길게 이어지면 보기가 더 좋을거라는 판단을 해서였는데-그 또한 오판이었음- container를 제작하고, flex를 사용하여 가로 스크롤을 구현하는 데까지 성공하였으며, 한 페이지가 넘어가는 script를 작성해 적용했다.</p>
                 </div>
-
-                <div class="main3 flex column gap">
-                    <h4>기억에 남는 점</h4>
-                    <img src="./images/description1.png" alt="이벤트 코드2">
-                    <!-- <div class="Easter_Egg flex">
-                        <img src="./images/headache.jpg" alt="아이고 머리야" class="hidden">
-                        <p class="p_center">이어지는 nth-child(n)개의 코드 행렬</p>
-                    </div> -->
-
-                    <p class="fz16">해결책. 제품 클릭 영역위로 mouseover시 배경에 넣어둔 .shop_bg의 이미지를 지정해 둔 피팅 이미지로 교체하는 방식을 사용. 직관적이고 간결하지만 제품 별로 교체 이미지가 다르기 때문에 각자 코드가 길어지는 단점이 생겼다. 미리 교체할 파일의 이름을 동일하게 설정해놓고 함수를 통해 지정한 영역에서 파일을 꺼내오거나 하는 방식이 있지 않을까? 하는 생각이 들지만...</p>
-                    <p class="fz16">슬라이드를 만드는 방식(box 안에 flex를 이용하여 일렬 정렬시킨뒤 옆으로 이동시키는 방법)을 사용하면 유사하게 만들어 낼 수 있을지 모른다는 생각에 이런 저런 방법을 구상해보았는데, 어느 것도 실행할 수 없었다. 하지만 오히려 그 점에서 용기를 얻었고 어쩌면 지금 당장 할 수 있는 가장 좋은 방법을 찾아냈을지도 모른다는 생각이 들었다. </p>
+                <div class="main3 flex gap">
+                    <img src="./images/horizontal_scroll2.PNG" alt="한페이지 스크롤링" clss="one_scroll">
+                    <span class="flex column gap">
+                        <span class="easter_egg">
+                            <h4>그리고 가로 스크롤을 삭제하기까지</h4>
+                            <img src="./images/easter_egg.jpg" alt="이럴수가" class="hidden">
+                        </span>
+                        <p class="fz16">순조롭다 싶더라니, 아니나 다를까 문제가 발생했다. 가로 스크롤에 도달하면 매끄럽게 한 장이 넘어가는 것이 아니라 애매한 지점에서 스크롤이 멈추기를 반복했다. 그 탓에 다음 페이지의 스크롤도 적용되지 않기는 매한가지였다. 그리고 문득 떠오르는 깨달음...</p>
+                        <p class="fz16">script에 height 값을 기준으로 이동하도록 작성했기 때문에 <strong>
+                        가로 스크롤에서도 해당 section의 높이 값 만큼만 horizontal 이동</strong>하기 때문에 애매한 중간 지점에서 멈춘 것이다.</p>
+                        <P class="fz16">script를 다르게 작성하는 방법이 있었겠지만 디자인이 마음에 들지 않았던 탓에 그냥 가로 스크롤을 삭제하고 기존 스크롤 방식을 따르는 쪽을 골랐다.</P>
+                        <span class="rip flex column">
+                            <img src="./images/horizontal_scroll3.PNG" alt="RIP">
+                            <p class="fz16">#R.I.P 가로 스크롤</p>
+                        </span>
+                    </span>
                 </div>
 
                 <div class="main4 flex column gap">
-                    <h4>기억에 남는 점</h4>
-                    <p class="fz16">당초 목적에는 delay나 transition을 통한 딜레이로 사이트의 전체적인 무드와 분위기를 맞추고자 하는 마음이 있었는데 사용자의 입장에서 고려해보니 제품 하나하나에 그렇게 긴 시간을 들이고 싶지 않았다. 그래서 이미지가 페이드 되는 딜레이를 과감하게 제외하고 fixed를 적용해 화면을 크게 채울 수 있도록 마무리 했다. 기존 웹을 탐색하고 UIUX 비전을 설정할 때부터 제품을 판매하는 사이트라는 점을 명확히 하고 유도하고 싶은 마음이 있었는데, 그와 동시에 사이트를 경험할 때 느려서 생기는 불쾌함을 줄이는 편이 낫다고 판단했다. 시각을 다각화하여 생각할 수 있도록 계속 노력해야겠다.</p>
-                    </div>
-            </div>
+                    <h4>마우스 커서 이벤트</h4>
+                    <img src="./images/cursor_event.PNG" alt="이벤트 코드2">
+                    <p class="fz16">main page를 후반에 수정했기 때문에 sub page의 디자인이 먼저 제작되었는데, 각 페이지에 <strong>.easter_egg</strong>를 숨겨놓던 중에 떠오른 아이디어.</p>
+                    <p class="fz16">포트폴리오의 메인 페이지에서도 숨겨진 영역을 몇가지 두면 재미있겠다는 생각이 들었다. 물론 이스터 에그처럼 티나지 않게 숨기는 것은 아니고, 적절한 유도를 통하여 숨겨진 텍스트와 정보값 등을 작성하여 발견하게 하는 것도 제법 즐겁지 않을까? 전체적인 디자인자체가 흑백이고 깨끗하게 레이아웃을정리하는 쪽을 선택해서 작업했기 때문에 이런 작은 요소를 주는 것이 페이지를 내리면서 흥미를 끊이지 않게 할 수 있을 것이라는 생각이 들었다. 무엇보다도 포트폴리오야 말로 나의 아이덴티티와 성격, 제작자의 요소를 보여주는 것이라고 생각했기 때문에 이것을 하나의 컨셉처럼 작용시킬 수 있겠다는 판단을 내렸다.</p>
+                </div>
+
+                <div class="main5 flex column gap">
+                    <span class="flex gap">
+                        <img src="./images/cursor_hover.PNG" alt="마우스 커서 이벤트">
+                        <span class="flex column gap">
+                            <h4>✴</h4>
+                            <p class="fz16">마우스를 따라다니는 커서를 우선 작성했다. 영상을 작업할 때에도 키프레임에 ease-in-out의 베지어를 적용해 자연스러운 움직임과 생동감을 주는 쪽을 선호해서 마우스의 이동을 반 박자 늦게 따라올수 있도록 시간을 조정했다. 또한 커서가 마우스의 이동보다 늦기 때문에 선택하는 영역을 알 수 있도록 하기 위해 기본 커서는 지우지 않은 채로 두었다.</p>
+                            <p class="fz16">Background 영역에 배경의 텍스쳐를 사용하려 했는데, 전체적으로 유사한 텍스쳐의 이미지를 많이 사용했다보니 어떤 페이지에서는 커서가 있더라도 한 눈에 확인하기 어려울 듯 했다. 고민끝에 포인트가 될 컬러를 지정해 흑백의 페이지에 강조를 주기로 결정했다.</p>
+                        </span>
+                    </span>
+                </div>
+
+                <div class="hover flex gap">
+                    <img src="./images/cursor_hover2.PNG" alt="커서 호버 이벤트">
+                    <span class="hover flex column gap">
+                        <img src="./images/cursor_hover3.PNG" alt="커서 호버 이벤트">
+                        <p class="fz16">.active를 작성한 뒤 스크립트를 작성하여 지정한 위치에 도달 시 커서 이미지가 확대되고, 그를 통해 숨겨놓은 텍스트가 그 안에 비춰지도록 만들었다.</p>
+                    </span>
+                    <img src="./images/cursor_event2.PNG" alt="커서 호버 이벤트">
+                </div>
             </div>
         </div>
 
@@ -196,22 +222,7 @@
             <h2>Review</h2>
             <span class="flex gap">
                 <h4>Good</h4>
-                <p>전체적으로 실수나 문제점이 발생한 상황을 어려워하거나 힘들어하지 않고 긍정적으로 해결하는 분위기로 작업을 진행할 수 있어 좋았습니다. 또한 여러 의견을 주고받고 논의하여 더 나은 효과를 사용하여 처음 구상보다 더 발전한 결과물을 보일수 있었던 점, 서로를 북돋아 주는 분위기 덕분에 쳐지는 일 없이 빠르게 기간 내 진행할 수 있었습니다.</p>
-            </span>
-            <span class="flex gap">
-                <h4>Bad</h4>
-                <span class="flex column">
-                    <p>- 진행이 빨랐던 만큼 조금 더 보완할 수 있었던 파트를 제대로 눈여겨보지 못함</p>
-                    <p>- 맡은 부분을 구현하는 개개인의 속도가 달라서 배분된 task의 양이 달랐음</p>
-                </span>
-            </span>
-            <span class="flex gap">
-                <h4>Takeaway</h4>
-                <span>
-                    <p>- git hub의 team 사용과정에서의 주의점을 숙지하게 된 점</p>
-                    <p>- 단기적으로 주어진 목표에 집중하여 우선순위를 맞추고 차례대로 행동할 수 있는 구상력</p>
-                    <p>- 타인의 코드를 읽고 이해하여 수정하는 과정을 통해 웹페이지의 구성 이해 능력 향상</p>
-                </span>
+                <p class="fz16">그 동안 작성해온 포트폴리오 디자인의 컨셉은 테마 컬러를 몇 가지 정해 그 셋을 조화롭게 꾸며내는 인상이 강했다. 그래서 이번 웹 포트폴리오의 디자인을 구상할 때에도 다양한 컬러 팔레트를 고민해보았는데 역시 가장 편안하고 좋아하는 컬러를 고르는 것이 정답이었는지도 모르겠다.</p>
             </span>
         </div>
 
