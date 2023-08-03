@@ -325,6 +325,12 @@ img {
     font-weight: bold;
 }
 
+.sec2 div .Description .main0 h4 {
+    font-family: var(--kr-txt-font);
+    width: 25%;
+    color: crimson;
+}
+
 .sec2 div .Description .main3 {
     position: relative;
     align-items: end;
@@ -360,7 +366,7 @@ img {
 }
 
 .sec2 div .Description .main3 span .rip img {
-    width: 75%;
+    width: 70%;
 }
 
 .sec2 div .Description .main5 span h4 {
@@ -369,18 +375,28 @@ img {
     text-align: center;
 }
 
-.sec2 div .Description .main5 span img {
-    width: 50%;
-}
-
-.sec2 div .Description .hover {
-    width: calc(100% - 4vw);
+.sec2 div .Description .main6 {
     justify-content: space-between;
-    align-items: center;
 }
 
-.sec2 div .Description .hover img:last-child {
-    width: 30%;
+.sec2 div .Description .main6 img {
+    width: 33%;
+}
+
+.sec2 div .Description .main6 .hover {
+    justify-content: space-between;
+    display: block;
+    width: 33%;
+}
+
+.sec2 div .Description .main6 .hover img {
+    width: 100%;
+}
+
+.sec2 div .Description .main7 span p {
+    text-align: center;
+    font-weight: bold;
+    color: #dc143c;
 }
 
 /* button */
