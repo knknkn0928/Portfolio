@@ -550,7 +550,7 @@ header .text .header_bottom h6 {
   position: absolute;
   display: block;
   border-bottom: 4px solid #000;
-  transition: width 0.2s ease-out;
+  transition: width 0.4s ease-out;
   left: auto;
   right: 0;
   bottom: -5px;
@@ -691,6 +691,8 @@ background-size: 7vw;
   grid-column: span / 4;
   
   background: url(../project_design/graphic4_myrtle/images/project1.jpg) no-repeat center / cover;
+  background-position:25% 10%;
+  background-size: 220%;
 }
 
 .graphic .grid .grd1 {
