@@ -1,0 +1,185 @@
+@charset "utf-8";
+
+* { margin: 0; }
+
+:root { scroll-behavior : auto }
+
+body { overflow-x: hidden; margin: 0; }
+
+.flex { display: flex; }
+
+.column { flex-direction: column; }
+
+.gap { gap:2vw; }
+
+.grid {
+    border: 1px solid silver;
+    background-size: 20px, 40px, 20px 20px, 40px 40px;
+    background-image: linear-gradient(90deg, #00000004 2px, transparent 2px), linear-gradient(90deg, #00000004 2px, transparent 2px), linear-gradient(#00000004 2px, transparent 2px), linear-gradient(#00000004 2px, transparent 2px);
+  }
+
+p {
+  font-family: var(--kr-txt-font);
+  font-size: var(--font-size-20);
+}
+
+header {
+    width: calc(100% - 20vw);
+    padding: 10vw 10vw 0 10vw;
+    gap:15rem;
+}
+
+header div h1 {
+    text-align: right;
+    text-transform: uppercase;
+    font-family: var(--main-txt-font);
+    font-size: var(--font-size-60);
+    font-weight: 600;
+    margin-right: 5vw;
+}
+
+header div h1:nth-child(2) {
+    color:crimson;
+}
+
+header menu {
+    text-transform: uppercase;
+    font-family: var(--main-txt-font);
+    font-size: var(--font-size-24);
+    font-weight: 600;
+    border-left: 10px solid crimson;
+    padding-bottom: 13rem;
+    margin-left: 5vw;
+}
+
+
+section {
+    width: calc(100% - 20vw);
+    padding: 0 10vw 7rem 10vw;
+}
+
+section h2 {
+    font-size: var(--font-size-20);
+    font-family: var(--main-txt-font);
+    font-weight: 600;
+    width: 40%;
+    text-transform: uppercase;
+}
+
+section p {
+    font-size: var(--font-size-17);
+    font-family: var(--kr-txt-font);
+}
+
+.sec1 {
+    gap: 3vw;
+}
+
+.sec1 .bi_img {
+    background: url(./images/logo_BI.png) no-repeat center 35% /cover;
+    height: 20rem;
+}
+
+.sec1 div {
+    justify-content: right;
+}
+
+.sec1 div div{
+    width: 50%;
+}
+
+.sec2 {
+    gap: 3vw;
+}
+
+.sec2 .box {
+    padding: 2vw;
+    justify-content: space-evenly;
+    align-items: center;
+}
+  
+.sec2 .grid img {
+    width: 13.5rem;
+    object-fit: contain;
+}
+
+.sec2 .grid img:first-child {
+    width: 15rem;
+}
+
+.sec2 div {
+    justify-content: right;
+}
+
+.sec2 div div{
+    width: 50%;
+}
+
+.sec3 {
+    gap: 3vw;
+}
+
+.sec3 .concept_img {
+    background: url(./images/Dancheong.jpg) no-repeat center 10% /cover;
+    height: 20rem;
+}
+
+.sec3 div {
+    justify-content: right;
+    width: 100%;
+}
+
+.sec3 div div {
+    width: 50%;
+}
+
+
+.sec4 {
+    width: calc(100% - 5vw);
+    padding: 0 5vw 10vw 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sec4 .container1 {
+    width: 45rem;
+    height: 35rem;
+    overflow: hidden;
+    align-items: center;
+}
+
+.sec4 .container1 img {
+    object-fit: cover;
+    height: 170%;
+    transform: translateX(-18rem) translateY(-2rem);
+}
+
+.sec4 .container2 {
+    padding: 2vw;
+    width: 30rem;
+    height: calc(35rem - 4vw);
+    justify-content: center;
+}
+
+.sec4 .container2 img {
+    object-fit: contain;
+}
+
+.sec4 .container3 p {
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.sec4 .container3 .btn_black {background-color: #000;}
+.sec4 .container3 .btn_red {background-color: #a12222;}
+.sec4 .container3 .btn_gold {background-color: #998649;}
+
+.active {
+    border: 1px solid #858585;
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+}

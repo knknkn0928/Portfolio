@@ -30,6 +30,7 @@
 
   <!-- script -->
   <script src="../../common/jquery-3.7.0.min.js"></script>
+  <script defer src="./graphic1_index.js"></script>
 </head>
 <body>
 
@@ -43,22 +44,25 @@
         <menu class="flex column gap">
             <li>logo</li>
             <li>process logo making</li>
-            <li>package design</li>
             <li>design concept</li>
+            <li>package design</li>
         </menu>
     </header>
 
-    <section class="sec1 flex column">
-        <h2 class="bi_img">.</h2>
+    <section class="sec1 flex column gap">
+        <h3 class="bi_img">.</h3>
 
         <div class="flex gap">
-            <h3>logo</h3>
-            <span>
-                <h3>"향기로운 물, 곡수曲水의 술"</h3>
+            <h2>logo</h2>
+            <div>
+                <h3>"향기로운 우물"</h3>
                 <p>전통을 베이스로 한 주류 브랜드를 기본으로 네이밍. </p>
                 <p>BI는 향기로울 향香, 우물 정井을 합친 형태로 제작.</p>
-            </span>
+            </div>
         </div>
+    </section>
+
+    <section class="sec2 flex column gap">
 
         <div class="box grid flex gap">
             <img src="./images/logo1.png" alt="logo">
@@ -66,8 +70,8 @@
             <img src="./images/logo3.png" alt="logo">
         </div>
 
-        <div class="flex gap">
-            <h3>process logo making</h3>
+        <div class="process flex gap">
+            <h2>process logo making</h2>
             <div>
                 <p>1) 패키지 및 라벨에 단독으로 쓰이는 BI</p>
                 <p>2) 타이틀과 배치되는 BI 시안 1번</p>
@@ -76,17 +80,28 @@
         </div>
     </section>
 
-    <section class="sec2 flex">
-        <div class="container1">
-            <h2>.</h2>
+    <section class="sec3 flex column gap">
+        <h3 class="concept_img">.</h3>
+        <div class="flex gap">
+            <h2>design concept</h2>
+            <div class="flex column gap">
+                <p>한국의 주류 브랜드이자 전통적 스타일을 컨셉으로 하였기에 먹과 시서화, 다양한 요소를 후보로 두었습니다. 이후 와인 라벨 디자인 논문을 통해 고급스러운 이미지를 구축하고자 궁궐과 사찰, 서원 등에 사용된 "단청", 그리고 "자개"를 디자인의 메인 컨셉으로 선택했습니다.</p>
+                <p>단청은 한국의 전통 목조건축물에 여러 가지 색으로 무늬를 그려 아름답고 장엄하게 장식하는 것을 말합니다.</p>
+            </div>
         </div>
-        <div class="container2 grid">
+    </section>
+
+    <section class="sec4 flex gap">
+        <div class="container1 flex">
+            <img src="./images/back_1.png" alt="package" class="package_img">
+        </div>
+        <div class="container2 grid flex">
             <img src="./images/design2.png" alt="logo">
         </div>
         <div class="container3 flex column gap">
-            <p> </p>
-            <p> </p>
-            <p> </p>
+            <p class="btn_black"> </p>
+            <p class="btn_red"> </p>
+            <p class="btn_gold"> </p>
         </div>
     </section>
 </body>
