@@ -92,7 +92,7 @@
     </div>
   </header>
 
-  <section class="about" id="About">
+  <section class="about page" id="About">
         <div class="sec1 flex column page">         
           <div class="sec1_top flex column">
 
@@ -107,8 +107,8 @@
                 <p>UI UX를 통한 웹의 접근성과 디자인의 연계에 대해 고민하며 공부중입니다.</p>
               </div>
               <div class="year flex column">
+                <p>GTQ 1급 , GTQi 1급, 컴퓨터그래픽스운용기능사 취득&nbsp;&nbsp;&nbsp;<strong>LICENSE</strong></p>
                 <p>컨텐츠, 배너, 영상, 편집 디자이너 4년차 근무&nbsp;&nbsp;&nbsp;<strong>2018-2022</strong></p>
-                <p>GTQ 1급 , GTQi 1급, 컴퓨터그래픽스운용기능사 취득&nbsp;&nbsp;&nbsp;<strong>2016/2022</strong></p>
                 <p>웹디자인기능사 필기 합격, 웹퍼블리싱 수업 이수&nbsp;&nbsp;&nbsp;<strong>2023 NOW</strong></p>
               </div>
             </div>
@@ -124,8 +124,10 @@
           </div>
 
         </div>
+        </section>
 
-        <div class="sec2 flex column page">
+        <section class="skill page">
+        <div class="sec2 flex column">
               <ul class="skill_list flex column">
                 <li class="flex">
                   <h4>HTML5 & CSS3</h4>
@@ -230,18 +232,18 @@
       <li class="wine">
         <a href="./project_design/graphic1_wine/graphic1_index.html" class="flex">wine</a>
       </li>
+      <li class="diamant">
+        <a href="./project_design/graphic2_diamant/graphic2_index.html" class="flex">
+          Cake diamant
+        </a>
+      </li>
       <li class="grd1">
         <a href="#" class="flex">
           grd1
         </a>
       </li>
-      <li class="diamant">
-        <a href="#" class="flex">
-          Cake diamant
-        </a>
-      </li>
       <li class="myrtle">
-        <a href="#" class="flex">
+        <a href="./project_design/graphic4_myrtle/graphic4_index.html" class="flex">
           myrtle
         </a>
       </li>
@@ -266,10 +268,17 @@
       </div>
     </div>
 
-    <!-- <div class="up_btn flex column" id="up_btn">
+    <div class="up_btn flex column" id="up_btn">
       <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48"><path d="m283-345-43-43 240-240 240 239-43 43-197-197-197 198Z"/></svg>
       <p>UP TO</p>
-  </div> -->
+  </div>
+
+  <script>
+    const up_btn = document.querySelector(".up_btn");
+    up_btn.onclick = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });  
+    }
+  </script>
   </footer>
 
 </body>
