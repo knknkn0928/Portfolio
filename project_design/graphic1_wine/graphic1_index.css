@@ -120,7 +120,7 @@ section p {
 }
 
 .sec3 .concept_img {
-    background: url(./images/Dancheong.jpg) no-repeat center 10% /cover;
+    background: url(./images/Dancheong.jpg) no-repeat top / cover;
     height: 20rem;
 }
 
@@ -182,4 +182,27 @@ section p {
     border-radius: 50%;
     width: 2.5rem;
     height: 2.5rem;
+}
+
+
+.back_btn {
+    color:#000000;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    position: fixed;
+    top:1vw;
+    left: 1vw;
+    z-index: 999;
+    gap:1vw
+}
+
+.back_btn svg {
+    fill:#000000;
+    width: 35px;
+}
+
+.back_btn p {
+    font-family: var(--main-txt-font);
+    font-weight:500;
 }

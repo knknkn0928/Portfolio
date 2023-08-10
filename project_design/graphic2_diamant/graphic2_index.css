@@ -39,7 +39,7 @@ header div h1 {
 }
 
 header div h1:nth-child(2) {
-    color:crimson;
+    color:rgb(255, 167, 194);
 }
 
 header menu {
@@ -47,7 +47,7 @@ header menu {
     font-family: var(--main-txt-font);
     font-size: var(--font-size-24);
     font-weight: 600;
-    border-left: 10px solid crimson;
+    border-left: 10px solid rgb(255, 167, 194);
     padding-bottom: 13rem;
     margin-left: 5vw;
 }
@@ -133,4 +133,27 @@ section p {
 
 .sec3 div div {
     width: 50%;
+}
+
+
+.back_btn {
+    color:#000000;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    position: fixed;
+    top:1vw;
+    left: 1vw;
+    z-index: 999;
+    gap:1vw
+}
+
+.back_btn svg {
+    fill:#000000;
+    width: 35px;
+}
+
+.back_btn p {
+    font-family: var(--main-txt-font);
+    font-weight:500;
 }
