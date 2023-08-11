@@ -39,7 +39,8 @@ header div h1 {
 }
 
 header div h1:nth-child(2) {
-    color:crimson;
+    color:rgb(255, 255, 255);
+    text-shadow: -1px 0px #998649, 0px 1px #998649, 1px 0px #998649, 0px -1px #998649;
 }
 
 header menu {
@@ -47,7 +48,7 @@ header menu {
     font-family: var(--main-txt-font);
     font-size: var(--font-size-24);
     font-weight: 600;
-    border-left: 10px solid crimson;
+    border-left: 10px solid #998649;
     padding-bottom: 13rem;
     margin-left: 5vw;
 }
