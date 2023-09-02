@@ -652,8 +652,8 @@ background-size: 7vw;
 .graphic .grid {
   gap:20px;
   height: 100%;
-  grid-template-columns:1fr 1fr 1fr;
-  grid-template-rows:1fr 1fr 1fr;
+  grid-template-columns:1fr 1fr 1fr 1fr;
+  grid-template-rows:1fr 1fr 1fr ;
 }
 
 .graphic .grid li {
@@ -681,7 +681,6 @@ background-size: 7vw;
 .graphic .grid .diamant {
   grid-row: 1 / span 2;
   grid-column: 2 / span 1;
-
   background: url(../project_design/graphic2_diamant/images/diamant_cookie.jpg) no-repeat center / cover;
 }
 

@@ -39,7 +39,8 @@ header div h1 {
 }
 
 header div h1:nth-child(2) {
-    color:rgb(255, 167, 194);
+    text-shadow: -1px 0px #ffa7c2, 0px 1px #ffa7c2, 1px 0px #ffa7c2, 0px -1px #ffa7c2;
+    color:#fff7ad;
 }
 
 header menu {
@@ -47,7 +48,7 @@ header menu {
     font-family: var(--main-txt-font);
     font-size: var(--font-size-24);
     font-weight: 600;
-    border-left: 10px solid rgb(255, 167, 194);
+    border-left: 10px solid #fff7ad;
     padding-bottom: 13rem;
     margin-left: 5vw;
 }
@@ -95,7 +96,7 @@ section p {
 }
 
 .sec2 .box {
-    padding: 2vw;
+    padding: 3vw 2vw;
     justify-content: space-evenly;
     align-items: center;
 }
@@ -118,21 +119,46 @@ section p {
 }
 
 .sec3 {
-    gap: 3vw;
+    height: calc(100vh - 10vw);
 }
 
-.sec3 .concept_img {
-    background: url(./images/Dancheong.jpg) no-repeat center 10% /cover;
-    height: 20rem;
+.sec3 .package {
+    width: 70%;
+    height: 50rem;
+    flex-wrap: wrap;
 }
 
-.sec3 div {
-    justify-content: right;
-    width: 100%;
+.sec3 .package .concept_img {
+    filter: grayscale(100%);
+    display: block;
 }
 
-.sec3 div div {
+.sec3 .package .concept_img:nth-child(1) {
+    background: url(./images/package0.jpg) no-repeat center / cover;
+    background-size: 150%;
+    background-position: 60% 40%;
     width: 50%;
+    height: 100%;
+}
+
+.sec3 .package .concept_img:nth-child(2) {
+    background: url(./images/package1.jpg) no-repeat center / cover;
+    width: 25%;
+    height: 45%;
+}
+.sec3 .package .concept_img:nth-child(3) {
+    background: url(./images/package2.jpg) no-repeat center / cover;
+    width: 25%;
+    height: 45%;
+}
+
+.sec3 > .concept {
+    justify-content: right;
+    width: 30%;
+}
+
+.sec3 > .concept > div {
+    width: 100%;
 }
 
 
