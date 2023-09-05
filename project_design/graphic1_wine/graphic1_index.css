@@ -213,23 +213,21 @@ section p {
         display: flex;
     }
     .tab_menu .tab_btn li {
+        cursor: pointer;
         list-style: none;
         position: relative;
-    }
-
-    .tab_menu .tab_btn li a {
         font-size: 1.3rem;
         font-family: var(--main-txt-font);
         font-weight: 600;
         transition: 0.5s;
+        padding-left: 10px;
     }
 
-    .tab_menu .tab_btn li.active a {
+    .tab_menu .tab_btn li.active {
         transition: 0.5s;
-        /* height: 15px; */
     }
 
-    .tab_menu .tab_btn li:nth-child(1) a::before {
+    .tab_menu .tab_btn li:nth-child(1)::before {
         content: "";
         position: absolute;
         left: -100px;
@@ -242,12 +240,12 @@ section p {
         height: 0;
     }
 
-    .tab_menu .tab_btn li:nth-child(1).active a::before {
+    .tab_menu .tab_btn li:nth-child(1).active::before {
         right: auto;
         height: 15px;
     }
 
-    .tab_menu .tab_btn li:nth-child(2) a::before {
+    .tab_menu .tab_btn li:nth-child(2)::before {
         content: "";
         position: absolute;
         left: -100px;
@@ -260,12 +258,12 @@ section p {
         height: 0;
     }
 
-    .tab_menu .tab_btn li:nth-child(2).active a::before {
+    .tab_menu .tab_btn li:nth-child(2).active::before {
         right: auto;
         height: 15px;
     }
 
-    .tab_menu .tab_btn li:nth-child(3) a::before {
+    .tab_menu .tab_btn li:nth-child(3)::before {
         content: "";
         position: absolute;
         left: -100px;
@@ -278,14 +276,9 @@ section p {
         height: 0;
     }
 
-    .tab_menu .tab_btn li:nth-child(3).active a::before {
+    .tab_menu .tab_btn li:nth-child(3).active::before {
         height: 15px;
         right: auto;
-    }
-
-    .tab_menu .tab_btn li a {
-        display: block;
-        padding: 10px;
     }
 
     .tab_menu .tab_cont {
@@ -304,7 +297,7 @@ section p {
         font-family: var(--kr-txt-font);
         position: absolute;
         right: 0;
-        bottom: 60px;
+        bottom: 30px;
         width: 50%;
         height: 10rem;
         text-align: right;
