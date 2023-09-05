@@ -1,81 +1,17 @@
+$(".popup_btn").click(function(){
+	$(".sub_menu").addClass("active");
+});
 
-// $(document).ready(function(){
-//   var mouseX, mouseY;
-//   var ww = $( window ).width();
-//   var wh = $( window ).height();
-//   var traX, traY;
-//   $(document).mousemove(function(e){
-//     mouseX = e.pageX;
-//     mouseY = e.pageY;
-//     traX = ((4 * mouseX) / 570) + 40;
-//     traY = ((4 * mouseY) / 570) + 50;
-//     console.log(traX);
-//     $(".title").css({"background-position": traX + "%" + traY + "%"});
-//   });
-// });
+$(".popup_close").click(function(){
+	$(".sub_menu").removeClass("active");
+});
 
+$(".sub_menu_title > .nav_title").click(function(){
+	$(".sub_menu").removeClass("active");
+});
 
-/* about 스크롤시 페이드인아웃 */
-
-// $(window).scroll(function () {
-//   var scroll = $(window).scrollTop();
-//   let about = $('.skill_list').offset().top;
-//   if (scroll >= about) {
-//     $('.about h1').addClass('active');
-//   } else {
-//     $('.about h1').removeClass('active');
-//   }
-// });
-
-/* 스킬 작성 이벤트 */
-
-// consoleText(['퍼블리싱 웹페이지 구축 카페24 웹사이트 관리 UX / Ui 디자인 책자 브로셔 지류 편집 및 카드뉴스 배너 상세페이지 등 그래픽 디자인 외 영상편집'], 'text',['#000']);
-
-// function consoleText(words, id, colors) {
-//   if (colors === undefined) colors = ['#fff'];
-//   var visible = true;
-//   var con = document.getElementById('console');
-//   var letterCount = 1;
-//   var x = 1;
-//   var waiting = false;
-//   var target = document.getElementById(id)
-//   target.setAttribute('style', 'color:' + colors[0])
-//   window.setInterval(function() {
-
-//     if (letterCount === 0 && waiting === false) {
-//       waiting = true;
-//       target.innerHTML = words[0].substring(0, letterCount)
-//       window.setTimeout(function() {
-//         var usedColor = colors.shift();
-//         colors.push(usedColor);
-//         var usedWord = words.shift();
-//         words.push(usedWord);
-//         x = 1;
-//         target.setAttribute('style', 'color:' + colors[0])
-//         letterCount += x;
-//         waiting = false;
-//       }, 700)
-//     } else if (letterCount === words[0].length + 1 && waiting === false) {
-//       waiting = true;
-//       window.setTimeout(function() {
-//         x = -1;
-//         letterCount += x;
-//         waiting = false;
-//       }, 3500)
-//     } else if (waiting === false) {
-//       target.innerHTML = words[0].substring(0, letterCount)
-//       letterCount += x;
-//     }
-//   }, 100)
-//   window.setInterval(function() {
-//     if (visible === true) {
-//       con.className = 'console-underscore hidden'
-//       visible = false;
-
-//     } else {
-//       con.className = 'console-underscore'
-
-//       visible = true;
-//     }
-//   }, 400)
-// }
+$("a").click(function() {
+    if ($(this).attr("href") == "#") {
+        return false;
+    }
+});

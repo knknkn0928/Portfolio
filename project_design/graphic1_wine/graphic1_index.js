@@ -12,7 +12,8 @@ $(function(){
 });
 
 
-
-$("a").click(function(e){
-    e.preventDefault();
+$("a").click(function() {
+    if ($(this).attr("href") == "#") {
+        return false;
+    }
 });
