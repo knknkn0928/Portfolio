@@ -112,7 +112,7 @@ section article.open .open_txt img {
 /* 내부 sec1 */
 
 section article.sec1 {
-  background: url(./images/open_back.jpg) no-repeat center /cover;
+  background: url(./images/open_back.jpg) no-repeat center / cover;
   background-attachment: fixed;
 }
 

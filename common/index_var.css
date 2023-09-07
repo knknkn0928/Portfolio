@@ -149,7 +149,7 @@ html {
   user-select:none;
 
   min-width: 1620px;
-  max-width: 1920px;
+  max-width: 100%;
 }
 
 h1 {

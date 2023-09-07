@@ -1,11 +1,15 @@
 @charset "utf-8";
 
 html {
+  width: 100%;
   height: 100%;
+  margin: 0;
 }
 
 body {
+  width: 100%;
   overflow-x: hidden;
+  margin: 0;
 }
 
 .flex {
@@ -66,7 +70,7 @@ p {
 .sub_menu.active {
   opacity: 1;
   transform: translate(0, 0);
-  transition: 0.5s ease;
+  transition: 0.5s ease-in-out;
   z-index: 100;
 }
 
@@ -197,7 +201,7 @@ header .text .header_bottom h6 {
 }
 
 .animate {
-  animation: line-anim 5s infinite alternate;
+  animation: line-anim 5s infinite linear;
   transition: 0.5s ease;
 }
 
@@ -505,7 +509,7 @@ header .text .header_bottom h6 {
   margin: 0 5px;
   position: absolute;
   transform: rotate(19deg);
-  top: -5px;
+  top: 0;
   right: -3vw;
   left: 6vw;
 }
@@ -518,7 +522,7 @@ header .text .header_bottom h6 {
   margin: 0 5px;
   position: absolute;
   transform: rotate(19deg);
-  top: -5px;
+  top: 0;
   right: 6vw;
   left: -3vw;
 }
@@ -644,7 +648,6 @@ background-size: 7vw;
 
 .graphic .grid li {
   background: url(./images/ex.jpg) no-repeat 50% / cover;
-  filter: grayscale(100%);
   display: block;
   height: 100%;
   transition: 0.3s;
@@ -664,6 +667,7 @@ background-size: 7vw;
 .graphic .grid li:hover {
   filter: none;
   transition: 0.3s;
+  filter: grayscale(100%);
 }
 
 .graphic .grid {
@@ -691,14 +695,16 @@ background-size: 7vw;
   grid-column: 1 / 1;
 
   background: url(../project_design/graphic1_wine/images/back_2.png) no-repeat center / cover;
-  background-position:42% 30%;
-  background-size: 400%;
+  background-position:40% 30%;
+  background-size: 355%;
 }
 
 .graphic .grid .diamant {
   grid-row: 1 / span 2;
   grid-column: 2 / span 1;
   background: url(../project_design/graphic2_diamant/images/diamant_cookie.jpg) no-repeat center / cover;
+  justify-content: center;
+  text-align: center;
 }
 
 .graphic .grid .myrtle {
@@ -706,13 +712,17 @@ background-size: 7vw;
   grid-column: span / 4;
   
   background: url(../project_design/graphic4_myrtle/images/project1.jpg) no-repeat center / cover;
-  background-position:35% 30%;
+  background-position:35% 44%;
   background-size: 270%;
 }
 
-.graphic .grid .grd1 {
+.graphic .grid .mirae {
   grid-row: 3 / 3;
   grid-column: span 2 / span 3;
+
+  background: url(../project_design/graphic3_mirae/images/mirae2.png) no-repeat center / cover;
+  background-position:35% 50%;
+  background-size: 150%;
 }
 
 
