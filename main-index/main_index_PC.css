@@ -618,21 +618,21 @@ background-size: 7vw;
 }
 
 
-.project .project_list a:nth-child(5) h4 {
+.project .project_list a:nth-child(4) h4 {
   font-family: 'Noto Serif HK', serif;
 }
 
-.project .project_list a:nth-child(5):hover {
+.project .project_list a:nth-child(4):hover {
   background: url(./images/project_thumbs/logo3.png) no-repeat center / contain;
   background-size: 7vw;
 }
 
 
-.project .project_list a:nth-child(6) h4 {
-  font-family: 'YUniverse-B';
+.project .project_list a:nth-child(5) h4 {
+  font-family: var(--title-txt-font);
 }
 
-.project .project_list a:nth-child(6):hover {
+.project .project_list a:nth-child(5):hover {
   background: url(./images/planet1.png) no-repeat center / contain;
   background-size: 7vw;
 }
@@ -651,6 +651,7 @@ background-size: 7vw;
   display: block;
   height: 100%;
   transition: 0.3s;
+  filter: grayscale(100%);
 }
 
 .graphic .grid li a {
@@ -667,7 +668,6 @@ background-size: 7vw;
 .graphic .grid li:hover {
   filter: none;
   transition: 0.3s;
-  filter: grayscale(100%);
 }
 
 .graphic .grid {

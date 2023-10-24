@@ -7,13 +7,26 @@
     "Malgun Gothic", "맑은 고딕", helvetica, "Apple SD Gothic Neo", sans-serif;
   --italic: italic;
   --point-color: #004236;
-  --h1-size: 10rem;
-  --h2-size: 3rem;
   --margin-basic: 10%;
-  /* --margin-btn: 5vw; */
 }
 
 ::-webkit-scrollbar-thumb {
   background-color: #004236;
   border-radius: 30px;
+}
+
+.flex {
+  display: flex;
+}
+
+.column {
+  flex-direction: column;
+}
+
+* {
+  margin: 0;
+  font-family: 'pretendard';
+  list-style: none;
+  padding: 0;
+  text-decoration: none;
 }

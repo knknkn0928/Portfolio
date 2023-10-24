@@ -189,20 +189,6 @@ section p {
     position: relative;
 }
 
-.sec4 > .slider {
-    width: 45rem;
-    height: 868.5px;
-    overflow: hidden;
-}
-.sec4 > .slider > .imagewrap {
-    width: 100%;
-
-}
-.sec4 > .slider > .imagewrap > image > img {
-    width: 100%;
-    object-fit: contain;
-}
-
 .sec4 {
     .tab_menu {
         width: 100%;
@@ -333,7 +319,7 @@ section p {
 .site_link {
     position: absolute;
     right: 10vw;
-    bottom: 5vw;
+    bottom: 50px;
     font-size: var(--font-size-17);
     font-weight: 700;
     font-family: var(--kr-txt-font);
