@@ -113,7 +113,7 @@ header .title .title_text span p {
     width: 30%;
 }
 
-.sec1 div:first-child p {
+.sec1 .Overview p {
     width: 70%;
 }
 
@@ -336,28 +336,6 @@ img {
     display: block;
 }
 
-
-.sec2 .site_link {
-    font-family: var(--kr-txt-font);
-    margin: 0 auto;
-    background-color: rgb(255, 255, 255, 0.2);
-    border: 1px solid #ffffff;
-    border-radius: 50%;
-    color:#fff;
-    text-align: center;
-    display: block;
-    width:200px;
-    padding: 1vw 2vw;
-    transition: 0.3s;
-}
-
-.sec2 .site_link:hover {
-    background-color: rgb(255, 255, 255, 0.8);
-    color:#000;
-}
-
-
-
 .sec2 .Review span {
     width: 100%;
     justify-content: space-between;
@@ -380,6 +358,27 @@ img {
 .sec2 .Review span p {
     width: 80%;
 }
+
+
+.site_link {
+    font-family: var(--kr-txt-font);
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255, 0.2);
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    color:#fff;
+    text-align: center;
+    display: block;
+    width:200px;
+    padding: 1vw 2vw;
+    transition: 0.3s;
+}
+
+.site_link:hover {
+    background-color: rgb(255, 255, 255, 0.8);
+    color:#000;
+}
+
 
 /* button */
 

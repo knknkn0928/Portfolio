@@ -65,6 +65,7 @@ p {
   transition: 0.5s ease;
   backdrop-filter: blur(3px);
   transform: translate(-100%, 0);
+  opacity: 0;
 }
 
 .sub_menu.active {
@@ -598,13 +599,19 @@ header .text .header_bottom h6 {
   height: 3vh;
 }
 .project .project_list a:nth-child(1):hover {
-  background: url(./images/project_thumbs/mock.gif) no-repeat center / contain;
-  background-size: 7vw;
+  background: url(./images/project_thumbs/up.png) no-repeat center / contain;
+  background-size: 8vw;
+}
+
+.project .project_list a:nth-child(2) h4 {
+  font-family: "Bitter", Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  height: 3vh;
 }
 
 .project .project_list a:nth-child(2):hover {
-  background: url(./images/project_thumbs/TBS_Logo.png) no-repeat center / contain;
-  background-size: 7vw;
+  background: url(./images/project_thumbs/bens-cookies-color.png) no-repeat center / contain;
+  background-size: 9.5vw;
 }
 
 

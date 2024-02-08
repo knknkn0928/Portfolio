@@ -1,0 +1,439 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700;900&family=Rowdies:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {margin: 0;}
+
+:root { scroll-behavior : auto }
+
+.flex {
+    display: flex;
+}
+  
+.grid {
+    display: grid;
+}
+  
+.column {
+    flex-direction: column;
+}
+
+html {
+    background: url(../../main-index/images/background_1.png) no-repeat;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+p {
+    font-family: var(--kr-txt-font);
+}
+
+
+/* header */
+
+header .title {
+    width: 100%;
+    height: 60vh;
+    background: url(./images/background.jpg) no-repeat bottom / cover;
+    background-attachment: fixed;
+    align-items: center;
+}
+
+header .title .title_text {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(3px);
+    transition: 0.3s;
+    padding: 0 5vw 0 10vw;
+    gap: 30px;
+    color:#ffffff;
+    align-items: center;
+}
+
+header .title .title_text .logo {
+    width: 22vh;
+    height: 15vh;
+    background: url(./images/bens-cookies-white.png) no-repeat bottom / cover;
+    transition: 0.3s;
+}
+
+header .title:hover .title_text .logo {
+    background: url(./images/bens-cookies-color.png) no-repeat bottom / cover;
+}
+
+header .title:hover .title_text {
+    background-color: rgba(255, 255, 255, 0.7);
+    color:#000;
+    width: 40%;
+}
+
+header .title .title_text div {
+    gap: 15px;
+}
+
+header .title .title_text h5 {
+    display: block;
+    width: 70px;
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #ec1d23;
+    color:#fff;
+    border-radius: 15px;
+}
+
+header .title .title_text h1 {
+  font-family: "Kanit";
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: var(--font-size-34);
+}
+
+header .title .title_text span p {
+    font-size: var(--font-size-16);
+}
+
+
+/* section */
+
+.sec1 {
+    margin: 0 auto;
+    padding:8vw 20vw 0;
+    width: calc(100% - 40vw);
+    gap: 5vw;
+}
+
+.sec1 div {
+    color:#000000;
+}
+
+.sec1 div h2 {
+    font-family: var(--main-txt-font);
+    width: 30%;
+}
+
+.sec1 div p {
+    font-size: var(--font-size-17);
+}
+
+.sec1 div:first-child p {
+    width: 70%;
+}
+
+.sec1 div span {
+    width: 80%;
+}
+
+.sec1 div span p {
+    width: 100%;
+}
+
+.sec1 .web_img div {
+    background-color: rgba(172, 172, 172, 0.2);
+    border-radius: 25px;
+    padding: 2vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec1 .web_img div p {
+    font-size: var(--font-size-16);
+}
+
+.sec1 .web_img div img {
+    border-radius: 20px;
+    display: block;
+    margin: 0;
+    object-fit: contain;
+    width: 100%;
+    /* width: 13vw; */
+}
+
+.sec1 .web_img .Vision {
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* sec2 */
+
+.sec2 {
+    padding:5vw 20vw;
+    width: calc(100% - 40vw);
+    gap: 5vw;
+}
+
+.gap {
+    gap:2vw;
+}
+
+.txt_gap p {
+    padding-bottom:5px;
+}
+
+img {
+    object-fit: contain;
+}
+
+.sec2 div {
+    /* gap: 2vw; */
+    color:#000000;
+}
+
+.sec2 div h2 {
+    font-family: var(--main-txt-font);
+    width: 30%;
+}
+
+.sec2 div p {
+    font-size: var(--font-size-17);
+}
+
+.sec2 div .style_guide {
+    width: calc(100% - 6vw);
+    padding:3vw;
+    background-color: rgba(172, 172, 172, 0.2);
+    border-radius: 25px;
+    gap:3vw;
+}
+
+.sec2 div .style_guide div h4 {
+    font-family: var(--main-txt-font);
+    width: 25%;
+    color: #ec1d23;
+}
+
+.sec2 div .style_guide div p {
+    font-size: var(--font-size-16);
+}
+
+.sec2 div .style_guide div .guide_sub {
+    width:75%;
+}
+
+.sec2 div .style_guide .color .guide_sub div span {
+    width: 33.333%;
+}
+
+.sec2 div .style_guide .color .guide_sub div span p {
+    width: 100%;
+    text-align: center;
+    display: block;
+    font-size: var(--font-size-14);
+}
+
+.sec2 div .style_guide .color .guide_sub div span:nth-child(1) p:first-child {
+    height: 20px;
+    background-color: #ec1d23;}
+.sec2 div .style_guide .color .guide_sub div span:nth-child(2) p:first-child {
+    height: 20px;
+    background-color: #2c2c2c;}
+.sec2 div .style_guide .color .guide_sub div span:nth-child(3) p:first-child {
+    height: 20px;
+    background-color: #ffffff;}
+.sec2 div .style_guide .color .guide_sub div span:nth-child(4) p:first-child {
+    height: 20px;
+    background-color: #D6CB49;}
+
+
+.sec2 div .style_guide .fonts .guide_sub .font_sub h3 {
+    width: 30%;
+    font-weight: 600;
+    font-size: var(--font-size-20);
+}
+
+.sec2 div .style_guide .fonts .guide_sub .font_sub:nth-child(1) h3 {
+    font-family:"Bitter";
+}
+
+.sec2 div .style_guide .fonts .guide_sub .font_sub:nth-child(2) h3 {
+    font-family:"Kanit";
+}
+
+.sec2 div .style_guide .fonts .guide_sub .font_sub:nth-child(3) h3 {
+    font-family:'Noto Sans KR';
+}
+
+.sec2 div .style_guide div h4 {width: 25%;}
+.sec2 div .style_guide div img {width: 75%;}
+
+
+.sec2 .work {
+    gap: 2vw;
+}
+
+.sec2 div .work .filter {
+    width:50%;
+    background-color: rgba(172, 172, 172, 0.2);
+    border-radius: 25px;
+    transition: 0.3s;
+    align-items: center;
+}
+
+.sec2 div .work {
+    width: 100%;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.sec2 div .work div:first-child {
+    width: 73%;
+}
+.sec2 div .work div:last-child {
+    width: 27%;
+}
+
+.sec2 div .work div h4 {
+    padding-top:2vw;
+    color: #ec1d23;
+}
+
+.sec2 div .work div img {
+    padding: 2vw;
+    width: calc(100% - 4vw);
+}
+
+
+.sec2 .proto_box {
+    gap: 2vw;
+}
+
+.sec2 div .proto_box .filter {
+    width: 100%;
+    background-color: rgba(172, 172, 172, 0.2);
+    border-radius: 25px;
+    transition: 0.3s;
+    align-items: center;
+}
+
+.sec2 .proto_box div {
+    justify-content: end;
+}
+
+.sec2 .proto_box div h4 {
+    padding-top:2vw;
+    font-family: var(--main-txt-font);
+    color: #ec1d23;
+}
+
+/* .sec2 div .proto_box .main1:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.sec2 div .proto_box .main2:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.sec2 div .proto_box .main3:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+} */
+
+.sec2 div .proto_box .main1 {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.sec2 div .proto_box .main1 img {
+    padding: 2vw;
+    width: calc(100% - 4vw);
+}
+
+.sec2 div .proto_box .main2 {
+    width: 62%;
+    align-items: center;
+    justify-content: center;
+}
+
+.sec2 div .proto_box .main2 img {
+    padding: 2vw;
+    width: calc(100% - 4vw);
+}
+
+.sec2 div .proto_box .main3 {
+    width: 38%;
+    align-items: center;
+    justify-content: center;
+}
+
+.sec2 div .proto_box .main3 img {
+    padding: 2vw;
+    width: calc(100% - 4vw);
+}
+
+
+
+.site_link {
+    font-family: var(--kr-txt-font);
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255, 0.2);
+    border: 1px solid #000000;
+    border-radius: 50%;
+    color:#000000;
+    text-align: center;
+    display: block;
+    width:200px;
+    padding: 1vw 2vw;
+    transition: 0.3s;
+}
+
+.site_link:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+    color:#ffffff;
+}
+
+
+/* button */
+
+.up_btn {
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    color:#000000;
+    cursor: pointer;
+}
+
+.up_btn svg {
+    fill:#000000;
+    animation: up 2s ease-in-out 2s infinite;
+}
+
+@keyframes up {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.up_btn p {
+    font-family: var(--main-txt-font);
+    font-weight: bold;
+}
+
+.back_btn {
+    color:#000000;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    position: fixed;
+    top:1vw;
+    left: 1vw;
+    z-index: 999;
+    gap:1vw
+}
+
+.back_btn svg {
+    fill:#000000;
+    width: 35px;
+}
+
+.back_btn p {
+    font-family: var(--main-txt-font);
+    font-weight:500;
+}

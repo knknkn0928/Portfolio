@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>project 2 :: BEN'S COOKIES</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Instrument+Sans&family=Lobster&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet">
+
+    <!-- favicon -->
+    <link rel="android-chrome-icon" sizes="76x76" href="../../common/favicon/android-chrome-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../../common/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../common/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../common/favicon/favicon-16x16.png">
+
+    <link rel="stylesheet" href="project2_index.css">
+    <link rel="stylesheet" href="../../common/index_var.css">
+  
+    <script defer src="../../common/jquery-3.7.0.min.js"></script>
+</head>
+<body>
+
+    <a href="javascript:history.back();" class="back_btn flex">
+        <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48"><path d="m274-450 248 248-42 42-320-320 320-320 42 42-248 248h526v60H274Z"/></svg>
+        <p>Back</p>
+    </a>
+
+    <script type="text/javascript">
+    function goBack(){
+        history.back();
+    }        
+    </script>
+
+    <header>
+        <div class="title flex">
+            <div class="title_text flex">
+                <span class="logo"></span>
+                <div class="flex column">
+                    <h5>Web</h5>
+                    <h1>BEN'S COOKIES</h1>
+                    <span>
+                        <p>영국에서 시작된 쿠키 스토어 "벤스 쿠키"</p>
+                        <p>#반응형 #미디어쿼리 #HTML #CSS #VEGAS #작업 기여도 100%</p>
+                        <p>개인 프로젝트 2024-01-26 ~ 2024-02-07</p>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="sec1 flex column">
+        <img src="./images/mockup.png" alt="mockup">
+        <a href="./project2_page/index.html" class="site_link" target="_blank">Redesign 바로가기</a>
+        <div class="flex">
+            <h2>Overview</h2>
+            <p>"벤스 쿠키"는 영국의 수제 쿠키 브랜드로 영국에서 반죽된 쿠키 생지를 매일 신선하게 구워내는 디저트 브랜드입니다.</p>
+        </div>
+
+        <div class="flex">
+            <h2>Time Line</h2>
+            <span class="txt_gap">
+                <p>리디자인 브랜드 선정 사이트 내 Ui UX 탐색 및 정리</p>
+                <p>와이어 프레임과 워크플로우 구조를 분석 후 리디자인</p>
+                <p>이미지 편집 및 HTML / CSS 작성</p>
+                <p>미디어쿼리를 통한 각 사이즈별 반응형 구성하기</p>
+                <p>스크립트를 통한 이벤트 작성 및 검토</p>
+                <p>페이지 동작 확인 후 마무리</p>
+            </span>
+        </div>
+
+        <div class="web_img flex column gap">
+            <h2>Web original</h2>
+            <div class="flex column gap">
+                <img src="./images/web_original.png" alt="웹 기존 디자인">
+                <p>사이트 상단의 정리되지 않은 느낌과 통일성 없는 구조가 흐름을 방해함</p>
+            </div>
+        </div>
+
+        <div class="flex">
+            <h2>UI UX Vision</h2>
+            <span>
+                <p>친숙하지 않은 느낌의 디자인과 Ui를 수정하여 사용자의 편안한 쇼핑을 유도함</p>
+                <p>가시성이 좋은 브랜드 테마 컬러를 사용해 디저트 브랜드라는 아이덴티티를 살려 디자인</p>
+            </span>
+        </div>
+    </section>
+
+    <section class="sec2 flex column">
+        <div class="flex column gap">
+            <h2>Style Guide</h2>
+            <div class="style_guide flex column">
+                <div class="flex">
+                    <h4>Main Keyword</h4>
+                    <p class="guide_sub">디저트 박스, 쿠키와 우유, 식욕</p>
+                </div>
+                <div class="color flex">
+                    <h4>COLOR CONCEPT</h4>
+                    <div class="guide_sub flex column gap">
+                        <div class="flex">
+                            <span class="flex column">
+                                <p></p>
+                                <p>#ec1d23</p>
+                                <p>Main point</p>
+                            </span>
+                            <span class="flex column">
+                                <p></p>
+                                <p>#2c2c2c</p>
+                                <p>Sub title, Point</p>
+                            </span>
+                            <span class="flex column">
+                                <p></p>
+                                <p>#ffffff</p>
+                                <p>Back Ground</p>
+                            </span>
+                        </div>
+                        <p>벤스 쿠키의 테마 컬러인 뚜렷한 Red를 중점으로 심플한 쿠키 플레이팅을 의도하여 컬러 팔레트를 심플하게 선택했습니다. 디저트가 담긴 벤스 쿠키의 틴 박스처럼 또렷하고 아이코닉한 컨셉을 목표로 하였습니다.</p>
+                    </div>
+                </div>
+                <div class="fonts flex">
+                    <h4>FONTS</h4>
+                    <div class="guide_sub flex column gap">
+                        <div class="flex column">
+                            <span class="font_sub flex gap">
+                                <h3>BEN'S COOKIES</h3>
+                                <p>Bitter font</p>
+                            </span>
+                            <span class="font_sub flex gap">
+                                <h3>BEN'S COOKIES</h3>
+                                <p>Kanit font</p>
+                            </span>
+                            <span class="font_sub flex gap">
+                                <h3>벤스쿠키</h3>
+                                <p>Noto sans kr</p>
+                            </span>
+                        </div>            
+                        <p>메뉴와 배너 내의 Brand intro에는 볼드하고 심플한 Kanit font를 사용하였고, 각 카테고리의 Sub title에는 웹 등의 가독성을 최적화된 슬랩 세리프체인 Bitter font를 사용하였습니다. 그 외 상세 메뉴에는 Noto sans kr을 사용하였습니다.</p>
+                    </div>
+                </div>
+                <div class="flex">
+                    <h4>FONTS STYLE</h4>
+                    <img src="./images/font_style.svg" alt="fontstyle">
+                </div>
+            </div>
+        </div>
+
+        <div class="flex column gap">
+            <h2>Work Flow</h2>
+            <div class="work flex">
+                <div class="filter flex column">
+                    <h4>Web Size</h4>
+                    <img src="./images/web.svg" alt="웹 사이즈">
+                </div>
+                <div class="filter flex column">
+                    <h4>Mobile Size</h4>
+                    <img src="./images/tab.svg" alt="태블릿 사이즈">
+                </div>
+                <div class="filter flex column">
+                    <h4>Mobile Size</h4>
+                    <img src="./images/mob.svg" alt="모바일 사이즈">
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="flex column gap">
+            <h2>Prototype</h2>
+            <div class="proto_box flex column">
+                <div class="main1 filter flex column">
+                    <h4>Web Size</h4>
+                    <img src="./images/web.png" alt="웹 이미지">
+                </div>
+                <div class="flex gap">
+                    <div class="main2 filter flex column">
+                        <h4>Tablet Size</h4>
+                        <img src="./images/tab.png" alt="태블릿 이미지">
+                    </div>
+
+                    <div class="main3 filter flex column">
+                        <h4>Mobile Size</h4>
+                        <img src="./images/mob.png" alt="모바일 이미지">
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+
+        <div class="up_btn flex column" id="up_btn">
+            <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48"><path d="m283-345-43-43 240-240 240 239-43 43-197-197-197 198Z"/></svg>
+            <p>UP TO</p>
+        </div>
+
+        <script>
+            const up_btn = document.querySelector(".up_btn");
+            up_btn.onclick = () => {
+            window.scrollTo({ top: 0, behavior: "smooth" });  
+            }
+        </script>
+
+    </section>
+
+</body>
+</html>

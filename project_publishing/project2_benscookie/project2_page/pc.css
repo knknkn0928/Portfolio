@@ -1,0 +1,180 @@
+@charset "utf-8";
+
+
+header .global-nav {
+  gap: 20px;
+  line-height: 60px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  height: 100px;
+  width: 700px;
+  padding: 0;
+}
+
+header .global-nav li a {
+  color: var(--sub-color);
+  transition: 0.3s;
+  font-size: 1.4rem;
+}
+
+
+/* banner */
+
+.banner .banner-in {
+  margin: 0 8%;
+  position: absolute;
+  text-align: left;
+  top:20%;
+}
+
+.banner .vegas-image-slide {
+  width: 65vw;
+  height: 110%;
+  border-radius: 350px 0 0;
+  margin: 0 0 0 35vw;
+  position: relative;
+}
+
+.banner .banner-txt div h3 {
+  font-size: 30px;
+}
+
+.banner .banner-txt h1 {
+  font-size: 65px;
+}
+
+
+/* main-menu */
+
+.main-menu .cookie-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+  margin-top: 8vw;
+  text-align: center;
+}
+
+.main-menu .cookie-list li {
+  padding:30px 10px;
+  width: 100%;
+  height: 100%;
+}
+
+.main-menu .cookie-list li img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+}
+
+.main-menu .cookie-list li h3 {
+  font-size: 1.25rem;
+}
+
+.main-menu .cookie-list li p {
+  font-size: 14px;
+}
+
+
+/* our story */
+
+.our-story .story-box .story-txt {
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+  padding: 80px;
+}
+
+.our-story .story-box .story-txt h3 {
+  font-size: 2.5rem;
+}
+
+.our-story .story-box .story-txt p {
+  font-size: 1.1rem;
+}
+
+
+/* store information */
+
+.store-list ul li h4 {
+  font-size: 1.2rem;
+}
+
+.store-list ul li .info {
+  font-size: 1rem;
+}
+
+
+/* order information */
+
+.order-info-list {
+  flex-direction: row;
+}
+
+.order-info-list ul {
+  width: 50%;
+  border-bottom: solid 1px #ddd;
+}
+
+.order-info-list ul li:last-child {
+  border-bottom: none;
+}
+
+.order-info-list ul li h4 {
+  font-size: 1.2rem;
+}
+
+.order-info-list ul li p {
+  font-size: 1rem;
+}  
+
+
+/* footer */
+
+footer {
+  height: 420px;
+}
+
+footer .footer-text {
+  height: 175px;
+}
+
+footer .footer-text .company {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap:15px;
+}
+
+footer .footer-text .company div {
+  gap:15px;
+}
+
+footer .footer-text .adress {
+  flex-direction: column;
+}
+
+footer .footer-text .adress .adress-info {
+  flex-direction: row;
+  justify-content: center;
+}
+
+footer .made-by {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 15px;
+  gap:15px;
+}
+
+footer .made-by p {
+  font-size: 1rem;
+}
+
+footer .made-by a {
+  height: 18px;
+}

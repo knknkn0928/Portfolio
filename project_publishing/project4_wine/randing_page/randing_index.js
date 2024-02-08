@@ -4,7 +4,6 @@ const menu = document.querySelector('.left');
 
 open.addEventListener('click', e => {
     section.classList.add('on');
-    section.classList.add('active');
 })
 
 
