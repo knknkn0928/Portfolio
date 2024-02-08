@@ -104,6 +104,11 @@ header .title .title_text span p {
     gap: 5vw;
 }
 
+.sec1 img {
+    width: 70%;
+    margin: 0 auto;
+}
+
 .sec1 div {
     color:#fff;
 }
