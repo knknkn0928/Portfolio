@@ -1,63 +1,8 @@
-* {margin: 0;
-  scroll-behavior: smooth;
-  -webkit-user-select:none;
-  -moz-user-select:none;
-  -ms-user-select:none;
-  user-select:none;}
-
-::-webkit-scrollbar {
-  display: none;
-}
-
-@font-face {
-  font-family: 'JSongMyung-Regular-KO';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/JSongMyung-Regular-KO.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Pretendard-Regular';
-  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-  font-weight: 400;
-  font-style: normal;
-}
-
-/* 한자 */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+HK:wght@200;300;400;500;600;700;800;900&display=swap');
-
-/* font-family: 'Gowun Batang', serif; */
-@import url("https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap");
-
-.flex {
-  display: flex;
-}
-
-.column {
-  flex-direction: column;
-}
-
-section {
-  width: 100%;
-  height: 100vh;
-}
-
-article {
-  width: 100%;
-  height: 100%;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  color: #fff;
-}
+@charset "utf-8";
 
 section article.open {
   background: url(./images/open_background.jpg) no-repeat bottom / cover;
+  background-color: #fff;
   position: fixed;
   -webkit-mask: url(./images/mask_1.png) no-repeat;
   -webkit-mask-size: 2300% 100%;
@@ -74,20 +19,16 @@ section.on .open {
   animation: mask-play 1.4s steps(22) forwards;
 }
 
-section article.open:hover {
-  background-position-y: center;
-}
-
-section article.open .open_txt {
+article.open .open_txt {
   align-items: center;
   justify-content: space-evenly;
-  height: 600px;
+  height: 900px;
   border-radius: 120px 120px;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(2px);
 }
 
-section article.open .open_txt span h2 {
+article.open .open_txt span h2 {
   width: 200px;
   color: #fff;
   text-align: center;
@@ -109,72 +50,17 @@ section article.open .open_txt img {
 }
 
 
-/* 내비 */
+/* slide */
 
-nav {
-  display: none;
-  position: fixed;
-  right: 30px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
-  text-align: right;
-  z-index: 99; }
-  nav a {
-    display: block;
-    line-height: 25px;
-    position: relative;
-    padding-right: 20px;
-    color: #ffffff;
-    text-decoration: none; }
-    nav a:hover .nav-label {
-      -webkit-transform: translateX(0);
-          -ms-transform: translateX(0);
-              transform: translateX(0);
-      opacity: 1;
-      visibility: visible; }
-  nav .nav-dot {
-    display: block;
-    width: 10px;
-    height: 10px;
-    position: absolute;
-    right: 0;
-    top: 50%;
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 100%;
-    -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
-    -webkit-transition: all 0.3s linear;
-            transition: all 0.3s linear; }
-  nav li:hover > .nav-dot {
-    background-color: rgba(255, 255, 255, 1);
-  }
+.slide {
+  color: #ffffff;
+  position: relative; }
 
-  nav .nav-label {
-    display: block;
-    opacity: 0.5;
-    visibility: hidden;
-    -webkit-transform: translateX(-10px);
-        -ms-transform: translateX(-10px);
-            transform: translateX(-10px);
-    -webkit-transition: all 0.2s cubic-bezier(.17, .67, .83, .67);
-            transition: all 0.2s cubic-bezier(.17, .67, .83, .67); }
-  /* nav.is-dark a {
-    color: #212121; }
-  nav.is-dark .nav-dot {
-    background-color: rgba(0, 0, 0, 0.5); } */
-  nav ul {
-    margin: 0;
-    padding: 0; }
-  nav li {
-    width: auto;
-    list-style: none; }
+.slide .wrapper {
+  text-align: left; }
 
 
-
-/* 내부 sec1 */
+/*  sec1 */
 
 section article.sec1 {
   background: url(./images/open_back.jpg) no-repeat center / cover;
@@ -213,47 +99,51 @@ section.active article.sec1 .sec1_left .left  {
   z-index: 99;
 }
 
-section article.sec1 .sec1_left .left span {
-  align-items: center;
-  gap: 25px;
+.sec1 header {
+  text-align: center;
 }
 
-section article.sec1 .sec1_left .left span a {
-  color: #fff;
-  font-family: 'Noto Serif HK';
-  text-transform: uppercase;
-  font-size: 1.1rem;
+.sec1 header h1 {
+  font-size: 3rem;
+  font-family: 'JSongMyung-Regular-KO';
 }
 
-section article.sec2 {
-  width: 100%;
-  height: 100%;
-  position: relative;
+.sec1 header {
+  font-size: 1.3rem;
 }
+  
+/* wrapper */
 
-section article.sec2 .right {
+section {
+  overflow: hidden;
+
+}
+section .wrapper {
   position: absolute;
-  top: 15%;
-  right:40px;
+  top: 50%;
+  bottom: auto;
+  left:8vw;
   align-items: end;
 }
 
-section article.sec2 .right h1 {
+section .wrapper h1 {
+  font-size: 3rem;
   font-family: 'JSongMyung-Regular-KO';
-  font-weight: 200;
-  font-size: 110px;
+  padding-bottom: 10px;
 }
 
-section article.sec2 .right h2 {
-  font-family: 'JSongMyung-Regular-KO';
+section .wrapper h2 {
+  font-size: 1.5rem;
   font-weight: 200;
-  font-size: 70px;
+  font-family: 'Pretendard-Regular';
+  padding-bottom: 10px;
 }
 
-.sec1 .logo {
-  object-fit: contain;
-  width: 120px;
+section .wrapper p {
+  font-size: 1rem;
+  font-family: 'Pretendard-Regular';
 }
+
 
 .sec2 {
   background: url(./images/back_1.png) no-repeat left center / cover;
@@ -271,3 +161,23 @@ section article.sec2 .right h2 {
   background-attachment: fixed;
   background-size: 115%;
 }
+
+
+/* Footer */
+
+.footer-container {
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  color: rgba(0, 0, 0, 0.9);
+  background: url(./images/close-up-of-delicious-red-wine.jpg) no-repeat center / cover;
+}
+
+.footer-container h3 {
+  margin: 0;
+  padding: 70px 0;
+  font-weight: normal; }
+  
+.footer-container a {
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.9); }

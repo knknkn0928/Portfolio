@@ -99,6 +99,11 @@ header .title .title_text h1 {
 
 /* section */
 
+.sec1 img {
+    width: 70%;
+    margin: 0 auto;
+}
+
 .sec1 {
     margin: 0 auto;
     padding:8vw 20vw 0;
@@ -337,7 +342,9 @@ img {
 }
 
 
-.sec2 .site_link {
+/* site link */
+
+.site_link {
     font-family: var(--kr-txt-font);
     margin: 0 auto;
     background-color: rgb(255, 255, 255, 0.2);
@@ -351,7 +358,7 @@ img {
     transition: 0.3s;
 }
 
-.sec2 .site_link:hover {
+.site_link:hover {
     background-color: rgb(255, 255, 255, 0.8);
     color:#000;
 }

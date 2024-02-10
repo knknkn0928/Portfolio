@@ -13,3 +13,9 @@ $(document).ready(function () {
       animation: 'kenburnsDownLeft'
     });
   });
+
+  $("a").click(function() {
+    if ($(this).attr("href") == "#") {
+      return false;
+    }
+  });

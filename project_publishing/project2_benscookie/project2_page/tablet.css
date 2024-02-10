@@ -6,6 +6,10 @@ h2 {
 
 /* header */
 
+header {
+  height: 100px;
+}
+
 header .header-wrapper .header-logo {
   width: 100px;
 }

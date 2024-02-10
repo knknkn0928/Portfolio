@@ -8,7 +8,7 @@ h2 {
 /* header */
 
 header {
-  height: 100px;
+  height: 80px;
   background-color: #fff;
   border-bottom: 2px solid var(--point-color);
   position: sticky;
@@ -24,7 +24,7 @@ header .header-wrapper {
 }
 
 header .header-wrapper .header-logo {
-  width: 100px;
+  width: 90px;
   object-fit: cover;
 }
 
@@ -66,7 +66,7 @@ header .menu-icon svg {
 .banner .banner-in {
   margin: 0 8%;
   position: absolute;
-  top: 45px;
+  top: 65px;
   z-index: 99;
 }
 
@@ -121,7 +121,7 @@ header .menu-icon svg {
   width: 100vw;
   height: 70%;
   border-radius: 150px 0 0 0;
-  margin: 40% 0 0 0;
+  margin: 48% 0 0 0;
   position: relative;
 }
 
@@ -166,17 +166,17 @@ header .menu-icon svg {
 
 .main-menu .cookie-list li h3 {
   font-weight: 700;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 
 .main-menu .cookie-list li p {
-  font-size: 12px;
+  font-size: 0.7rem;
   color: var(--point-color);
 }
 
 .main-menu .cookie-list li img {
-  min-width: 140px;
-  max-width: 140px;
+  max-width: 130px;
+  height: 130px;
   border-radius: 30px;
 }
 
@@ -211,7 +211,7 @@ header .menu-icon svg {
 
 .our-story .story-box .story-txt h3 {
   font-family: var(--sub-title-font);
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 .our-story .story-box .story-txt p {
   font-size: 0.8rem;
@@ -319,13 +319,13 @@ header .menu-icon svg {
 
 .store-list ul li h4 {
   color: var(--point-color);
-  font-size: 1rem;
+  font-size: 0.85rem;
   width: 35%;
   font-weight: bold;
 }
 
 .store-list ul li .info {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   width: 65%;
   flex-direction: column;
   gap: 5px;
@@ -362,14 +362,14 @@ header .menu-icon svg {
 
 .order-info-list ul li h4 {
   color: var(--point-color);
-  font-size: 1rem;
+  font-size: 0.85rem;
   width: 40%;
   font-weight: bold;
 }
 
 .order-info-list ul li p {
   width: 60%;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 
 .order-info-list ul:first-child li div {
@@ -429,7 +429,7 @@ header .menu-icon svg {
 
 .order-info .social li h4 {
   color: var(--point-color);
-  font-size: 1rem;
+  font-size: 0.85rem;
   font-weight: bold;
 }
 
@@ -470,16 +470,16 @@ footer .footer-text {
 
 footer .footer-text .info-use {
   justify-content: center;
-  gap: 50px;
+  gap: 30px;
 }
 
 footer .footer-text .company div {
   justify-content: center;
-  gap:20px;
+  gap:10px;
 }
 
 footer .footer-text .company .pg {
-  padding: 15px;
+  padding: 10px;
 }
 
 footer .footer-text .adress {
@@ -496,7 +496,7 @@ footer h3 {
 }
 
 footer p {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   margin-top: 5px;
 }
 
@@ -507,6 +507,7 @@ footer .made-by {
 }
 
 footer .made-by a {
+  font-family: "Kanit";
   font-size: 0.6rem;
   color: #fff;
   font-size: 1rem;

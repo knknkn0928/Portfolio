@@ -31,3 +31,9 @@ $(window).on("wheel", function(e){
 	var posTop = (page-1) * ($(window).height());
 	$html.animate({scrollTop : posTop}, timeScrollAnimation);
 });
+
+$("a").click(function() {
+	if ($(this).attr("href") == "#") {
+		return false;
+	}
+});
